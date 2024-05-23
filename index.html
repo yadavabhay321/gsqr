@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>g.s. question research</title>
+
+    <style>
+    * {
+
+            font-family: ;
+
+            margin: 0;
+
+            padding: 0;
+
+            box-sizing: border-box;
+
+            text-decoration: none;
+
+            outline: none;
+
+            text-transform: capitalize;
+
+
+        }
+
+
+
+        .navbar{
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            position: sticky;
+
+            top: 0;
+
+            cursor: pointer;
+
+            background-color: orangered;
+
+            font-size: 25px;
+
+            font-weight: bold;
+
+        }
+
+
+
+        .navbar span{
+
+            width: 100%;
+
+            padding: 10px;
+
+            color: white;
+
+            text-align: center;
+
+        }
+
+
+
+        .background{
+
+            background: rgba(0, 0, 0, 0.5) url('img/bg.jpg');
+
+            background-size: cover;
+
+            background-blend-mode: darken;
+
+        }
+
+
+
+        .firstSection{
+
+            height: 100vh;
+
+        }
+
+
+
+        .box-main{
+
+            display: flex;
+
+            justify-content: center;
+
+            align-items: center;
+
+            color: white;
+
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+            height: 80%;
+
+            padding: 50px;
+
+            text-align: center;
+
+        }
+
+
+
+        .firstHalf{
+
+            width: 75%;
+
+            display: flex;
+
+            flex-direction: column;
+
+            justify-content: center;
+
+        }
+
+
+
+        .secondHalf{
+
+            width: 30%;
+
+        }
+
+
+
+        .secondHalf img{
+
+            width: 100%;
+
+            border: 4px solid white;
+
+            border-radius: 150px;
+
+            display: block;
+
+            margin: auto;
+
+        }
+
+
+
+        .text-big{
+
+            font-size: 41px;
+
+            margin-top: 15px;
+
+            margin-bottom: 20px;
+
+        }
+
+
+
+        .text-small{
+
+            font-size: 18px;
+
+        }
+
+
+
+        .secRight{
+
+            padding: 25px 50px;
+
+            text-align: center;
+
+        }
+
+
+
+        .secRight p{
+
+            margin-bottom: 20px;
+
+        }
+
+
+
+        .start{
+
+            text-decoration: none;
+
+            text-align: center;
+
+            padding: 8px 50px;
+
+            background-color: rgb(14, 216, 14);
+
+            color: white;
+
+            border: 4px solid black;
+
+            border-radius: 25px;
+
+        }
+
+
+
+        .start:hover{
+
+            color: red;
+
+        }
+
+
+
+        hr{
+
+            height: 2px;
+
+            background-color: orangered;
+
+        }
+
+
+
+        .contact{
+
+            background-color: antiquewhite;
+
+            padding: 20px 50px;
+
+        }
+
+
+
+        .text-center{
+
+            text-align: center;
+
+            font-size: 35px;
+
+        }
+
+
+
+        .form{
+
+            max-width: 1200px;
+
+            margin: auto;
+
+        }
+
+
+
+        .form-input{
+
+            margin: 14px 0;
+
+            width: 100%;
+
+            border: 2px solid grey;
+
+            border-radius: 6px;
+
+            padding: 10px;
+
+        }
+
+
+
+        .btn-dark{
+
+            color: black;
+
+            border: 2px solid gray;
+
+            padding: 3px 5px;
+
+        }
+
+
+
+        .text-footer{
+
+            text-align: center;
+
+            color: white;
+
+            padding: 10px;
+
+            background-color: black;
+
+            font-size: 25px;
+
+        }
+
+
+
+        @media only screen and (max-width: 1140px){
+
+            .box-main{
+                flex-direction: column-reverse;
+            }
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <nav class="navbar">
+
+        <span>g.s. question research</span>
+
+    </nav>
+
+
+
+    <section class="background firstSection">
+
+        <div class="box-main">
+
+            <div class="firstHalf">
+
+                <p class="text-big">hi, i'm abhay singh yadav</p>
+
+                <p class="text-small">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit iure inventore quisquam, molestiae eum minus officiis voluptates at laboriosam odit distinctio. Doloremque praesentium enim exercitationem labore inventore delectus culpa quam cupiditate repudiandae dolor corrupti voluptatem modi dolore est odio, autem sed rerum hic consequatur eaque ullam eveniet totam. Qui, quis?</p>
+
+            </div>
+
+
+
+            <div class="secondHalf">
+
+                <img src="img/abhay.jpg" alt="abhay">
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <section class="secRight">
+
+        <p class="sectionTag">let's start</p>
+
+        <a class="start" href="subject/subject.html">start</a>
+
+    </section>
+
+    <hr>
+
+
+
+    <section class="contact">
+
+        <h2 class="text-center">contact us</h2>
+
+        <div class="form">
+
+            <input class="form-input" type="name" name="name" id="name" placeholder="enter your name">
+
+            <input class="form-input" type="number" name="phone" id="phone" placeholder="enter your phone">
+
+            <input class="form-input" type="email" name="email" id="email" placeholder="enter your email" style="text-transform: none;">
+
+            <textarea class="form-input" name="text" id="text" cols="30" rows="10" placeholder="send your question"></textarea>
+
+            <button class="btn-dark">submit</button>
+
+        </div>
+
+    </section>
+
+
+
+    <footer class="text-footer">thank you!</footer>
+
+</body>
+
+</html>

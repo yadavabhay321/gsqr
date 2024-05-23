@@ -1,0 +1,1022 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>सूक्ष्मजीव</title>
+
+    <style>
+    * {
+
+            font-family: ;
+
+            margin: 0;
+
+            padding: 0;
+
+            box-sizing: border-box;
+
+            text-decoration: none;
+
+            outline: none;
+
+            text-transform: capitalize;
+
+
+        }
+
+
+
+        .nav {
+
+            width: 100vw;
+
+            height: 100%;
+
+            background-color: orangered;
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            text-align: center;
+
+        }
+
+
+
+        .st {
+
+            font-size: 30px;
+
+            color: white;
+
+            padding: 10px 25px;
+
+            font-weight: bold;
+
+        }
+
+
+
+        .qbox section div {
+            display: none;
+        }
+
+        .qbox section .ans:focus+div {
+            display: block;
+        }
+
+
+
+        .qbox {
+            margin: 5px 15px;
+
+            border: 2px solid #ccc;
+
+            height: 100%;
+
+            padding: 15px;
+
+        }
+
+
+        .ans {
+            border: 1px solid black;
+            padding: 5px 5px;
+            margin: 0;
+            background-color: #ccc;
+            position: relative;
+
+        }
+
+
+        .ansbox {
+            position: relative;
+            top: 5px;
+            padding: 5px 0;
+            margin-bottom: 10px;
+            border: ;
+        }
+
+
+        .anw,
+        .mor {
+            color: red;
+            font-weight: bold;
+        }
+
+        .answer,
+        .more {
+            color: blue;
+            padding: 5px 0;
+        }
+
+        .question {
+            font-weight: bold;
+            color: #000;
+        }
+
+        .h {
+            width: 100%;
+            background-color: #ccc;
+            padding: 10px 10px;
+            margin-bottom: 10px;
+            text-align: center;
+            justify-content: center;
+        }
+
+        section {
+            margin-top: 10px;
+        }
+
+        .fs {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0 15px;
+            gap: 10px;
+        }
+
+        .shuffle,
+        .reload {
+            padding: 5px 10px;
+            font-size: 20px;
+            margin-top: 5px;
+            font-weight: bold;
+            background-color: #ccc;
+        }
+        
+        .search {
+            padding: 8px 10px;
+            margin-top: 5px;
+            border: 2px solid black;
+        }
+        
+        #myol {
+           list-style-position: inside; 
+        }
+    </style>
+
+</head>
+
+
+
+<body>
+
+    <nav class="nav">
+        <div class="st">सूक्ष्मजीव</div>
+    </nav>
+
+    <div class="fs">
+        <input class="search" id="searchInput" placeholder="search question">
+        <button class="shuffle" onclick="main()">shuffle</button>
+        <button class="reload" onclick="window.location.reload()">reset</button>       
+    </div>
+
+    <div class="qbox">
+    
+    <ol id="myol">
+    
+        <!-- ???????????????????????????? -->
+
+        <li class="question">प्रमुख सूक्ष्मजीव<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>वायरॉइड्स, प्रियान, विषाणु, जीवाणु, कवक, प्रोटोजोआ, शैवाल</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+                
+        <li class="question">वायरॉइड्स की खोज किसने किया था यह_____बने होते हैं, यह केवल किसमें पाए जाते हैं, न्यूक्लिक एसिड के रूप में केवल_____पाया जाता है<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>अमेरिकी जीव वैज्ञानिक थियोडोर डायनर, न्यूक्लिक अम्ल, पौधों में, RNA</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">प्रियान_____ का बना होता है, इसके कारण बकरी और भेड में कौन सा रोग होता है, इसके कारण मनुष्य में कौन सा रोग होता है<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>प्रोटीन अणु, स्क्रैपि, क्रोयूट सल्फेट (यकोबा)</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <h4 class="h" id="h">विषाणु</h4>
+        
+        <li class="question">विषाणु की खोज सर्वप्रथम किसने और किसमें किया था, उन्होंने इसका नाम क्या रखा, यह बने होते हैं<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>रूसी वैज्ञानिक आइवेनोस्की, तंबाकू के पौधे में, तंबाकू मोज़ेक वायरस, न्यूक्लिक एसिड,</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">विष्णु को किन आधार पर निर्जीव माना जाता है<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>1. वायरस केवल जीवित परपोषी में ही वृद्धि कर सकता है 2. वायरस को क्रिस्टल के रूप में प्राप्त किया जा सकता है 3. वायरस में श्वसन नहीं होता 4. जीवित कोशिका के बाहर वायरस में उपापचय की क्रियाएं नहीं होती है</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        <li class="question">वायरस को किन आधार पर सजीव माना जाता है<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>1. भिन्न-भिन्न वायरस का आकार और संरचना भिन्न होता है 2. वायरस जनन करता है 3. वायरस संवेदनशील होता है तथा वातावरण के प्रति उनमें अनुकूलन पाई जाती है</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">वायरस द्वारा पौधों में होने वाले प्रमुख रोग<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>तंबाकू गन्ना ककड़ी टमाटर गोभी मिर्च में होने वाला मजाक रोग, आलू का लीफ रोल, भिंडी का पित्त सिरा मोजैक, टमाटर का लीफ कर्ल</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">वायरस के कारण मनुष्य में होने वाले प्रमुख रोग<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>इन्फ्लूएंजा या फ्लू, पोलियो, खसरा, चेचक, छोटी माता, रेबीज, हेपेटाइटिस, एड्स, डेंगू, पीलिया, ट्रैकोमा, हर्पीज</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">इन्फ्लूएंजा या फ्लू किस वायरस के कारण होता है यह कैसे फैलता है इसके लक्षण क्या है इससे राहत के लिए क्या उपयोग किया जाता है<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>मिक्सो वायरस, वायु द्वारा रोगी के छींक के साथ, बुखार पूरे शरीर में कंपन कमजोरी नाक से पानी निकालना, एस्पिरिन</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">पोलियो किस वायरस के कारण होता है यह कैसे फैलता है, यह कैसे प्रभावित करता है, यह रोग किस उम्र में सबसे ज्यादा होता है, इसकी तीव्रता कैसे कम की जाती है<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>पोलियो वायरस, संक्रमित भोजन दूध तथा पेयजल के माध्यम से, पेशीय को नियंत्रित करने वाली तंत्रिका कोशिका को नष्ट कर देता है, 6 महीने से लेकर 3 वर्ष तक, फिजियोथैरेपी</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        <li class="question">खसरा किस वायरस के कारण होता है यह कैसे फैलता है इसके लक्षण क्या है<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>मोबोरली वायरस, वायु के माध्यम से, आरंभ में नाक आंख से पानी बहता है बुखार होता है तथा तीन-चार दिनों के बाद शरीर पर लाल दाने हो जाते हैं</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">चेचक वायरस के कारण होता है, यह किस माध्यम से फैलता है, इसके लक्षण क्या है<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>वैरिओला वायरस, वायु, प्रारंभ में बुखार सर में दर्द उल्टी होता है और उसे चार दिन के बाद मुंह पर लाल दाने निकल आते हैं जो धीरे-धीरे पूरे शरीर में फैल जाता है</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">छोटी माता किस वायरस के कारण होता है, इसके लक्षण क्या है<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>वैरिसेला जोस्टर वायरस, शरीर पर छोटे-छोटे दाने निकल आते हैं हल्का बुखार रहता है तथा जोड़ों पर दर्द होते रहता है</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">रेबीज किस वायरस के कारण होता है, इस वाइरस को पहली बार किसने देखा था, यह वायरस किन जीवो में पाया जाता है, इसके इसके लक्षण क्या है<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>रैब्डी वायरस फ्रांस के वैज्ञानिक लुई पाश्चर, कुत्ते चमगादड़ गीदड़, प्रारंभ में सिर दर्द हल्का बुखार तथा गर्दन में दर्द</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">एड्स किस वायरस के कारण होता है, यह किसे प्रभावित करता है<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>HIV वायरस, WBC</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">ट्रैकोमा किस वायरस होता है, यह किसे प्रभावित करता है<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>क्लेमाइडिया ट्रैकोमा, आंख</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">डेंगू किस वायरस के कारण होता है<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>अरबो वायरस</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">पीलिया किस वायरस के कारण होता है, यह किसे प्रभावित करता है<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>हेपेटाइटिस बी, यकृत</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">हर्पीज किस वायरस के कारण होता है, यह किसे प्रभावित करता है<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>हर्पीज सिम्पलेक्स, त्वचा</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">गंगाजल में कौन सा वायरस पाया जाता है, इसकी खोज सर्वप्रथम किसने और कब किया था, यह बने होते हैं<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>बैक्टीरियोफेज, ट्वार्ड  तथा डी हेरेल ने 1917 में, प्रोटीन एवं डीएनए</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <h4 class="h" ud="h">जीवाणु</h4>
+        
+        <li class="question">जीवाणु की खोज सर्वप्रथम किसने किया था, उन्होंने इसका नाम क्या रखा था, जीवाणु का नाम जीवाणु किसने दिया, सर्वप्रथम किसने पता लगाया की जीवाणु मनुष्य में रोग फैलाते हैं, जीवाणु किस प्रकार के कोशिका है, जीवाणु की कोशिका भित्ति किससे बनी होती है, जीवाणु में किस प्रकार का जनन होता है<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>ल्यूवेनहॉक, animalcule, एहरनबर्ग, लुई पाश्चर और कोच, प्रोकैरियोटिक, पेप्टीडोग्लाइकन, विखंडन द्वारा अलैंगिक जनन</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">स्वपोषी जीवाणु कहलाते हैं<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>सायनोबैक्टीरिया</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">गोल आकार के जीवाणु को क्या कहते हैं<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>कोकाई</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">घन आकर के गोल जीवाणु को क्या कहते हैं<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>सारसीना</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">छड़ आकर के जीवाणु को क्या कहते हैं<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>बैसिल्स</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">सर्पिल आकार जीवाणु को क्या कहते हैं<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>स्पाइरिला</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">कामा आकर के जीवाणु को क्या कहते हैं<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>वाइब्रियो</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">प्रमुख नाइट्रोजन स्थितिकारक जीवाणु है<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>एजोटोबैक्टर, क्लोरास्ट्रीडियम, राइजोबियम</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">मनुष्य के पाचन तंत्र में पाया जाने वाला जीवाणु है<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>ई. कोलाई</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        
+        <li class="question">दूध को दही में परिवर्तित करने वाला जीवाणु है<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>लैक्टोबैसिलस</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">जीवाणु द्वारा मक्खन तथा पनीर में विशेष सुगंध लाई जाती है इस प्रक्रिया को क्या कहते हैं<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>राइपेनिंग</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">चाय तथा तंबाकू के पत्तों में क्रमशः किन जीवाणुओं द्वारा सुगंध पैदा किया जाता है<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>बेसिलस मेगाथेरियम, माइक्रोकोक्कस</p>
+        <p class="more"><span class="mor">more:- </span>इस जीवाणु का उपयोग नील के निर्माण में चमड़े के शोध में तथा झूठ के देशों को अलग करने में होता है</p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">प्रमुख विनाइट्रीकारी जीवाणु<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>स्युडोमोनस, थायोबसिलस</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">खाद्य पदार्थों को विषाक्त बनाने वाले जीवाणु है<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>स्ट्रैप्टॉकोक्कस, क्लोस्ट्रीडियम, बोटूलिनियम</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">रुई के रेशों को नष्ट करने वाला जीवाणु है<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>स्पारोकिट साइटीफाज</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        <li class="question">पौधों में जीवाणु से होने वाले प्रमुख रोग<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>आलू का विल्ट रोग या सैथिल रोग, गन्ना में लालधारी रोग, चावल का अंगमारी रोग, नींबू तथा टमाटर का कैंकर रोग, सेब और नाशपाती का नीरजा रोग या अग्निनीरजा रोग, बंद गोभी का कल विलगन रोग, गेहूं का विलगन रोग, गेहूं का टुंडू रोग</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">जीवाणु द्वारा मानव में होने वाला प्रमुख रोग<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>क्षय रोग या टीवी, टाइफाइड, निमोनिया, हैजा, एंथ्रेक्स, डिप्थीरिया, प्लेग, टिटनस, कालीखांसी, कोढ</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">टीवी किस जीवाणु के कारण होता है इसके लक्षण क्या है यह कैसे फैलता है इससे बचाव हेतु कौन सा टीका लगाया जाता है<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>माइकोबैक्टीरियम टिउबरकुलोसिस, 3 महीने से ज्यादा खांसी के साथ-साथ हल्का बुखार, रॉकी के थूक कफ तथा खांसी से, BCG</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">विश्व टीवी दिवस कब मनाया जाता है<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>24 मार्च</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">टाइफाइड किस जीवाणु के कारण होता है यह कैसे फैलता है इसके लक्षण क्या है इससे बचाव हेतु कौन सा टीका लगाया जाता है<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>सालमोनेला टाइफी, पेयजल भोजन दूध कच्चेफल सब्जी के माध्यम से, कमजोरी सर दर्द तेज बुखार टाइफाइड बुखार 3 सप्ताह लगातार, प्रत्येक 3 वर्ष के बाद TAB टीका</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        <li class="question">निमोनिया किस जीवाणु के कारण होता है इसके लक्षण है<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>स्ट्रैप्टोकोक्कस न्यूमोनि, ज्वर खांसी सिर दर्द</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">हैजा किस जीवाणु के कारण होता है इसके लक्षण है<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>बिब्रियो कालेरी, बार-बार दस्त उल्टी होते रहना</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">एंथ्रेक्स किस जीवाणु के कारण होता है यह प्राय किन पशुओं में पाया जाता है इसके लक्षण क्या है<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>बेसिलस एंथ्रेसिस, गाय भैंस बकरी, सर्दी सांस लेने में दिक्कत भूख में कमी</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <h3 class="h" id="h">कवक</h3>
+        
+        <li class="question">कवक की कोशिका भित्ति किससे बनी होती है<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>काइटिन</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">पेड़ की छाल पर उगने वाले कवक को क्या कहते हैं<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>कोर्टीकोलस</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">गोबर पर उगने वाले कवक को क्या कहते हैं<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>क्रोपोफिलस</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">चट्टान पर उगने वाले कवक को क्या कहते हैं<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>सेक्सीकोल्स</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">कवक द्वारा पौधों में होने वाले रोग<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>आलू का लेट ब्लाइंड, मूंगफली का टीका रोग, गन्ने का लाल सड़न रोग, चने का विल्ट रोग, बाजरे का आगर्त रोग, धान का प्रध्वंश रोग, आलू का अंगभारी रोग, अंगूर का पाउडरी मिलडायू, गेहूं का लाल रस्ट, सरसों का सफेद कीट रोग</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">कवक द्वारा मनुष्य में होने वाले रोग<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>एथलीट फुट, खाज, दाद, गंजापन, एस्पर्जीलेसिस</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">एथलीट फुट किस कवक द्वारा होता है<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>ट्राइकोफाइटन</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">खाज किस कवक द्वारा होता है<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>सरकाप्ट्स</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">दाद किस कवक द्वारा होता है<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>ट्राइकोफाइटन</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">गंजापन किस कवक द्वारा होता है<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>टीनिया केपेटिस</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">एस्पर्जीलेसिस किसे प्रभावित करता है<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>फेफड़ा को</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+         <h3 class="h" id="h">प्रोटोजोआ</h3>
+        
+        <li class="question">प्रोटोजोआ किस कोशिका का बना होता है, इसमें किस प्रकार का कोशिका पाया जाता है<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>एककोशिकीय तथा युकैरियोट</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">प्रमुख प्रोटोजोआ<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>यूग्लीना, पैरामीशियम, प्लाज्मोडियम, लिशमैनिया डोडोवानी, ट्रिपैनोसोमा, एन्ट अमीबा जिन जिवैलिस, एंट अमीबा हिस्टोलिका, एंट अमीबा कोलाई, अमीबा</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">प्रोटोजोआ द्वारा मनुष्य में होने वाले प्रमुख रोग<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>मलेरिया, कालाजार, स्लीपिंग सिकनेस, पायरिया, अमीबिय पेचिस, </p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">हरा प्रोटोजोआ किसे कहते हैं, इसके प्रचलन अंग को क्या कहते हैं<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>यूग्लीना, फ्लेजिला</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">पैरामीशियम का प्रचलन अंग क्या है<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>सिलिया</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">मलेरिया किस प्रोटोजोआ के कारण होता है, यह किसे प्रभावित करता है, इस रोग का नाम किसके द्वारा प्रस्तावित किया गया था, इस प्रोटोजोआ को किसने खोजा था, इस प्रोटोजोआ के कारण मलेरिया होता है यह सर्वप्रथम किसने पता लगाया<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>प्लाजमोडियम, RBC, मेकुलॉक, फ्रांसीसी डॉक्टर सी एल ए लैवेरान, ब्रिटिश डॉक्टर रोनाल्ड रॉस</p>
+        <p class="more"><span class="mor">more:- </span>यह प्रोटोजोआ मादा एनाफिलीज मच्छर को भी प्रभावित करता है और यह मच्छर मनुष्य में इस रोग को फैलाते हैं</p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        
+        <li class="question">कालाजार किस प्रोटोजोआ के कारण होता है यह किसके द्वारा फैलता है इसके लक्षण क्या है<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>लिशमैनिया डोडोवानी, बालू मक्खी, 2 हफ्ते से ज्यादा समय बुखार खून की कमी जिगर और तिल्ली का बढ़ना भूख न लगना</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">स्लीपिंग सिकनेस कि प्रोटोजोआ के कारण होता है यह किसके द्वारा फैलता है यह किस प्रभावित करता है<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>ट्रिपैनोसोमा गैंबियेंस, सी-सी मक्खी, तंत्रिका तंत्र को नष्ट करने लगता है</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">पायरिया किस प्रोटोजोआ के कारण होता है यह किसे प्रभावित करता है<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>एंट अमीबा जिन जिवैलिस, दांत तथा मसूढा</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">पेचिश किस प्रोटोजोआ के कारण होता है<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>एंट अमीबा हिस्टॉलिटिका</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->       
+    
+               
+</ol>       
+</div>
+
+<script type="text/javascript">
+
+        function shuffle() {
+            var ol = document.getElementById("myol")
+            for (var i = ol.children.length; i >= 0; i--) {
+                ol.appendChild(ol.children[Math.random() * i | 0])
+            }
+        }
+
+        function hhide() {
+            let heading = document.getElementById("h");
+            heading.style.display = "none";
+        }
+
+        function main() {
+            shuffle();
+            hhide();
+        }
+        
+        document.addEventListener("DOMContentLoaded", function () {
+
+const searchInput = document.getElementById("searchInput")
+
+const list = document.getElementById("myol");
+
+const items = list.getElementsByTagName("li");
+
+searchInput.addEventListener("input", function () {
+
+const searchTerm = searchInput.value.toLowerCase();
+
+Array.from(items).forEach((item) => {
+
+const text = item.textContent.toLowerCase();
+
+item.style.display = text.includes (searchTerm) ?
+
+"block" : "none";
+
+})
+
+})
+
+})
+        
+    </script>
+    
+</body>
+   
+
+</html>
