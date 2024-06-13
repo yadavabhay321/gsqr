@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>प्रमुख मेले</title>
+
+    <style>
+    * {
+
+            font-family: ;
+
+            margin: 0;
+
+            padding: 0;
+
+            box-sizing: border-box;
+
+            text-decoration: none;
+
+            outline: none;
+
+            text-transform: capitalize;
+
+
+        }
+
+
+
+        .nav {
+
+            width: 100vw;
+
+            height: 100%;
+
+            background-color: orangered;
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            text-align: center;
+
+        }
+
+
+
+        .st {
+
+            font-size: 30px;
+
+            color: white;
+
+            padding: 10px 25px;
+
+            font-weight: bold;
+
+        }
+
+
+
+        .qbox section div {
+            display: none;
+        }
+
+        .qbox section .ans:focus+div {
+            display: block;
+        }
+
+
+
+        .qbox {
+            margin: 5px 15px;
+
+            border: 2px solid #ccc;
+
+            height: 100%;
+
+            padding: 15px;
+
+        }
+
+
+        .ans {
+            border: 1px solid black;
+            padding: 5px 5px;
+            margin: 0;
+            background-color: #ccc;
+            position: relative;
+
+        }
+
+
+        .ansbox {
+            position: relative;
+            top: 5px;
+            padding: 5px 0;
+            margin-bottom: 10px;
+            border: ;
+        }
+
+
+        .anw,
+        .mor {
+            color: red;
+            font-weight: bold;
+        }
+
+        .answer,
+        .more {
+            color: blue;
+            padding: 5px 0;
+        }
+
+        .question {
+            font-weight: bold;
+            color: #000;
+        }
+
+        .h {
+            width: 100%;
+            background-color: #ccc;
+            padding: 10px 10px;
+            margin-bottom: 10px;
+            text-align: center;
+            justify-content: center;
+        }
+
+        section {
+            margin-top: 10px;
+        }
+
+        .fs {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0 15px;
+            gap: 10px;
+        }
+
+        .shuffle,
+        .reload {
+            padding: 5px 10px;
+            font-size: 20px;
+            margin-top: 5px;
+            font-weight: bold;
+            background-color: #ccc;
+        }
+        
+        .search {
+            padding: 8px 10px;
+            margin-top: 5px;
+            border: 2px solid black;
+        }
+        
+        #myol {
+           list-style-position: inside; 
+        }
+    </style>
+
+</head>
+
+
+
+<body>
+
+    <nav class="nav">
+
+        <div class="st">प्रमुख मेले</div>
+
+    </nav>
+
+    <div class="fs">
+        <input class="search" id="searchInput" placeholder="search question">
+        <button class="shuffle" onclick="main()">shuffle</button>
+        <button class="reload" onclick="window.location.reload()">reset</button>
+    </div>
+
+    <div class="qbox">
+    
+    <ol id="myol">
+    
+        <!-- ???????????????????????????? -->
+    
+        <li class="question">कुम्भ मेला किन स्थानों पर लगता हैं , यह मेला एक स्थान से दूसरे स्थान के बीच कितने वर्ष के अंतरालों पर लगता हैं<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>उजैन (क्षिप्रा नदी), प्रयागराज (त्रिवेणी- गंगा, यमुना, सरस्वती), हरिद्वार (गंगा नदी), नासिक (गोदावरी नदी), 3 वर्ष</p>
+        <p class="more"><span class="mor">more:- </span>अर्धकुंभ का आयोजन 6 वर्ष के अंतराल पर हरिद्वार और प्रयाग में किया जाता हैं</p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">माधवपुर मेला कहाँ और किसके याद में मनाया जाता हैं<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>गुजरात, भगवान कृष्णा और रुक्मिणी</p>
+        <p class="more"><span class="mor">more:- </span>ऐसा माना जाता हैं की भगवान कृष्ण ने रुक्मिणी से यही पर विवाह किया था</p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">सबरीमाला मेला का आयोजन कब और कहाँ किया जाता हैं , यह मेला किसको समर्पित हैं<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>नवंबर से जनवरी के मध्य, केरल, भगवान अय्यपा</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">रामनगरीया मेला का आयोजन किस राज्य में किया जाता हैं<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>उत्तर प्रदेश</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">गंगासागर मेला का आयोजन किस राज्य में किया जाता हैं<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span></p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">राजस्थान का वह प्रसिद्ध मेला कौन सा हैं जिसमें ऊंटों का व्यापार एक प्रसिद्ध आकर्षण होता हैं<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>पुष्कर मेला, </p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">हरिहर(सोनपुर) मेला का आयोजन किस राज्य में किया जाता हैं<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>बिहार</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">ज्वालामुखी मेला का आयोजन किस राज्य में किया जाता हैं<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>हिमाचल प्रदेश</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">किस मेला को पत्थर मार मेला के नाम से भी जाना जाता हैं , इस मेला का आयोजन किस मंदिर तथा किस राज्य में किया जाता हैं<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>देवीधुरा बग्वाल मेला, माँ बराही मंदिर, उत्तराखंड</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">गोटमार मेला का आयोजन कहाँ किया जाता हैं<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>छिंदवाड़ा मध्य प्रदेश</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">मिंजर मेला का आयोजन किस राज्य में किया जाता हैं<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>हिमाचल प्रदेश</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">फूल वालों की सेर मेला का आयोजन कहाँ किया जाता है<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>दिल्ली</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">किस मेले का आयोजन मुस्लिम संत मस्तान शाह वली के मजार पर किया जाता हैं ,  और किस कहाँ किया जाता हैं<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>धामोनी उर्स का मेला, मध्य प्रदेश के सागर जिले में</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">लक्खी(करौली देवी मेला, खाटू श्याम मेला) मेला का आयोजन किस राज्य में किया जाता हैं<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>राजस्थान</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">तरनेतर मेला का आयोजन किस राज्य में किया जाता हैं<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>गुजरात</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">नौचंडी मेला का आयोजन किस राज्य में किया जाता हैं<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>उत्तर प्रदेश</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">बेणेश्वर धाम मेला का आयोजन किस राज्य में किया जाता हैं<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>राजस्थान</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">हेमिस गोम्पा मेला का आयोजन किस कहाँ किया जाता हैं<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>लद्दाख</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">सूरजकुंड हस्तशिल्प मेला का आयोजन किस राज्य में किया जाता हैं<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>हरियाणा</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">चंद्रभागा मेला का आयोजन किस राज्य में किया जाता हैं<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>राजस्थान</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question"><br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span></p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+       
+</ol>
+</div>
+
+<script type="text/javascript">
+
+        function shuffle() {
+            var ol = document.getElementById("myol")
+            for (var i = ol.children.length; i >= 0; i--) {
+                ol.appendChild(ol.children[Math.random() * i | 0])
+            }
+        }
+
+        function hhide() {
+            let heading = document.getElementById("h");
+            heading.style.display = "none";
+        }
+
+        function main() {
+            shuffle();
+            hhide();
+        }
+
+document.addEventListener("DOMContentLoaded", function () {
+
+const searchInput = document.getElementById("searchInput")
+
+const list = document.getElementById("myol");
+
+const items = list.getElementsByTagName("li");
+
+searchInput.addEventListener("input", function () {
+
+const searchTerm = searchInput.value.toLowerCase();
+
+Array.from(items).forEach((item) => {
+
+const text = item.textContent.toLowerCase();
+
+item.style.display = text.includes (searchTerm) ?
+
+"block": "none";
+
+})
+
+})
+
+})
+
+    </script>
+    
+</body>
+   
+
+</html>
