@@ -1,0 +1,2434 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>संघ</title>
+
+    <style>
+    * {
+
+            font-family: ;
+
+            margin: 0;
+
+            padding: 0;
+
+            box-sizing: border-box;
+
+            text-decoration: none;
+
+            outline: none;
+
+            text-transform: capitalize;
+
+
+        }
+
+
+
+        .nav {
+
+            width: 100vw;
+
+            height: 100%;
+
+            background-color: orangered;
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            text-align: center;
+
+        }
+
+
+
+        .st {
+
+            font-size: 30px;
+
+            color: white;
+
+            padding: 10px 25px;
+
+            font-weight: bold;
+
+        }
+
+
+
+        .qbox section div {
+            display: none;
+        }
+
+        .qbox section .ans:focus+div {
+            display: block;
+        }
+
+
+
+        .qbox {
+            margin: 5px 15px;
+
+            border: 2px solid #ccc;
+
+            height: 100%;
+
+            padding: 15px;
+
+        }
+
+
+        .ans {
+            border: 1px solid black;
+            padding: 5px 5px;
+            margin: 0;
+            background-color: #ccc;
+            position: relative;
+
+        }
+
+
+        .ansbox {
+            position: relative;
+            top: 5px;
+            padding: 5px 0;
+            margin-bottom: 10px;
+            border: ;
+        }
+
+
+        .anw,
+        .mor {
+            color: red;
+            font-weight: bold;
+        }
+
+        .answer,
+        .more {
+            color: blue;
+            padding: 5px 0;
+        }
+
+        .question {
+            font-weight: bold;
+            color: #000;
+        }
+
+        .h {
+            width: 100%;
+            background-color: #ccc;
+            padding: 10px 10px;
+            margin-bottom: 10px;
+            text-align: center;
+            justify-content: center;
+        }
+
+        section {
+            margin-top: 10px;
+        }
+
+        .fs {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0 15px;
+            gap: 10px;
+        }
+
+        .shuffle,
+        .reload {
+            padding: 5px 10px;
+            font-size: 20px;
+            margin-top: 5px;
+            font-weight: bold;
+            background-color: #ccc;
+        }
+        
+        .search {
+            padding: 8px 10px;
+            margin-top: 5px;
+            border: 2px solid black;
+        }
+        
+        #myol {
+           list-style-position: inside; 
+        }
+    </style>
+
+</head>
+
+
+
+<body>
+
+    <nav class="nav">
+        <div class="st">संघ</div>
+    </nav>
+    
+    <div class="fs">
+        <input class="search" id="searchInput" placeholder="search question">
+        <button class="shuffle" onclick="main()">shuffle</button>
+        <button class="reload" onclick="window.location.reload()">reset</button>       
+    </div>
+
+    <div class="qbox">
+    
+    <ol id="myol">
+    
+        <!-- ???????????????????????????? -->
+        
+        <h4 class="h" id="h">संघीय कार्यपालिका</h4>
+    
+        <li class="question">राष्ट्रपति का चुनाव किस निर्वाचन पद्धति द्वारा होता है<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>एकल संक्रमणिय अनुपातिक पद्धति द्वारा अप्रत्यक्ष रूप से</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">किस राष्ट्रपति के निर्वाचन के समय द्वितीय चरण की गणना हुई थी<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>वी वी गिरी</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">राष्ट्रपति के निर्वाचन मंडल में कौन-कौन भाग लेता है<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>लोकसभा राज्यसभा केवल निर्वाचित सदस्य तथा सभी राज्य और तीन केंद्र शासित प्रदेश दिल्ली पुडुचेरी जम्मू कश्मीर के निर्वाचित सदस्य</p>
+        <p class="more"><span class="mor">more:- </span>विधान परिषद राज्यसभा के 12 मनोनीत सदस्य राष्ट्रपति के निर्वाचन में भाग नहीं लेते हैं</p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">दिल्ली तथा पांडिचेरी को राष्ट्रपति का निर्वाचन मंडल में कब शामिल किया गया किस संशोधन द्वारा<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>1990, 70 व संशोधन</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">राष्ट्रपति का निर्वाचन कितने दिनों के अंदर कर लेना अनिवार्य है<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>6 महीना</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">राष्ट्रपति का चुनाव लड़ने हेतु जमानत की राशि कितनी और किसके पास रखनी होती है यदि_____से कम वोट मिलेगा तो जमानत की राशि जप्त हो जाएगी<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>₹15000, आरबीआई, 1/6 भाग</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">राष्ट्रपति की योग्यताएं क्या होनी चाहिए इसका उल्लेख किस अनुच्छेद में है<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>अनुच्छेद 58<br>1. वह भारत का नागरिक हो <br>2. 35 वर्ष की आयु होनी चाहिए<br>3. लोकसभा के सदस्य बनने की योग्यता हो<br>4. 50 प्रस्तावक तथा 50 अनुमोदक हो</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">राष्ट्रपति की दशाएं/शर्तें<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>1. पागल या दिवालिया ना हो <br>2. किसी भी लाभ के पद पर ना हो<br>3. संसद या विधान मंडल में किसी का भी सदस्य ना हो</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">राष्ट्रपति को शपथ कौन दिलाता है इसका उल्लेख किस अनुच्छेद में है<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>सुप्रीम कोर्ट के मुख्य न्यायाधीश, अनुच्छेद 60</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">राष्ट्रपति पर महाभियोग किन कारणों से लगाया जाता है, यह किस सदन द्वारा प्रारंभ किया जाता है, इसे प्रारंभ करने के लिए कितने मतों की आवश्यकता होती है इसे पारित करने के लिए कितना बहुमत चाहिए, महाभियोग को दूसरे सदन में भेजने के लिए कितने दिन पूर्व राष्ट्रपति को सूचित किया जाता है, इसे किस देश के संविधान से लिया गया है, महाभियोग की चर्चा किस अनुच्छेद में है<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>1. यदि वह संविधान का अतिक्रमण करें<br>2. मंत्रिमंडल के सलाह को मानें<br>3. किसी विदेशी राष्ट्र के प्रभाव में आ जाए,<br>किसी भी सदन में, 1/4, 2/3, 14, usa, अनुच्छेद 61</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">राष्ट्रपति का पद किन परिस्थितियों में रिक्त होता है<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>1. कार्यकाल की समाप्ति<br>2. महाभियोग<br>3. त्यागपत्र<br>4. मृत्यु<br>5. निर्वाचन अवैध</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">राष्ट्रपति की विभिन्न शक्तियां<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>1. कार्यकारी शक्तियां<br>2. विधायी शक्तियां<br>3. वित्तीय शक्तियां<br>4. न्यायिक शक्तियां<br>5. सैन्य शक्तियां<br>6. राजनीतिक शक्तियां<br>7. आपातकालीन शक्तियां<br>8. विशेष शक्ति</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">राष्ट्रपति का वेतन कितना होता है<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>5 लाख</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">उपराष्ट्रपति का वेतन कितना होता है<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>4 लाख</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">राष्ट्रपति कच क्षमादान शक्तियां कौन-कौन सी है इसका उल्लेख किस अनुच्छेद में है<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>अनुच्छेद 72<br>1. क्षमा[पूरी तरह से सजा को माफ कर देना]<br>2. लघुकारण[सजा की प्रकृति को बदल देते हैं किंतु समय नहीं घटाते]<br>3. परिहार[समय घटते हैं किंतु प्रकृति नहीं बदलते]<br>4. विराम[स्वास्थ अच्छा नहीं होने पर सजा को कुछ समय के लिए रोक लगा सकते हैं]<br>5. प्रतिलंबन[फांसी की सजा को कुछ समय के लिए रोक लगा देना]</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">वित्तीय आपात किस देश के संविधान से लिया गया है<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>usa</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">भारत के सभी राष्ट्रपतियों की सूची और उनके कार्यकाल<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>1. राजेंद्र प्रसाद (1950-1962)<br>2. सर्वपल्ली राधाकृष्णन (1962-67)<br>3. जाकिर हुसैन (1967-69)<br>4. बीवी गिरी (1974-74)<br>5. फखरुद्दीन अली अहमद (1974-77)<br>6. नीलम संजीवा रेड्डी (1977-82)<br>7. ज्ञानी जैल सिंह (1982-87)<br>8. आर वेंकटरमन (1987-92)<br>9. शंकर दयाल शर्मा (1992-97)<br>10. के आर नारायण (1997-2002)<br>11. एपीजे अब्दुल कलाम (2002-07)<br>12. प्रतिभा देवी सिंह पाटिल (2007-12)<br>13. प्रणब मुखर्जी (2012-17)<br>14. रामनाथ कोविंद (2017-22)<br>15. द्रौपदी मुर्मू (2022-)</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">राष्ट्रपति (कार्य का निर्वहन) अधिनियम, 1969 के अनुसार, राष्ट्रपति या उपराष्ट्रपति के उपलब्ध न होने या दिवंगत हो जाने पर कार्यों का निर्वहन कौन कर्ता है ?<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>मुख्य न्यायाधीश या वरिष्ठ न्यायाधीश राष्ट्रपति के कार्यों का निर्वहन कर सकते हैं ।</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">भारत के राष्ट्रपति के महाभियोग की प्रक्रिया_____है<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>अर्धन्यायिक</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">राष्ट्रपति का मासिक वेतन कितना होता है अवकाश ग्रहण के बाद इन्हें कितना रुपया प्रतिमाह पेंशन के रूप में दिया जाता है<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>5 लाख, 1.5 लाख प्रतिमाह</p>
+        <p class="more"><span class="mor">more:- </span>राष्ट्रपति का वेतन आयकर मुक्त होता है</p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">किसकी किसकी नियुक्ति राष्ट्रपति द्वारा की जाती है<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>प्रधानमंत्री, कैबिनेट मंत्री, राज्यों में राज्यपाल, भारत के महान्यायवादी, CAG, भारत के सुप्रीम कोर्ट और हाईकोर्ट के न्यायाधीश, वित्त आयोग के अध्यक्ष एवं सदस्य, संघ लोक सेवा आयोग के अध्यक्ष एवं सदस्य, मुख्य निर्वाचन आयुक्त एवं अन्य निर्वाचन आयुक्त</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">उपराष्ट्रपति पद के निर्वाचन हेतु उम्मीदवार की अधिकतम आयु सीमा कितनी होती है<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>कोई सीमा नहीं</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">उपराष्ट्रपति किस सभा का सदस्य नहीं हो सकता है<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>राज्यसभा</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">भारतीय संविधान के किस अनुच्छेद के अंतर्गत राष्ट्रपति में संघ की कार्यपालिका शक्ति निहित होती है<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>अनुच्छेद 53</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">राष्ट्रपति अपना त्यागपत्र किसे सौंपते हैं<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>उपराष्ट्रपति</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">राष्ट्रपति का कार्यकाल कितने समय का होता है इसका उल्लेख किस अनुच्छेद में है<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>5 वर्ष, अनुच्छेद 56</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">राष्ट्रपति का पुनः निर्वाचन का संबंध किस अनुच्छेद से है<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>अनुच्छेद 57</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">किस अनुच्छेद के अनुसार राष्ट्रपति भारत सरकार के व्यापार के अधिक सुविधाजनक लेनदेन के लिए और उक्त व्यवसाय के मंत्रियों के बीच आवंटन के लिए नियम बनाएंगे<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>अनुच्छेद 77(3)</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">अन्य आकस्मिकता में राष्ट्रपति की कृतियों का निर्वहन उपराष्ट्रपति द्वारा किया जाएगा इसका उल्लेख किस अनुच्छेद में है<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>अनुच्छेद 70</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">राष्ट्रपति की क्षमादान शक्तियों का उल्लेख किस अनुच्छेद में है<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>अनुच्छेद 72</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">किस अनुच्छेद के तहत राष्ट्रपति द्वारा अध्यादेश जारी किया जाता है<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>आर्टिकल 123</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">राष्ट्रपति उच्चतम न्यायालय से परामर्श ले सकते हैं इसका उल्लेख किस अनुच्छेद में किया गया है<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>अनुच्छेद 143</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">राष्ट्रपति की विधाई शक्तियां कौन-कौन सी है<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>संसद सत्र को आहूत करना, संसद सत्र का सत्रावसान करना, अध्यादेश लागू करना</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">राष्ट्रपति द्वारा संसद में कितने सदस्यों को मनोनीत किया जाता है इसका उल्लेख किस अनुच्छेद में है<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>12, अनुच्छेद 80(3)</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">सैन्य बलों की सर्वोच्च शक्ति किसमे सन्निहित होती है<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>राष्ट्रपति</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">दूसरे देशों के साथ समझौता या संधि किसके नाम से की जाती है<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>राष्ट्रपति</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">भारत में विदेश के राजदूतों की नियुक्ति का अनुमोदन कौन करता है<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>राष्ट्रपति</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">राष्ट्रपति की आपातकालीन शक्तियां कौन-कौन सी हैं<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>राष्ट्रीय आपात, वित्तीय आपात</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">भारत के राष्ट्रपति को कौन-कौन सी विटो शक्तियां प्राप्त है इसका उल्लेख किस अनुच्छेद में है<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>आत्यंतिक वीटो, निलंबनकारी वीटो, पॉकेट विटो, अनुच्छेद 111</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">राष्ट्रपति धन विधेयकों के मामले में किस वीटो का प्रयोग नहीं कर सकते<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>निलंबनकारी वीटो</p>
+        <p class="more"><span class="mor">more:- </span>साधारण धन विधेयक राष्ट्रपति के पूर्व अनुमति द्वारा प्रस्तुत किया जाता है</p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">भारतीय संविधान के किस अनुच्छेद के तहत कोई विधायक राज्यपाल द्वारा राष्ट्रपति के विचार अर्थ के लिए आरक्षित किया जाता है<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>अनुच्छेद 201</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">जब संसद के दोनों सदनों द्वारा पारित विधेयक पर राष्ट्रपति अपनी सहमति नहीं देते हैं तो किस वीटो का प्रयोग माना जाता है इस वीडियो का सर्वप्रथम प्रयोग किसने और किस विधेयक पर किया<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>आत्यंतिक वीटो, राजेंद्र प्रसाद, पेप्सू अधिनियम</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">किस राष्ट्रपति ने पहली बार जेबी वीटो का प्रयोग किया था, कब और किस विधेयक पर<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>Gyani jail Singh, 1986 में डाकघर संशोधन अधिनियम</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">किस संविधान संशोधन द्वारा विधेयकों पर राष्ट्रपति को अपनी स्वीकृति देने के लिए बाध्यकारी बना दिया गया<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>24 व संविधान संशोधन</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">राष्ट्रपति किसके-किसके रिपोर्ट को संसद के समक्ष प्रस्तुत करते हैं<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>केंद्रीय वित्त आयोग की सिफारिश, नियंत्रक एवं महालेखा परीक्षक की रिपोर्ट, राष्ट्रीय अनुसूचित जाति एवं राष्ट्रीय जनजाति आयोग की रिपोर्ट</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">लगातार दो बार उपराष्ट्रपति तथा एक बार राष्ट्रपति कौन बने<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>डॉक्टर सर्वपल्ली राधाकृष्णन</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">कौन से ऐसे राष्ट्रपति हुए जो एक बार चुनाव में हार गए फिर बाद में निर्विरोध चुने गए<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>नीलम संजीवा रेड्डी</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">भारत की प्रथम महिला राष्ट्रपति कौन हैं<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>प्रतिभा देवी सिंह पाटिल</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">राष्ट्रपति किस वीटो का प्रयोग कर किसी विधेयक को पुनर्विचार के लिए संसद को लौटाते हैं यह प्रावधान किस संशोधन द्वारा किया गया<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>निलंबनकारी वीटो, 44 व संविधान संशोधन 1978</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">उपराष्ट्रपति से संबंधित प्रावधान किस देश के संविधान से ग्रहण किया गया है<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>अमेरिका</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">उपराष्ट्रपति के निर्वाचन मंडल में कौन-कौन शामिल होता है, इसका उल्लेख किस अनुच्छेद में है<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>लोकसभा और राज्यसभा के निर्वाचित और मनोनीत सभी सदस्य, अनुच्छेद 66</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">उपराष्ट्रपति बनने के लिए योग्यता क्या होनी चाहिए<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>1. वह भारत का नागरिक हो<br>2. पागल या दिवालिया ना हो<br>3. 35 वर्ष आयु का हो<br>4. लव के पद पर ना हो<br>5. 20 प्रस्तावक तथा 20 अनुमोदक हो<br>6. राज्यसभा का सदस्य बनने की योग्यता रखता हो</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">उपराष्ट्रपति को पद से हटाने के लिए कार्यवाही किस सदन में शुरू की जाती है इस कार्रवाई को शुरू करने के लिए कितने मतों की आवश्यकता होती है एवं पारित करने के लिए कितने मतों की आवश्यकता होती है<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>राज्यसभा, 1/4, 1/6</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">सभी उपराष्ट्रपति के नाम और उनके कार्यकाल<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>1. सर्वपल्ली राधाकृष्णन (1952-62)<br>2. जाकिर हुसैन (1962-67)<br>3. वीवी गिरी (1967-69)<br>4. गोपाल स्वरूप पाठक (1969-74)<br>5. मो. हिदायतुल्लाह (1979-84)<br>6. आर. वेंकटरमन (1984-87)<br>7. शंकर दयाल शर्मा (1987-92)<br>8. के. आर. नारायण (1992-97)<br>9. कृष्णकांत (1997-2002)<br>10. भैरो सिंह शेखावत (2002-07)<br>11. हामिद अंसारी (2007-17)<br>12. वैकेया नायडू (2017-22)<br>13. जगदीप धनखड़ (2022-)</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">उपराष्ट्रपति को राष्ट्रपति के रूप में कार्य करने की अधिकतम अवधि कितनी होती है<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>6 महीने तक</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">उपराष्ट्रपति तथा राष्ट्रपति के चुनाव से जुड़े मामले की सुनवाई करने का अधिकार किसे है इसका उल्लेख किस अनुच्छेद में है<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>उच्चतम न्यायालय, अनुच्छेद 71</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">भारतीय संविधान का कौन सा अनुच्छेद यह कहता है कि जिस किसी का लोधी में उपराष्ट्रपति राष्ट्रपति के रूप में कार्य करता है वह राज्यसभा का सभापति नहीं रह सकता है<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>अनुच्छेद 97</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">संसदीय शासन में वास्तविक शक्ति किसके पास होती है<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>प्रधानमंत्री</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">संविधान के किस अनुच्छेद के अनुसार राष्ट्रपति को उसके कार्यों के संपादन व सलाह देने हेतु एक मंत्री परिषद होती है<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>अनुच्छेद 74</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">मंत्री राष्ट्रपति के प्रसाद प्रयत्न पद धारण करेंगे इसका उल्लेख किस अनुच्छेद में है<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>अनुच्छेद 75(2)</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">मंत्री परिषद सामूहिक रूप से किसके प्रति उत्तरदाई होता है इसका उल्लेख किस अनुच्छेद में है<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>लोकसभा, अनुच्छेद 75(3)</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">प्रधानमंत्री और मंत्री को शपथ कौन दिलाते हैं इसका उल्लेख किस अनुच्छेद में है<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>राष्ट्रपति, अनुच्छेद 75(4)</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">प्रधानमंत्री की नियुक्ति कौन करता है इसका उल्लेख किस अनुच्छेद में है<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>राष्ट्रपति, अनुच्छेद 75(1)</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">मंत्रिमंडल में कुल मंत्रियों की संख्या प्रधानमंत्री को सम्मिलित करते हुए लोकसभा के सदस्यों की कुल संख्या के कितना प्रतिशत से अधिक नहीं होगी, यह प्रावधान कब और किस संशोधन द्वारा लाया गया<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>15, 91 संशोधन</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">मंत्री परिषद में कौन-कौन शामिल होता है, इसमें कितने स्तर के मंत्री होते हैं<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>प्रधानमंत्री, कैबिनेट, राज्य मंत्री, राज्य मंत्री(स्वतंत्र प्रभार), उप मंत्री, 3</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">मंत्रिमंडल में कौन-कौन शामिल होता है<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>प्रधानमंत्री, कैबिनेट, राज्य मंत्री स्वतंत्र प्रभार</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">भारत के सभी प्रधानमंत्री और उनके कार्यकाल<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>1. जवाहरलाल नेहरू (1947-64)<br>2. लाल बहादुर शास्त्री (1964-66)<br>3. इंदिरा गांधी (1966-77 & 1980-84)<br>4. मोरारजी देसाई (1977-79)<br>5. चौधरी चरण सिंह (1979-80)<br>6. राजीव गांधी (1984-89)<br>7. वी पी सिंह (1989-90)<br>8. चंद्रशेखर (1990-91)<br>9. पी वी नरसिम्हा राव (1991-96)<br>10. अटल बिहारी वाजपेई (1996 & 1998-2004)<br>11. एच डी देवगौड़ा (1996-97)<br>12. इंद्र कुमार गुजराल (1997-98)<br>13. मनमोहन सिंह (2000-14)<br>14. नरेंद्र मोदी (2014-)</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">अगर कोई मंत्री ना लोकसभा का सदस्य है और ना ही राज्यसभा का सदस्य है तो इस स्थिति में मंत्रियों को कितने समय के भीतर दोनों में से किसी भी एक सदन की सदस्यता लेनी आवश्यक है इसका उल्लेख किस अनुच्छेद में है<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>6 माह, अनुच्छेद 75(1)</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">भारतीय संविधान का कौन सा अनुच्छेद उपराष्ट्रपति के पद को निरूपित करता है<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>अनुच्छेद 63</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">उपराष्ट्रपति का कार्यकाल कितने समय का होता है इसका उल्लेख किस अनुच्छेद में है<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>5 वर्ष, अनुच्छेद 67</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">राज्यसभा का सभापति कौन होता है इसका उल्लेख किस अनुच्छेद में है<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>उपराष्ट्रपति, अनुच्छेद 64</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">राष्ट्रपति के पद रिक्ति के संबंध में उपराष्ट्रपति राष्ट्रपति होंगे इसका उल्लेख किस अनुच्छेद में है<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>अनुच्छेद 65</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">मंत्रिमंडल में कुल मंत्रियों की संख्या प्रधानमंत्री को सम्मिलित करते हुए लोकसभा के सदस्यों की कुल संख्या के कितना प्रतिशत से अधिक नहीं होगी यह प्रावधान किस संशोधन द्वारा लाया गया<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>15%, 91 वा संविधान संशोधन</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">अविश्वास प्रस्ताव लाने के लिए किस सदन के और कितने सदस्यों का लिखित समर्थन आवश्यक होता है<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>लोकसभा, 50 सदस्य</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">प्रधानमंत्री किसके किसके पदेन अध्यक्ष होते हैं<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>नीति आयोग, राष्ट्रीय जल संसाधन परिषद, केंद्रीय वैज्ञानिक अनुसंधान परिषद</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">प्रधानमंत्री का यह कर्तव्य है कि वह मंत्री परिषद की कार्रवाइयों की सूचना राष्ट्रपति को दें इसका उल्लेख किस अनुच्छेद में है<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>अनुच्छेद 78</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">कौन राष्ट्रपति द्वारा नियुक्त किया जाता है लेकिन उनकी मर्जी से पद धारण नहीं करता<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>भारत के नियंत्रक और महालेखा परीक्षक</p>
+        <p class="more"><span class="mor">more:- </span>सांसद हटता है</p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">एक से अधिक बार नियुक्त होने वाले प्रधानमंत्री कौन-कौन से हैं<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>जवाहरलाल नेहरू, इंदिरा गांधी गुलजारीलाल नंदा, अटल बिहारी वाजपेई, नरेंद्र मोदी, मनमोहन सिंह</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">सबसे लंबा कार्यकाल किस प्रधानमंत्री का रहा<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>जवाहरलाल नेहरू (1947-64)</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">प्रथम गैर कांग्रेसी प्रधानमंत्री कौन थे<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>मोरारजी देसाई</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">लोकसभा का सामना न करने वाले प्रधानमंत्री कौन थे<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>चौधरी चरण सिंह</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">वह प्रधानमंत्री कौन है जो पद ग्रहण करते समय किसी भी सदन के सदस्य नहीं थे<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>पी वी नरसिम्हा राव</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">वह प्रधानमंत्री कौन है जो पद ग्रहण करते समय विधानसभा के सदस्य थे<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>एच डी देवगौड़ा</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">वह प्रधानमंत्री कौन से हैं जिनका निधन पद पर रहते हुए हो गया<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>जवाहरलाल नेहरू, लाल बहादुर शास्त्री, इंदिरा गांधी, राजीव गांधी</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">प्रधानमंत्री पद से त्यागपत्र देने वाले प्रथम प्रधानमंत्री कौन थे<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>मोरारजी देसाई</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">सबसे छोटा कार्यकाल किस प्रधानमंत्री का हुआ कितने दिनों का<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>अटल बिहारी वाजपेई 13 दिन</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">अब तक के सबसे युवा प्रधानमंत्री कौन थे<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>Rajiv Gandhi</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">वह प्रधानमंत्री कौन से हैं जो अविश्वास प्रस्ताव द्वारा हटाए गए<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>विश्वनाथ प्रताप सिंह, अटल बिहारी वाजपेई</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">पहली बार अविश्वास प्रस्ताव किस प्रधानमंत्री के विरुद्ध लाया गया<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>पंडित जवाहरलाल नेहरू</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">वह प्रधानमंत्री कौन से है जो मुख्यमंत्री भी रह चुके हैं<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>मोरारजी देसाई (Mumbai)<br>चौधरी चरण सिंह(उत्तर प्रदेश)<br>विश्वनाथ प्रताप सिंह(उत्तर प्रदेश)<br>पीवी नरसिम्हा राव(आंध्र प्रदेश)<br>एचडी देवगौड़ा(कर्नाटक)<br>नरेंद्र मोदी(गुजरात)</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">निर्विरोध चुने जाने वाले उपराष्ट्रपति कौन से हैं<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>सर्वपल्ली राधाकृष्णन, मोहम्मद हिदायतुल्लाह, शंकर दयाल शर्मा</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">कौन से ऐसे उपराष्ट्रपति हुए जिनका निधन पद पर रहते हुए हुआ<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>कृष्णकांत</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">वह उपराष्ट्रपति कौन से हैं जो राष्ट्रपति भी बने<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>सर्वपल्ली राधाकृष्णन, जाकिर हुसैन, बीवी गिरी, आर वेंकटरमन, शंकर दयाल शर्मा, के आर नारायण</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <h5 class="h" id="h">***संघीय कार्यपालिका***</h5>
+        <h3 class="h" id="h">संघीय संसद</h3>
+        
+        <li class="question">संसद के अंतर्गत कौन-कौन आता है इसका उल्लेख किस अनुच्छेद के अंतर्गत किया गया है<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>राष्ट्रपति लोकसभा राज्यसभा, अनुच्छेद 79</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">राज्यसभा के सदस्यों की अधिकतम संख्या कितनी हो सकती है<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>250</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">राज्यसभा की संरचना की बात किस अनुच्छेद में की गई है<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>अनुच्छेद 80</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">राज्यसभा के सदस्य बनने की शर्तें क्या है<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>भारत का नागरिक हो<br>पागल या दिवालिया ना हो<br>किसी लाभ के पद पर ना हो<br>कम से कम 30 वर्ष आयु का हो</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">राज्यसभा का कार्यकाल कितने वर्षों का होता है<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>6 वर्ष</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">राज्यसभा के कितने सदस्य प्रति 2 वर्ष के बाद सेवानिवृत हो जाते हैं इसकी चर्चा किस अनुच्छेद के अंतर्गत की गई है<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>एक तिहाई अनुच्छेद 83(1)</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">राज्यसभा के उपसभापति का निर्वाचन कौन करता है<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>राज्यसभा सदस्य</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">राज्य एवं उनके राज्यसभा सीटों की संख्या बताएं<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>हिमाचल प्रदेश (3)<br>उत्तराखंड (3)<br>पंजाब (7)<br>हरियाणा (5)<br>उत्तर प्रदेश (31)<br>बिहार (16)<br>झारखंड (6)<br>पश्चिम बंगाल (16)<br>सिक्किम (1)<br>असम (7)<br>अरुणाचल प्रदेश (1)<br>नागालैंड (1)<br>मणिपुर (1)<br>मिजोरम (1)<br>त्रिपुरा (1)<br>मेघालय (1)<br>राजस्थान (10)<br>मध्य प्रदेश (11)<br>छत्तीसगढ़ (5)<br>ओडिसा (10)<br>गुजरात (11)<br>महाराष्ट्र (19)<br>कर्नाटक (12)<br>गोवा (1)<br>केरल (9)<br>तेलांगना (7)<br>आंध्र प्रदेश (11)<br>तमिलनाडु (18)</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">राज्यसभा के प्रथम उपसभापति कौन थे<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>एस वी कृष्णमूर्ति राव</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">उपसभापति अपना त्यागपत्र किसे सौपता है इसकी चर्चा किस अनुच्छेद में की गई है<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>सभापति को, अनुच्छेद 90</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">जब उपसभापति को पद से हटाने का संकल्प विचारीधीन हो तो वह पीठासीन नहीं होगा, इसका संबंध किस अनुच्छेद से है<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>अनुच्छेद 92</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">उपसभापति के सभापति के तौर पर काम करने की शक्ति किस अनुच्छेद के तहत दी गई है<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>अनुच्छेद 91</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">राज्यसभा का एक सभापति और एक उपसभापति होगा इसकी चर्चा किस अनुच्छेद में की गई है<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>अनुच्छेद 89</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">राज्यसभा को राज्य सूची के विषय पर कानून बनाने का अधिकार किस अनुच्छेद के अंतर्गत दिया गया है<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>अनुच्छेद 249</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">अखिल भारतीय सेवाओं का सृजन का अधिकार किसे दिया गया है इसका उल्लेख किस अनुच्छेद में है<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>राज्य सभा, अनुच्छेद 312</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">धन विधेयक को राज्यसभा में पुनः स्थापित नहीं किया जाएगा यह प्रावधान किस अनुच्छेद के अंतर्गत किया गया हैं<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>अनुच्छेद 109</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">राज्यसभा के उपसभापति का पद रिक्त का संबंध किस अनुच्छेद से है<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>अनुच्छेद 90</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">वह प्रधानमंत्री कौन से हैं जो राज्यसभा के सदस्य थे<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>इंदिरा गांधी, इंद्र कुमार गुजराल, मनमोहन सिंह</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">पुराने संसद भवन के डिजाइन आर्किटेक्ट कौन थे इसे कब तैयार किया गया था, इसकी नीव कब रखी गई<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>एडविन लुटियंस एवं सर हेबर्ट ब्रे, 1912-13, 12-02-1921</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">राज्यसभा का गठन कब हुआ उसे समय इसका नाम क्या था इसकी पहली बैठक कब हुई<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>3 अप्रैल 1952, काउंसिल ऑफ स्टेट, 13 मई 1952</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">राज्यसभा का नाम राज्यसभा कब किया गया<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>23 अगस्त 1954</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">लोकसभा का गठन कब हुआ<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>17 अप्रैल 1952</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">लोकसभा अध्यक्ष का वेतन कितना होता है<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>4,00,000</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">कौन वर्ष में काम से कम दो बार राज्यसभा का अधिवेशन आहूत करता है<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>राष्ट्रपति</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">वह केंद्र शासित प्रदेश कौन से हैं जो राज्यसभा में प्रतिनिधित्व है<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>दिल्ली, पुडुचेरी, जम्मू कश्मीर</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">लोकसभा की संरचना की बात चर्चा किस अनुच्छेद में की गई है<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>अनुच्छेद 81</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">मूल संविधान में लोकसभा के सदस्यों की संख्या कितनी निश्चित की गई थी<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>500</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">लोकसभा सदस्य बनने की शर्तें क्या है<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>भारत का नागरिक हो<br>पागल दिवालिया ना हो<br>लाभ के पद पर ना हो<br>कम से कम 25 वर्ष का हो</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">_____को निम्न सदन तथा_____को उच्च सदन कहते हैं<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>राज्यसभा, लोकसभा</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">लोकसभा के अध्यक्ष तथा उपाध्यक्ष होगा इन्हें कितने बहुमत के आधार पर चुना जाता है इसकी चर्चा किस अनुच्छेद में की गई है<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>साधारण बहुमत, अनुच्छेद 93</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">लोकसभा में अनुसूचित जाति और अनुसूचित जनजाति के लिए क्रमशः कितने सिम आरक्षित की गई है इसका उल्लेख किस अनुच्छेद में है<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>84, 47, अनुच्छेद 330</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">84 संशोधन अधिनियम द्वारा लोकसभा एवं विधानसभाओं की सीटों की संख्या कब तक यथावत रखने का प्रावधान किया गया है<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>2026</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">वर्तमान में लोकसभा सीटों की संख्या कितनी है<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>543</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">लोकसभा की सीटों का राज्यों के मध्य आवंटन_____जनगणना के आधार पर है इसकी चर्चा किस अनुच्छेद में की गई है<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>1971, अनुच्छेद 82</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">सबसे अधिक मतदाता वाला लोकसभा क्षेत्र कौन सा है<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>बाहरी दिल्ली</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">सबसे कम मतदाता वाला लोकसभा क्षेत्र कौन सा है<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>लक्ष्य द्वीप</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">क्षेत्रफल की दृष्टि से सबसे बड़ा लोकसभा क्षेत्र<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>लद्दाख</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">क्षेत्रफल की दृष्टि से सबसे छोटा लोकसभा क्षेत्र<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>चांदनी चौक दिल्ली</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">वह वर्ष कौन-कौन से हैं जब लोकसभा को राष्ट्रपति द्वारा समय से पहले भांग कब किया गया<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>1970 1977 1979 1984 1989 1991 1997 1999</p>
+        <p class="more"><span class="mor">more:- </span>आठ बार</p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">किस वर्ष लोकसभा का कार्यकाल दो बार एक-एक वर्ष के लिए बांटा गया<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>1976</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">किस अनुच्छेद में यह कहा गया है कि संसद का कार्य हिंदी अंग्रेजी भाषा में किया जाएगा<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>अनुच्छेद 348</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">1 वर्ष में लोकसभा की कितनी बैठक होती है इसके दो बैठकों के बीच कितने समय से ज्यादा का अंतराल नहीं होना चाहिए<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>3, 6 माह</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">लोकसभा की गणपूर्ति या कोरम कुल सदस्य संख्या के कितने भाग होता है इसका उल्लेख किस अनुच्छेद में है<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>दसवां भाग, अनुच्छेद 100(4)</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">राष्ट्रपति द्वारा संसद की संयुक्त अधिवेशन किन परिस्थितियों में बुलाई जा सकती है, इसका उल्लेख किस अनुच्छेद में है<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>अनुच्छेद 108<br>एक सदन द्वारा पारित विधेयक दूसरा सदन द्वारा स्वीकार कर देने पर<br>एक सदन द्वारा पारित विधेयक को दूसरा सदन 6 माह से अधिक के लिए रोक दे<br>एक सदन द्वारा दिया गया सुझाव दूसरा सदन मानने से इनकार कर दे</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">संयुक्त अधिवेशन की अध्यक्षता किसके द्वारा की जाती है इसकी चर्चा किस अनुच्छेद में की गई है<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>लोकसभा अध्यक्ष, अनुच्छेद 118(4)</p>
+        <p class="more"><span class="mor">more:- </span>लोकसभा के अध्यक्ष के नहीं होने पर उपाध्यक्ष संयुक्त अधिवेशन की अध्यक्षता करता है लेकिन अगर अध्यक्ष और उपाध्यक्ष नहीं हो तो फिर राज्यसभा उपसभापति संयुक्त अधिवेशन की अध्यक्षता करता है</p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">संयुक्त अधिवेशन की समस्त कार्यवाही की प्रक्रिया किस सदन के अनुसार होती है<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>लोकसभा</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">लोकसभा में एक दिन में तरण अंकित प्रश्नों की संख्या अधिकतम कितनी होती है<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>20</p>
+        <p class="more"><span class="mor">more:- </span>वैसे प्रश्न जिसका जवाब मौखिक देना होता है उसे तारांकित प्रश्न कहा जाता है इसको लेकर पूरक प्रश्न पूछा जा सकता है यह प्रश्न समानता हर कागज पर लिखकर पूछा जाता है</p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">लोकसभा के अध्यक्ष या उपाध्यक्ष को कितने दिन पूर्व सदस्यों के बहुमत से पारित संकल्प द्वारा पद से हटाया जा सकता है<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>14</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">संविधान के किस अनुच्छेद के अंतर्गत न्यायालय द्वारा संसद की कार्यवाही की जांच करना प्रतिबंधित किया गया है<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>अनुच्छेद 122</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">लोकसभा का प्रोटेम स्पीकर की नियुक्ति किसके द्वारा की जाती है<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>राष्ट्रपति</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">लोकसभा अध्यक्ष को निर्णायक मत देने का अधिकार किस अनुच्छेद में दिया गया है<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>अनुच्छेद 100(1)</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">प्रथम लोकसभा उपाध्यक्ष कौन थे<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>अनुतशयनम</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">सभी लोकसभा अध्यक्ष के नाम बताएं<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span></p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">लोकसभा अध्यक्ष द्वारा कौन-कौन से कार्य संपादित किए जाते हैं<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>सांसद व राष्ट्रपति के मध्य होने वाला पत्र व्यवहार करना<br>कोई विधेयक धन विधेयक है या नहीं इसका निर्णय करना<br>वह बेचारा दिन विधेयक पर वह रुकवा सकता है</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">यदि कोई संसद सदस्य_____दिनों तक सदन में अनुपस्थित रहता है तो उसकी सदस्यता समाप्त हो सकती है<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>60</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">भूतपूर्व सांसद सदस्यों के लिए पेंशन की व्यवस्था कब से लागू की गई है<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>1976</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">अध्यक्ष संसद सदस्य को अपनी मातृभाषा में सदन को संबोधित करने की आज्ञा किस अनुच्छेद के तहत देता है<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>अनुच्छेद 120</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <h5 class="h" id="h">★★★संघीय संसद★★★</h5>
+        <h3 class="h" id="h">भारत के महान्यायवादी</h3>
+        
+        <li class="question">सर्वप्रथम भारत का विधि अधिकारी कौन होता है<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>महान्यायवादी</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">महान्यायवादी का वेतन कितना होता है<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>2,50,000</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">भारतीय संविधान का कौन सा अनुच्छेद महान्यायवादी को किसी भी सदन अथवा उनकी समितियां में बोलने का अधिकार देता है<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>अनुच्छेद 88</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">भारत के प्रथम महान्यायवादी कौन थे<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>M C शीतलवार</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <h5 class="h" id="h">★★★भारत के महान्यायवादी★★★</h5>
+        <h3 class="h" id="h">भारत का नियंत्रक एवं महालेखा परीक्षक</h3>
+        
+        <li class="question">संविधान का कौन सा अनुच्छेद भारत के नियंत्रक और महालेखा परीक्षक के कर्तव्य को निर्धारित करता है<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>अनुच्छेद 149</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">नियंत्रक एवं महालेखा परीक्षक की पदविधि कितनी होती है<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>6 वर्ष का कार्यकाल या 65 वर्ष की आयु</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">नियंत्रक एवं महालेखा परीक्षक का वेतन कितना होता है<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>2,50,000</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">नियंत्रण क्यों महालेखा परीक्षक का वर्णन किस अनुच्छेद में किया गया है<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>अनुच्छेद 148-151</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">कौन सेवा निवृत्ति के पश्चात भारत सरकार के अधीन कोई पद धारण नहीं कर सकता है<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>भारत का नियंत्रक एवं महालेखा परीक्षक</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">भारत तथा प्रत्येक राज्य एवं प्रत्येक संघ राज्य के क्षेत्र की संचित निधि से किए गए सभी व्यय विधि के अधीन हुए इसकी जांच कौन करता है<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>भारत का नियंत्रक एवं महालेखा परीक्षक</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">CAG केंद्र सरकार के लेखाओं से संबंधित प्रतिवेदन किसे सौपता है<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>राष्ट्रपति को</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">CAG केंद्र सरकार के लेखाओं से संबंधित प्रतिवेदन किसे सौपता है<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>राज्यपाल को</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">केंद्र के संबंध में कैग के द्वारा दिए गए प्रतिवेदनों को संसद के पटल पर कौन रखवाता है तथा इसकी जांच कौन करता है<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>राष्ट्रपति, लोक लेखा समिति</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">लोक लेखा समिति अपना रिपोर्ट किसे देता है<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>लोकसभा अध्यक्ष को</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">भारत का नियंत्रक एवं महालेखा परीक्षक किसका एक मित्र, गाइड एवं मार्गदर्शन होता है<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>लोक लेखा समिति</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">CAG राष्ट्रपति को कौन सा प्रतिवेदन सौंपता है<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>विनियोग लेखाओं पर लेखा परीक्षक रिपोर्ट<br>वित्त लेखाओं पर लोक परीक्षा रिपोर्ट<br>सरकारी उपक्रमों पर लेख परीक्षा रिपोर्ट</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">भारत के प्रथम नियंत्रक एवं महालेखा परीक्षक कौन थे<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>नरहरि राव</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <h5 class="h" id="h">★★★भारत के नियंत्रक एवं महालेखा परीक्षक★★★</h5>
+        <h3 class="h" id="h">सर्वोच्च न्यायालय</h3>
+        
+        <li class="question">भारतीय संविधान के किस भाग में संघीय न्यायालय का उल्लेख है<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>भाग 5</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">वर्तमान में सर्वोच्च न्यायालय में मुख्य न्यायाधीश तथा अन्य न्यायाधीश की संख्या क्रमशः कितनी है<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>1, 33</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">सर्वोच्च न्यायालय के मुख्य न्यायाधीश तथा अन्य न्यायाधीशों का वेतन क्रमशः कितना होता है<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>2,80,000 तथा 2,50,000</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">सर्वोच्च न्यायालय एक अभिलेख न्यायालय होगा इसकी चर्चा किस अनुच्छेद में है<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>अनुच्छेद 129</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">न्यायिक पुनराविल ओपन अर्थात पुनर्विचार संबंधित क्षेत्राधिकार किस अनुच्छेद से संबंधित है<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>अनुच्छेद 137</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">सबसे अधिक लंबे समय तक मुख्य न्यायाधीश के पद पर रहने वाले कौन है<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>Y. V chandrachud</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">PIL के समय मुख्य न्यायाधीश कौन थे<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>पीएन भगवती</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">संविधान के निर्वाचन से संबंधित मामलों की सुनवाई करने के लिए बेंच की संख्या कम से कम कितनी होनी चाहिए<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>5</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">भारत सरकार के उपभोक्ता संरक्षण अधिनियम कब पारित किया गया था<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>1986</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">भारत के सर्वोच्च न्यायालय ने किस वर्ष में न्यायाधीशों की नियुक्ति के लिए कॉलेजों व्यवस्था को अपनाया था<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>1993</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">जब सर्वोच्च न्यायालय का गठन हुआ उसे समय मुख्य न्यायाधीश समेत न्यायाधीशों की कुल संख्या कितनी हुआ करती थी<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>8</p>
+        <p class="more"><span class="mor">more:- </span>न्यायाधीशों की संख्या में वृद्धि सांसद करता है परंतु कमी नहीं कर सकता</p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">सुप्रीम कोर्ट का उद्घाटन कब हुआ<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>28 जनवरी 1950</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">सुप्रीम कोर्ट का प्रारंभिक या मूल अधिकार किस अनुच्छेद में है इसके अंतर्गत कौन-कौन से क्षेत्राधिकार आते हैं<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>अनुच्छेद 131<br>केंद्र राज्य विवाद<br>राज्य राज्य विवाद<br>एक ओर केंद्र और उसके साथ कुछ राज्य तथा दूसरी ओर कुछ अन्य राज्य</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">सर्वोच्च न्यायालय और उच्च न्यायालय के न्यायाधीशों की नियुक्ति कौन करता है<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>राष्ट्रपति कॉलेजियम की मदद से</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        
+</ol>
+</div>
+        
+<script type="text/javascript">
+
+        function shuffle() {
+            var ol = document.getElementById("myol")
+            for (var i = ol.children.length; i >= 0; i--) {
+                ol.appendChild(ol.children[Math.random() * i | 0])
+            }
+        }
+
+        function hhide() {
+            let heading = document.getElementById("h");
+            heading.style.display = "none";
+        }
+
+        function main() {
+            shuffle();
+            hhide();
+        }
+        
+        document.addEventListener("DOMContentLoaded", function () {
+
+const searchInput = document.getElementById("searchInput")
+
+const list = document.getElementById("myol");
+
+const items = list.getElementsByTagName("li");
+
+searchInput.addEventListener("input", function () {
+
+const searchTerm = searchInput.value.toLowerCase();
+
+Array.from(items).forEach((item) => {
+
+const text = item.textContent.toLowerCase();
+
+item.style.display = text.includes (searchTerm) ?
+
+"block" : "none";
+
+})
+
+})
+
+})
+        
+    </script>
+        
+</body>
+   
+
+</html>
