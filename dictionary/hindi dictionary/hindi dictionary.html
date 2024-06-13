@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title></title>
+
+    <style>
+        * {
+
+            font-family: ;
+
+            margin: 0;
+
+            padding: 0;
+
+            box-sizing: border-box;
+
+            text-decoration: none;
+
+            outline: none;
+
+            text-transform: capitalize;
+
+
+        }
+
+
+
+        .nav {
+
+            width: 100vw;
+
+            height: 100%;
+
+            background-color: orangered;
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            text-align: center;
+
+        }
+
+
+
+        .st {
+
+            font-size: 30px;
+
+            color: white;
+
+            padding: 10px 25px;
+
+            font-weight: bold;
+            
+        }
+
+
+        .qbox {
+            margin: 5px 15px;
+
+            border: 2px solid #ccc;
+
+            height: 100%;
+
+            padding: 5px;
+
+        }
+
+        .word {
+            font-weight: bold;
+            color: #000;
+            background-color: lightpink;
+            padding: 10px 10px;
+            margin-top: 10px;
+            border-left: 4px solid green;
+            border-bottom: 4px solid green;
+        }
+
+        .h {
+            width: 100%;
+            background-color: black;
+            padding: 10px 10px;
+            margin: 10px 0;
+            text-align: center;
+            justify-content: center;
+            color: white;
+        }
+
+        section {
+            margin-top: 10px;
+        }
+
+        .fs {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0 15px;
+            gap: 10px;
+        }
+        
+        .search {
+            padding: 8px 10px;
+            margin-top: 5px;
+            border: 2px solid black;
+        }
+        
+        #myol {
+           list-style-position: inside; 
+        }
+        
+        p {
+            margin-top: 10px;
+        }
+        
+        span {
+            color: red;
+        }
+        
+        hr {
+            height: 4px;
+            background-color: green;
+        }
+    </style>
+
+</head>
+
+
+
+<body>
+
+    <nav class="nav">
+        <div class="st">शब्दकोश</div>
+    </nav>
+
+    <div class="fs">
+        <input class="search" id="searchInput" placeholder="search word">      
+    </div>
+
+    <div class="qbox">
+
+        <ol id="myol">
+
+<h5 class="h" id="h">क</h5>
+
+            <li class="word"><span>कौतूहल- </span>किसी वस्तु को देखने या जानने की इच्छा या चाहत; कुतूहल; जिज्ञासा।
+            <p><span>more- </span>curiosity</p></li>
+            
+<h5 class="h" id="h"></h5>            
+            
+            <li class="word"><span></span>
+            <p><span>more- </span></p></li>
+            
+            <li class="word"><span></span>
+            <p><span>more- </span></p></li>
+            
+        </ol>
+    </div>
+
+    <script type="text/javascript">     
+        document.addEventListener("DOMContentLoaded", function () {
+
+const searchInput = document.getElementById("searchInput")
+
+const list = document.getElementById("myol");
+
+const items = list.getElementsByTagName("li");
+
+searchInput.addEventListener("input", function () {
+
+const searchTerm = searchInput.value.toLowerCase();
+
+Array.from(items).forEach((item) => {
+
+const text = item.textContent.toLowerCase();
+
+item.style.display = text.includes (searchTerm) ?
+
+"block" : "none";
+
+})
+
+})
+
+})
+        
+    </script>
+
+</body>
+
+
+</html>
