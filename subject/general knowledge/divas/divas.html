@@ -1,0 +1,1912 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>दिवस</title>
+
+    <style>
+        * {
+
+            font-family: ;
+
+            margin: 0;
+
+            padding: 0;
+
+            box-sizing: border-box;
+
+            text-decoration: none;
+
+            outline: none;
+
+            text-transform: capitalize;
+
+
+        }
+
+
+
+        .nav {
+
+            width: 100vw;
+
+            height: 100%;
+
+            background-color: orangered;
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            text-align: center;
+
+        }
+
+
+
+        .st {
+
+            font-size: 30px;
+
+            color: white;
+
+            padding: 10px 25px;
+
+            font-weight: bold;
+
+        }
+
+
+
+        .qbox section div {
+            display: none;
+        }
+
+        .qbox section .ans:focus+div {
+            display: block;
+        }
+
+
+
+        .qbox {
+            margin: 5px 15px;
+
+            border: 2px solid #ccc;
+
+            height: 100%;
+
+            padding: 15px;
+
+        }
+
+
+        .ans {
+            border: 1px solid black;
+            padding: 5px 5px;
+            margin: 0;
+            background-color: #ccc;
+            position: relative;
+
+        }
+
+
+        .ansbox {
+            position: relative;
+            top: 5px;
+            padding: 5px 0;
+            margin-bottom: 10px;
+            border: ;
+        }
+
+
+        .anw,
+        .mor {
+            color: red;
+            font-weight: bold;
+        }
+
+        .answer,
+        .more {
+            color: blue;
+            padding: 5px 0;
+        }
+
+        .question {
+            font-weight: bold;
+            color: #000;
+        }
+
+        .h {
+            width: 100%;
+            background-color: #ccc;
+            padding: 10px 10px;
+            margin-bottom: 10px;
+            text-align: center;
+            justify-content: center;
+        }
+
+        section {
+            margin-top: 10px;
+        }
+
+        .fs {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0 15px;
+            gap: 10px;
+        }
+
+        .shuffle,
+        .reload {
+            padding: 5px 10px;
+            font-size: 20px;
+            margin-top: 5px;
+            font-weight: bold;
+            background-color: #ccc;
+        }
+        
+        .search {
+            padding: 8px 10px;
+            margin-top: 5px;
+            border: 2px solid black;
+        }
+        
+        #myol {
+           list-style-position: inside; 
+        }
+    </style>
+
+</head>
+
+
+
+<body>
+
+    <nav class="nav">
+        <div class="st">दिवस</div>
+    </nav>
+
+    <div class="fs">
+        <input class="search" id="searchInput" placeholder="search question">
+        <button class="shuffle" onclick="main()">shuffle</button>
+        <button class="reload" onclick="window.location.reload()">reset</button>       
+    </div>
+
+    <div class="qbox">
+
+        <ol id="myol">
+
+            <!-- ???????????????????????????? -->
+
+            <li class="question">लुई ब्रेल दिवस कब मनाया जाता है<br>
+                <section>
+                    <span class="ans" tabindex="0">Answer</span>
+                    <div class="ansbox">
+                        <p class="answer"><span class="anw">Answer:- </span>4 जनवरी</p>
+                        <p class="more"><span class="mor">more:- </span></p>
+                    </div>
+                </section>
+                <br>
+            </li>
+
+            <!-- ???????????????????????????? -->
+
+            <li class="question">प्रवासी भारतीय दिवस कब मनाया जाता है<br>
+                <section>
+                    <span class="ans" tabindex="0">Answer</span>
+                    <div class="ansbox">
+                        <p class="answer"><span class="anw">Answer:- </span>9 जनवरी</p>
+                        <p class="more"><span class="mor">more:- </span></p>
+                    </div>
+                </section>
+                <br>
+            </li>
+
+            <!-- ???????????????????????????? -->
+
+            <li class="question">विश्व हिंदी दिवस कब मनाया जाता है<br>
+                <section>
+                    <span class="ans" tabindex="0">Answer</span>
+                    <div class="ansbox">
+                        <p class="answer"><span class="anw">Answer:- </span>10 जनवरी</p>
+                        <p class="more"><span class="mor">more:- </span></p>
+                    </div>
+                </section>
+                <br>
+            </li>
+
+            <!-- ???????????????????????????? -->
+
+            <li class="question">राष्ट्रीय युवा दिवस कब मनाया जाता है<br>
+                <section>
+                    <span class="ans" tabindex="0">Answer</span>
+                    <div class="ansbox">
+                        <p class="answer"><span class="anw">Answer:- </span>12 जनवरी</p>
+                        <p class="more"><span class="mor">more:- </span>स्वामी विवेकानंद के जन्म दिवस के रूप में</p>
+                    </div>
+                </section>
+                <br>
+            </li>
+
+            <!-- ???????????????????????????? -->
+
+            <li class="question">थल सेवा दिवस कब मनाया जाता है<br>
+                <section>
+                    <span class="ans" tabindex="0">Answer</span>
+                    <div class="ansbox">
+                        <p class="answer"><span class="anw">Answer:- </span>15 जनवरी</p>
+                        <p class="more"><span class="mor">more:- </span></p>
+                    </div>
+                </section>
+                <br>
+            </li>
+
+            <!-- ???????????????????????????? -->
+
+            <li class="question">पराक्रम दिवस कब मनाया जाता है<br>
+                <section>
+                    <span class="ans" tabindex="0">Answer</span>
+                    <div class="ansbox">
+                        <p class="answer"><span class="anw">Answer:- </span>23 जनवरी</p>
+                        <p class="more"><span class="mor">more:- </span>सुभाष चंद्र बोस की जयंती पर</p>
+                    </div>
+                </section>
+                <br>
+            </li>
+
+            <!-- ???????????????????????????? -->
+
+            <li class="question">राष्ट्रीय बालिका दिवस कब मनाया जाता है<br>
+                <section>
+                    <span class="ans" tabindex="0">Answer</span>
+                    <div class="ansbox">
+                        <p class="answer"><span class="anw">Answer:- </span>24 जनवरी</p>
+                        <p class="more"><span class="mor">more:- </span></p>
+                    </div>
+                </section>
+                <br>
+            </li>
+
+            <!-- ???????????????????????????? -->
+
+            <li class="question">भारत पर्यटन दिवस कब मनाया जाता है<br>
+                <section>
+                    <span class="ans" tabindex="0">Answer</span>
+                    <div class="ansbox">
+                        <p class="answer"><span class="anw">Answer:- </span>25 जनवरी</p>
+                        <p class="more"><span class="mor">more:- </span></p>
+                    </div>
+                </section>
+                <br>
+            </li>
+
+            <!-- ???????????????????????????? -->
+
+            <li class="question">राष्ट्रीय मतदाता दिवस कब मनाया जाता है<br>
+                <section>
+                    <span class="ans" tabindex="0">Answer</span>
+                    <div class="ansbox">
+                        <p class="answer"><span class="anw">Answer:- </span>25 जनवरी</p>
+                        <p class="more"><span class="mor">more:- </span></p>
+                    </div>
+                </section>
+                <br>
+            </li>
+
+            <!-- ???????????????????????????? -->
+
+            <li class="question">गणतंत्र दिवस कब मनाया जाता है<br>
+                <section>
+                    <span class="ans" tabindex="0">Answer</span>
+                    <div class="ansbox">
+                        <p class="answer"><span class="anw">Answer:- </span>26 जनवरी</p>
+                        <p class="more"><span class="mor">more:- </span></p>
+                    </div>
+                </section>
+                <br>
+            </li>
+
+            <!-- ???????????????????????????? -->
+
+            <li class="question">अंतर्राष्ट्रीय सीमा शुल्क व उत्पाद दिवस कब मनाया जाता है<br>
+                <section>
+                    <span class="ans" tabindex="0">Answer</span>
+                    <div class="ansbox">
+                        <p class="answer"><span class="anw">Answer:- </span>26 जनवरी</p>
+                        <p class="more"><span class="mor">more:- </span></p>
+                    </div>
+                </section>
+                <br>
+            </li>
+
+            <!-- ???????????????????????????? -->
+
+            <li class="question">सर्वोदय दिवस कब मनाया जाता है<br>
+                <section>
+                    <span class="ans" tabindex="0">Answer</span>
+                    <div class="ansbox">
+                        <p class="answer"><span class="anw">Answer:- </span>30 जनवरी</p>
+                        <p class="more"><span class="mor">more:- </span></p>
+                    </div>
+                </section>
+                <br>
+            </li>
+
+            <!-- ???????????????????????????? -->
+
+            <li class="question">शहीद दिवस कब मनाया जाता है<br>
+                <section>
+                    <span class="ans" tabindex="0">Answer</span>
+                    <div class="ansbox">
+                        <p class="answer"><span class="anw">Answer:- </span>30 जनवरी</p>
+                        <p class="more"><span class="mor">more:- </span></p>
+                    </div>
+                </section>
+                <br>
+            </li>
+
+            <!-- ???????????????????????????? -->
+
+            <li class="question">कुष्ठ निवारण दिवस कब मनाया जाता है<br>
+                <section>
+                    <span class="ans" tabindex="0">Answer</span>
+                    <div class="ansbox">
+                        <p class="answer"><span class="anw">Answer:- </span>30 जनवरी</p>
+                        <p class="more"><span class="mor">more:- </span></p>
+                    </div>
+                </section>
+                <br>
+            </li>
+
+            <!-- ???????????????????????????? -->
+
+            <li class="question">विश्व कैंसर दिवस कब मनाया जाता है<br>
+                <section>
+                    <span class="ans" tabindex="0">Answer</span>
+                    <div class="ansbox">
+                        <p class="answer"><span class="anw">Answer:- </span>4 फरवरी</p>
+                        <p class="more"><span class="mor">more:- </span></p>
+                    </div>
+                </section>
+                <br>
+            </li>
+
+            <!-- ???????????????????????????? -->
+
+            <li class="question">समर्पण दिवस कब मनाया जाता है<br>
+                <section>
+                    <span class="ans" tabindex="0">Answer</span>
+                    <div class="ansbox">
+                        <p class="answer"><span class="anw">Answer:- </span>11 फरवरी</p>
+                        <p class="more"><span class="mor">more:- </span></p>
+                    </div>
+                </section>
+                <br>
+            </li>
+
+            <!-- ???????????????????????????? -->
+
+            <li class="question">बिहार सरकार के द्वारा शहीद दिवस कब मनाया जाता है<br>
+                <section>
+                    <span class="ans" tabindex="0">Answer</span>
+                    <div class="ansbox">
+                        <p class="answer"><span class="anw">Answer:- </span>15 फरवरी</p>
+                        <p class="more"><span class="mor">more:- </span></p>
+                    </div>
+                </section>
+                <br>
+            </li>
+
+            <!-- ???????????????????????????? -->
+
+            <li class="question">अंतर्राष्ट्रीय मातृभाषा दिवस कब मनाया जाता है<br>
+                <section>
+                    <span class="ans" tabindex="0">Answer</span>
+                    <div class="ansbox">
+                        <p class="answer"><span class="anw">Answer:- </span>21 फरवरी</p>
+                        <p class="more"><span class="mor">more:- </span></p>
+                    </div>
+                </section>
+                <br>
+            </li>
+
+            <!-- ???????????????????????????? -->
+
+            <li class="question">केंद्रीय उत्पाद शुल्क दिवस कब मनाया जाता है<br>
+                <section>
+                    <span class="ans" tabindex="0">Answer</span>
+                    <div class="ansbox">
+                        <p class="answer"><span class="anw">Answer:- </span>24 फरवरी</p>
+                        <p class="more"><span class="mor">more:- </span></p>
+                    </div>
+                </section>
+                <br>
+            </li>
+
+            <!-- ???????????????????????????? -->
+
+            <li class="question">राष्ट्रीय विज्ञान दिवस कब मनाया जाता है<br>
+                <section>
+                    <span class="ans" tabindex="0">Answer</span>
+                    <div class="ansbox">
+                        <p class="answer"><span class="anw">Answer:- </span>28 फरवरी</p>
+                        <p class="more"><span class="mor">more:- </span></p>
+                    </div>
+                </section>
+                <br>
+            </li>
+
+            <!-- ???????????????????????????? -->
+
+            <li class="question">विश्व वन्यजीव दिवस कब मनाया जाता है<br>
+                <section>
+                    <span class="ans" tabindex="0">Answer</span>
+                    <div class="ansbox">
+                        <p class="answer"><span class="anw">Answer:- </span>3 मार्च</p>
+                        <p class="more"><span class="mor">more:- </span></p>
+                    </div>
+                </section>
+                <br>
+            </li>
+
+            <!-- ???????????????????????????? -->
+
+            <li class="question">राष्ट्रीय सुरक्षा दिवस कब मनाया जाता है<br>
+                <section>
+                    <span class="ans" tabindex="0">Answer</span>
+                    <div class="ansbox">
+                        <p class="answer"><span class="anw">Answer:- </span>4 मार्च</p>
+                        <p class="more"><span class="mor">more:- </span></p>
+                    </div>
+                </section>
+                <br>
+            </li>
+
+            <!-- ???????????????????????????? -->
+
+            <li class="question">अंतर्राष्ट्रीय महिला दिवस कब मनाया जाता है<br>
+                <section>
+                    <span class="ans" tabindex="0">Answer</span>
+                    <div class="ansbox">
+                        <p class="answer"><span class="anw">Answer:- </span>8 मार्च</p>
+                        <p class="more"><span class="mor">more:- </span></p>
+                    </div>
+                </section>
+                <br>
+            </li>
+
+            <!-- ???????????????????????????? -->
+
+            <li class="question">विश्व उपभोक्ता अधिकार दिवस कब मनाया जाता है<br>
+                <section>
+                    <span class="ans" tabindex="0">Answer</span>
+                    <div class="ansbox">
+                        <p class="answer"><span class="anw">Answer:- </span>15 मार्च</p>
+                        <p class="more"><span class="mor">more:- </span></p>
+                    </div>
+                </section>
+                <br>
+            </li>
+
+            <!-- ???????????????????????????? -->
+
+            <li class="question">प्रेरणा दिवस कब मनाया जाता है<br>
+                <section>
+                    <span class="ans" tabindex="0">Answer</span>
+                    <div class="ansbox">
+                        <p class="answer"><span class="anw">Answer:- </span>17 मार्च</p>
+                        <p class="more"><span class="mor">more:- </span></p>
+                    </div>
+                </section>
+                <br>
+            </li>
+
+            <!-- ???????????????????????????? -->
+
+            <li class="question">विश्व खुशहाली दिवस एवं विश्व गौरैया दिवस कब मनाया जाता है<br>
+                <section>
+                    <span class="ans" tabindex="0">Answer</span>
+                    <div class="ansbox">
+                        <p class="answer"><span class="anw">Answer:- </span>20 मार्च</p>
+                        <p class="more"><span class="mor">more:- </span></p>
+                    </div>
+                </section>
+                <br>
+            </li>
+
+            <!-- ???????????????????????????? -->
+
+            <li class="question">विश्व वानिकी दिवस कब मनाया जाता है<br>
+                <section>
+                    <span class="ans" tabindex="0">Answer</span>
+                    <div class="ansbox">
+                        <p class="answer"><span class="anw">Answer:- </span>21 मार्च</p>
+                        <p class="more"><span class="mor">more:- </span></p>
+                    </div>
+                </section>
+                <br>
+            </li>
+
+            <!-- ???????????????????????????? -->
+
+            <li class="question">विश्व जल संरक्षण दिवस कब मनाया जाता है<br>
+                <section>
+                    <span class="ans" tabindex="0">Answer</span>
+                    <div class="ansbox">
+                        <p class="answer"><span class="anw">Answer:- </span>22 मार्च</p>
+                        <p class="more"><span class="mor">more:- </span></p>
+                    </div>
+                </section>
+                <br>
+            </li>
+
+            <!-- ???????????????????????????? -->
+
+            <li class="question">विश्व मौसम विज्ञान दिवस कब मनाया जाता है<br>
+                <section>
+                    <span class="ans" tabindex="0">Answer</span>
+                    <div class="ansbox">
+                        <p class="answer"><span class="anw">Answer:- </span>23 मार्च</p>
+                        <p class="more"><span class="mor">more:- </span></p>
+                    </div>
+                </section>
+                <br>
+            </li>
+
+            <!-- ???????????????????????????? -->
+
+            <li class="question">विश्व टीवी दिवस कब मनाया जाता है<br>
+                <section>
+                    <span class="ans" tabindex="0">Answer</span>
+                    <div class="ansbox">
+                        <p class="answer"><span class="anw">Answer:- </span>24 मार्च</p>
+                        <p class="more"><span class="mor">more:- </span></p>
+                    </div>
+                </section>
+                <br>
+            </li>
+
+            <!-- ???????????????????????????? -->
+
+            <li class="question">विश्व रंगमंच दिवस कब मनाया जाता है<br>
+                <section>
+                    <span class="ans" tabindex="0">Answer</span>
+                    <div class="ansbox">
+                        <p class="answer"><span class="anw">Answer:- </span>27 मार्च</p>
+                        <p class="more"><span class="mor">more:- </span></p>
+                    </div>
+                </section>
+                <br>
+            </li>
+
+            <!-- ???????????????????????????? -->
+
+            <li class="question">विश्व स्वास्थ्य दिवस कब मनाया जाता है<br>
+                <section>
+                    <span class="ans" tabindex="0">Answer</span>
+                    <div class="ansbox">
+                        <p class="answer"><span class="anw">Answer:- </span>7 अप्रैल</p>
+                        <p class="more"><span class="mor">more:- </span></p>
+                    </div>
+                </section>
+                <br>
+            </li>
+
+            <!-- ???????????????????????????? -->
+
+            <li class="question">अंबेडकर जयंती कब मनाया जाता है<br>
+                <section>
+                    <span class="ans" tabindex="0">Answer</span>
+                    <div class="ansbox">
+                        <p class="answer"><span class="anw">Answer:- </span>14 अप्रैल</p>
+                        <p class="more"><span class="mor">more:- </span></p>
+                    </div>
+                </section>
+                <br>
+            </li>
+
+            <!-- ???????????????????????????? -->
+
+            <li class="question">विश्व वैमानिकी एवं ब्रह्मांडीकी दिवस कब मनाया जाता है<br>
+                <section>
+                    <span class="ans" tabindex="0">Answer</span>
+                    <div class="ansbox">
+                        <p class="answer"><span class="anw">Answer:- </span>14 अप्रैल</p>
+                        <p class="more"><span class="mor">more:- </span></p>
+                    </div>
+                </section>
+                <br>
+            </li>
+
+            <!-- ???????????????????????????? -->
+
+            <li class="question">समानता दिवस कब मनाया जाता है<br>
+                <section>
+                    <span class="ans" tabindex="0">Answer</span>
+                    <div class="ansbox">
+                        <p class="answer"><span class="anw">Answer:- </span>14 अप्रैल</p>
+                        <p class="more"><span class="mor">more:- </span></p>
+                    </div>
+                </section>
+                <br>
+            </li>
+
+            <!-- ???????????????????????????? -->
+
+            <li class="question">विश्व हीमोफीलिया दिवस कब मनाया जाता है<br>
+                <section>
+                    <span class="ans" tabindex="0">Answer</span>
+                    <div class="ansbox">
+                        <p class="answer"><span class="anw">Answer:- </span>17 अप्रैल</p>
+                        <p class="more"><span class="mor">more:- </span></p>
+                    </div>
+                </section>
+                <br>
+            </li>
+
+            <!-- ???????????????????????????? -->
+
+            <li class="question">विश्व विरासत दिवस कब मनाया जाता है<br>
+                <section>
+                    <span class="ans" tabindex="0">Answer</span>
+                    <div class="ansbox">
+                        <p class="answer"><span class="anw">Answer:- </span>18 अप्रैल</p>
+                        <p class="more"><span class="mor">more:- </span></p>
+                    </div>
+                </section>
+                <br>
+            </li>
+
+            <!-- ???????????????????????????? -->
+
+            <li class="question">पृथ्वी दिवस कब मनाया जाता है<br>
+                <section>
+                    <span class="ans" tabindex="0">Answer</span>
+                    <div class="ansbox">
+                        <p class="answer"><span class="anw">Answer:- </span>22 अप्रैल</p>
+                        <p class="more"><span class="mor">more:- </span></p>
+                    </div>
+                </section>
+                <br>
+            </li>
+
+            <!-- ???????????????????????????? -->
+
+            <li class="question">विश्व पुस्तक एवं कॉपीराइट दिवस कब मनाया जाता है<br>
+                <section>
+                    <span class="ans" tabindex="0">Answer</span>
+                    <div class="ansbox">
+                        <p class="answer"><span class="anw">Answer:- </span>23 अप्रैल</p>
+                        <p class="more"><span class="mor">more:- </span></p>
+                    </div>
+                </section>
+                <br>
+            </li>
+
+            <!-- ???????????????????????????? -->
+
+            <li class="question">विश्व श्रमिक दिवस कब मनाया जाता है<br>
+                <section>
+                    <span class="ans" tabindex="0">Answer</span>
+                    <div class="ansbox">
+                        <p class="answer"><span class="anw">Answer:- </span>1 मई</p>
+                        <p class="more"><span class="mor">more:- </span></p>
+                    </div>
+                </section>
+                <br>
+            </li>
+
+            <!-- ???????????????????????????? -->
+
+            <li class="question">विश्व प्रेस स्वतंत्रता दिवस कब मनाया जाता है<br>
+                <section>
+                    <span class="ans" tabindex="0">Answer</span>
+                    <div class="ansbox">
+                        <p class="answer"><span class="anw">Answer:- </span>3 मई</p>
+                        <p class="more"><span class="mor">more:- </span></p>
+                    </div>
+                </section>
+                <br>
+            </li>
+
+            <!-- ???????????????????????????? -->
+
+            <li class="question">विश्व अस्थमा दिवस कब मनाया जाता है<br>
+                <section>
+                    <span class="ans" tabindex="0">Answer</span>
+                    <div class="ansbox">
+                        <p class="answer"><span class="anw">Answer:- </span>7 मई</p>
+                        <p class="more"><span class="mor">more:- </span></p>
+                    </div>
+                </section>
+                <br>
+            </li>
+
+            <!-- ???????????????????????????? -->
+
+            <li class="question">विश्व रेडक्रॉस दिवस कब मनाया जाता है<br>
+                <section>
+                    <span class="ans" tabindex="0">Answer</span>
+                    <div class="ansbox">
+                        <p class="answer"><span class="anw">Answer:- </span>8 मई</p>
+                        <p class="more"><span class="mor">more:- </span></p>
+                    </div>
+                </section>
+                <br>
+            </li>
+
+            <!-- ???????????????????????????? -->
+
+            <li class="question">राष्ट्रीय प्रौद्योगिकी दिवस कब मनाया जाता है<br>
+                <section>
+                    <span class="ans" tabindex="0">Answer</span>
+                    <div class="ansbox">
+                        <p class="answer"><span class="anw">Answer:- </span>11 मई</p>
+                        <p class="more"><span class="mor">more:- </span></p>
+                    </div>
+                </section>
+                <br>
+            </li>
+
+            <!-- ???????????????????????????? -->
+
+            <li class="question">विश्व नर्स दिवस कब मनाया जाता है<br>
+                <section>
+                    <span class="ans" tabindex="0">Answer</span>
+                    <div class="ansbox">
+                        <p class="answer"><span class="anw">Answer:- </span>12 मई</p>
+                        <p class="more"><span class="mor">more:- </span></p>
+                    </div>
+                </section>
+                <br>
+            </li>
+
+            <!-- ???????????????????????????? -->
+
+            <li class="question">विश्व परिवार दिवस कब मनाया जाता है<br>
+                <section>
+                    <span class="ans" tabindex="0">Answer</span>
+                    <div class="ansbox">
+                        <p class="answer"><span class="anw">Answer:- </span>15 मई</p>
+                        <p class="more"><span class="mor">more:- </span></p>
+                    </div>
+                </section>
+                <br>
+            </li>
+
+            <!-- ???????????????????????????? -->
+
+            <li class="question">विश्व दूरसंचार दिवस कब मनाया जाता है<br>
+                <section>
+                    <span class="ans" tabindex="0">Answer</span>
+                    <div class="ansbox">
+                        <p class="answer"><span class="anw">Answer:- </span>17 मई</p>
+                        <p class="more"><span class="mor">more:- </span></p>
+                    </div>
+                </section>
+                <br>
+            </li>
+
+            <!-- ???????????????????????????? -->
+
+            <li class="question">विश्व संग्रहालय दिवस कब मनाया जाता है<br>
+                <section>
+                    <span class="ans" tabindex="0">Answer</span>
+                    <div class="ansbox">
+                        <p class="answer"><span class="anw">Answer:- </span>18 मई</p>
+                        <p class="more"><span class="mor">more:- </span></p>
+                    </div>
+                </section>
+                <br>
+            </li>
+
+            <!-- ???????????????????????????? -->
+
+            <li class="question">आतंकवाद विरोधी दिवस कब मनाया जाता है<br>
+                <section>
+                    <span class="ans" tabindex="0">Answer</span>
+                    <div class="ansbox">
+                        <p class="answer"><span class="anw">Answer:- </span>21 मई</p>
+                        <p class="more"><span class="mor">more:- </span></p>
+                    </div>
+                </section>
+                <br>
+            </li>
+
+            <!-- ???????????????????????????? -->
+
+            <li class="question">जैविक विविधता दिवस कब मनाया जाता है<br>
+                <section>
+                    <span class="ans" tabindex="0">Answer</span>
+                    <div class="ansbox">
+                        <p class="answer"><span class="anw">Answer:- </span>22 मई</p>
+                        <p class="more"><span class="mor">more:- </span></p>
+                    </div>
+                </section>
+                <br>
+            </li>
+
+            <!-- ???????????????????????????? -->
+            
+            <li class="question">इंटरनेशनल एवरेस्ट दिवस कब मनाया जाता है<br>
+                <section>
+                    <span class="ans" tabindex="0">Answer</span>
+                    <div class="ansbox">
+                        <p class="answer"><span class="anw">Answer:- </span>29 मई</p>
+                        <p class="more"><span class="mor">more:- </span></p>
+                    </div>
+                </section>
+                <br>
+            </li>
+
+            <!-- ???????????????????????????? -->
+
+            <li class="question">विश्व तंबाकू रोधी दिवस कब मनाया जाता है<br>
+                <section>
+                    <span class="ans" tabindex="0">Answer</span>
+                    <div class="ansbox">
+                        <p class="answer"><span class="anw">Answer:- </span>31 मई</p>
+                        <p class="more"><span class="mor">more:- </span></p>
+                    </div>
+                </section>
+                <br>
+            </li>
+
+            <!-- ???????????????????????????? -->
+
+            <li class="question">विश्व हास्य दिवस कब मनाया जाता है<br>
+                <section>
+                    <span class="ans" tabindex="0">Answer</span>
+                    <div class="ansbox">
+                        <p class="answer"><span class="anw">Answer:- </span>मई महीने के पहले रविवार को</p>
+                        <p class="more"><span class="mor">more:- </span></p>
+                    </div>
+                </section>
+                <br>
+            </li>
+
+            <!-- ???????????????????????????? -->
+
+            <li class="question">विश्व दूग्ध दिवस कब मनाया जाता है<br>
+                <section>
+                    <span class="ans" tabindex="0">Answer</span>
+                    <div class="ansbox">
+                        <p class="answer"><span class="anw">Answer:- </span>1 जून</p>
+                        <p class="more"><span class="mor">more:- </span></p>
+                    </div>
+                </section>
+                <br>
+            </li>
+
+            <!-- ???????????????????????????? -->
+
+            <li class="question">विश्व पर्यावरण दिवस कब मनाया जाता है<br>
+                <section>
+                    <span class="ans" tabindex="0">Answer</span>
+                    <div class="ansbox">
+                        <p class="answer"><span class="anw">Answer:- </span>5 जून</p>
+                        <p class="more"><span class="mor">more:- </span></p>
+                    </div>
+                </section>
+                <br>
+            </li>
+
+            <!-- ???????????????????????????? -->
+
+            <li class="question">विश्व बाल श्रम निषेध दिवस कब मनाया जाता है<br>
+                <section>
+                    <span class="ans" tabindex="0">Answer</span>
+                    <div class="ansbox">
+                        <p class="answer"><span class="anw">Answer:- </span>12 जून</p>
+                        <p class="more"><span class="mor">more:- </span></p>
+                    </div>
+                </section>
+                <br>
+            </li>
+
+            <!-- ???????????????????????????? -->
+
+            <li class="question">विश्व रक्तदान दिवस कब मनाया जाता है<br>
+                <section>
+                    <span class="ans" tabindex="0">Answer</span>
+                    <div class="ansbox">
+                        <p class="answer"><span class="anw">Answer:- </span>14 जून</p>
+                        <p class="more"><span class="mor">more:- </span></p>
+                    </div>
+                </section>
+                <br>
+            </li>
+
+            <!-- ???????????????????????????? -->
+
+            <li class="question">विश्व शरणार्थी दिवस कब मनाया जाता है<br>
+                <section>
+                    <span class="ans" tabindex="0">Answer</span>
+                    <div class="ansbox">
+                        <p class="answer"><span class="anw">Answer:- </span>20 जून</p>
+                        <p class="more"><span class="mor">more:- </span></p>
+                    </div>
+                </section>
+                <br>
+            </li>
+
+            <!-- ???????????????????????????? -->
+            
+            <li class="question">अंतर्राष्ट्रीय योग दिवस कब मनाया जाता है<br>
+                <section>
+                    <span class="ans" tabindex="0">Answer</span>
+                    <div class="ansbox">
+                        <p class="answer"><span class="anw">Answer:- </span>21 जून</p>
+                        <p class="more"><span class="mor">more:- </span></p>
+                    </div>
+                </section>
+                <br>
+            </li>
+
+            <!-- ???????????????????????????? -->
+
+            <li class="question">अंतरराष्ट्रीय ओलंपिक दिवस कब मनाया जाता है<br>
+                <section>
+                    <span class="ans" tabindex="0">Answer</span>
+                    <div class="ansbox">
+                        <p class="answer"><span class="anw">Answer:- </span>23 जून</p>
+                        <p class="more"><span class="mor">more:- </span></p>
+                    </div>
+                </section>
+                <br>
+            </li>
+
+            <!-- ???????????????????????????? -->
+
+            <li class="question">मादक द्रव्यों के सेवन एवं उनके अवैध व्यापार के विरुद्ध अंतर्राष्ट्रीय दिवस कब मनाया जाता है<br>
+                <section>
+                    <span class="ans" tabindex="0">Answer</span>
+                    <div class="ansbox">
+                        <p class="answer"><span class="anw">Answer:- </span>26 जून</p>
+                        <p class="more"><span class="mor">more:- </span></p>
+                    </div>
+                </section>
+                <br>
+            </li>
+
+            <!-- ???????????????????????????? -->
+
+            <li class="question">राष्ट्रीय सांख्यिकी दिवस कब और किनके जन्मदिवस पर मनाया जाता है<br>
+                <section>
+                    <span class="ans" tabindex="0">Answer</span>
+                    <div class="ansbox">
+                        <p class="answer"><span class="anw">Answer:- </span>29 जून, प्रशांत चंद्र महालनोबिस</p>
+                        <p class="more"><span class="mor">more:- </span></p>
+                    </div>
+                </section>
+                <br>
+            </li>
+
+            <!-- ???????????????????????????? -->
+
+            <li class="question">चिकित्सा दिवस कब और किन के जन्मदिन पर मनाया जाता है<br>
+                <section>
+                    <span class="ans" tabindex="0">Answer</span>
+                    <div class="ansbox">
+                        <p class="answer"><span class="anw">Answer:- </span>1 जुलाई, डॉक्टर विधानचंद्र राय</p>
+                        <p class="more"><span class="mor">more:- </span></p>
+                    </div>
+                </section>
+                <br>
+            </li>
+
+            <!-- ???????????????????????????? -->
+
+            <li class="question">विश्व जनसंख्या दिवस कब मनाया जाता है<br>
+                <section>
+                    <span class="ans" tabindex="0">Answer</span>
+                    <div class="ansbox">
+                        <p class="answer"><span class="anw">Answer:- </span>11 जुलाई</p>
+                        <p class="more"><span class="mor">more:- </span></p>
+                    </div>
+                </section>
+                <br>
+            </li>
+
+            <!-- ???????????????????????????? -->
+
+            <li class="question">आयकर दिवस कब मनाया जाता है<br>
+                <section>
+                    <span class="ans" tabindex="0">Answer</span>
+                    <div class="ansbox">
+                        <p class="answer"><span class="anw">Answer:- </span>24 जुलाई</p>
+                        <p class="more"><span class="mor">more:- </span></p>
+                    </div>
+                </section>
+                <br>
+            </li>
+
+            <!-- ???????????????????????????? -->
+
+            <li class="question">कारगिल स्मृति दिवस कब मनाया जाता है<br>
+                <section>
+                    <span class="ans" tabindex="0">Answer</span>
+                    <div class="ansbox">
+                        <p class="answer"><span class="anw">Answer:- </span>26 जुलाई</p>
+                        <p class="more"><span class="mor">more:- </span></p>
+                    </div>
+                </section>
+                <br>
+            </li>
+
+            <!-- ???????????????????????????? -->
+
+            <li class="question">विश्व हेपेटाइटिस दिवस कब मनाया जाता है<br>
+                <section>
+                    <span class="ans" tabindex="0">Answer</span>
+                    <div class="ansbox">
+                        <p class="answer"><span class="anw">Answer:- </span>28 जुलाई</p>
+                        <p class="more"><span class="mor">more:- </span></p>
+                    </div>
+                </section>
+                <br>
+            </li>
+
+            <!-- ???????????????????????????? -->
+
+            <li class="question">विश्व सांस्कृतिक संरक्षण दिवस कब मनाया जाता है<br>
+                <section>
+                    <span class="ans" tabindex="0">Answer</span>
+                    <div class="ansbox">
+                        <p class="answer"><span class="anw">Answer:- </span>28 जुलाई</p>
+                        <p class="more"><span class="mor">more:- </span></p>
+                    </div>
+                </section>
+                <br>
+            </li>
+
+            <!-- ???????????????????????????? -->
+
+            <li class="question">अंतरराष्ट्रीय बाघ दिवस कब मनाया जाता है<br>
+                <section>
+                    <span class="ans" tabindex="0">Answer</span>
+                    <div class="ansbox">
+                        <p class="answer"><span class="anw">Answer:- </span>29 जुलाई</p>
+                        <p class="more"><span class="mor">more:- </span></p>
+                    </div>
+                </section>
+                <br>
+            </li>
+
+            <!-- ???????????????????????????? -->
+
+            <li class="question">विश्व स्तनपान दिवस कब मनाया जाता है<br>
+                <section>
+                    <span class="ans" tabindex="0">Answer</span>
+                    <div class="ansbox">
+                        <p class="answer"><span class="anw">Answer:- </span>1 अगस्त</p>
+                        <p class="more"><span class="mor">more:- </span></p>
+                    </div>
+                </section>
+                <br>
+            </li>
+
+            <!-- ???????????????????????????? -->
+
+            <li class="question">राष्ट्रीय हथकरघा दिवस कब मनाया जाता है<br>
+                <section>
+                    <span class="ans" tabindex="0">Answer</span>
+                    <div class="ansbox">
+                        <p class="answer"><span class="anw">Answer:- </span>7 अगस्त</p>
+                        <p class="more"><span class="mor">more:- </span></p>
+                    </div>
+                </section>
+                <br>
+            </li>
+
+            <!-- ???????????????????????????? -->
+
+            <li class="question">भाला फेंक दिवस कब मनाया जाता है<br>
+                <section>
+                    <span class="ans" tabindex="0">Answer</span>
+                    <div class="ansbox">
+                        <p class="answer"><span class="anw">Answer:- </span>7 अगस्त</p>
+                        <p class="more"><span class="mor">more:- </span></p>
+                    </div>
+                </section>
+                <br>
+            </li>
+
+            <!-- ???????????????????????????? -->
+
+            <li class="question">विश्व आदिवासी दिवस कब मनाया जाता है<br>
+                <section>
+                    <span class="ans" tabindex="0">Answer</span>
+                    <div class="ansbox">
+                        <p class="answer"><span class="anw">Answer:- </span>9 अगस्त</p>
+                        <p class="more"><span class="mor">more:- </span></p>
+                    </div>
+                </section>
+                <br>
+            </li>
+
+            <!-- ???????????????????????????? -->
+
+            <li class="question">विश्व युवा दिवस कब मनाया जाता है<br>
+                <section>
+                    <span class="ans" tabindex="0">Answer</span>
+                    <div class="ansbox">
+                        <p class="answer"><span class="anw">Answer:- </span>12 अगस्त</p>
+                        <p class="more"><span class="mor">more:- </span></p>
+                    </div>
+                </section>
+                <br>
+            </li>
+
+            <!-- ???????????????????????????? -->
+
+            <li class="question">विभाजन विभीषिका स्मृति दिवस कब मनाया जाता है<br>
+                <section>
+                    <span class="ans" tabindex="0">Answer</span>
+                    <div class="ansbox">
+                        <p class="answer"><span class="anw">Answer:- </span>14 अगस्त</p>
+                        <p class="more"><span class="mor">more:- </span></p>
+                    </div>
+                </section>
+                <br>
+            </li>
+
+            <!-- ???????????????????????????? -->
+
+            <li class="question">स्वतंत्रता दिवस कब मनाया जाता है<br>
+                <section>
+                    <span class="ans" tabindex="0">Answer</span>
+                    <div class="ansbox">
+                        <p class="answer"><span class="anw">Answer:- </span>15 अगस्त</p>
+                        <p class="more"><span class="mor">more:- </span></p>
+                    </div>
+                </section>
+                <br>
+            </li>
+
+            <!-- ???????????????????????????? -->
+
+            <li class="question">सद्भावना दिवस कब मनाया जाता है<br>
+                <section>
+                    <span class="ans" tabindex="0">Answer</span>
+                    <div class="ansbox">
+                        <p class="answer"><span class="anw">Answer:- </span>20 अगस्त</p>
+                        <p class="more"><span class="mor">more:- </span></p>
+                    </div>
+                </section>
+                <br>
+            </li>
+
+            <!-- ???????????????????????????? -->
+
+            <li class="question">राष्ट्रीय खेल दिवस कब और किन के जन्मदिन पर मनाया जाता है<br>
+                <section>
+                    <span class="ans" tabindex="0">Answer</span>
+                    <div class="ansbox">
+                        <p class="answer"><span class="anw">Answer:- </span>29 अगस्त, मेजर ध्यानचंद</p>
+                        <p class="more"><span class="mor">more:- </span></p>
+                    </div>
+                </section>
+                <br>
+            </li>
+
+            <!-- ???????????????????????????? -->
+
+            <li class="question">शिक्षक दिवस कब और किनके जन्म दिवस पर मनाया जाता है<br>
+                <section>
+                    <span class="ans" tabindex="0">Answer</span>
+                    <div class="ansbox">
+                        <p class="answer"><span class="anw">Answer:- </span>5 सितंबर, डॉक्टर सर्वपल्ली राधाकृष्णन</p>
+                        <p class="more"><span class="mor">more:- </span></p>
+                    </div>
+                </section>
+                <br>
+            </li>
+
+            <!-- ???????????????????????????? -->
+
+            <li class="question">हिंदी दिवस कब मनाया जाता है<br>
+                <section>
+                    <span class="ans" tabindex="0">Answer</span>
+                    <div class="ansbox">
+                        <p class="answer"><span class="anw">Answer:- </span>14 सितंबर</p>
+                        <p class="more"><span class="mor">more:- </span></p>
+                    </div>
+                </section>
+                <br>
+            </li>
+
+            <!-- ???????????????????????????? -->
+
+            <li class="question">अभियंता दिवस कब मनाया जाता है<br>
+                <section>
+                    <span class="ans" tabindex="0">Answer</span>
+                    <div class="ansbox">
+                        <p class="answer"><span class="anw">Answer:- </span>15 सितंबर</p>
+                        <p class="more"><span class="mor">more:- </span></p>
+                    </div>
+                </section>
+                <br>
+            </li>
+
+            <!-- ???????????????????????????? -->
+
+            <li class="question">अंतर्राष्ट्रीय ओजोन दिवस कब मनाया जाता है<br>
+                <section>
+                    <span class="ans" tabindex="0">Answer</span>
+                    <div class="ansbox">
+                        <p class="answer"><span class="anw">Answer:- </span>16 सितंबर</p>
+                        <p class="more"><span class="mor">more:- </span></p>
+                    </div>
+                </section>
+                <br>
+            </li>
+
+            <!-- ???????????????????????????? -->
+
+            <li class="question">सामाजिक न्याय दिवस कब मनाया जाता है<br>
+                <section>
+                    <span class="ans" tabindex="0">Answer</span>
+                    <div class="ansbox">
+                        <p class="answer"><span class="anw">Answer:- </span>17 सितंबर</p>
+                        <p class="more"><span class="mor">more:- </span></p>
+                    </div>
+                </section>
+                <br>
+            </li>
+
+            <!-- ???????????????????????????? -->
+
+            <li class="question">विश्व शांति दिवस कब मनाया जाता है<br>
+                <section>
+                    <span class="ans" tabindex="0">Answer</span>
+                    <div class="ansbox">
+                        <p class="answer"><span class="anw">Answer:- </span>21 सितंबर</p>
+                        <p class="more"><span class="mor">more:- </span></p>
+                    </div>
+                </section>
+                <br>
+            </li>
+
+            <!-- ???????????????????????????? -->
+
+            <li class="question">विश्व पर्यटन दिवस कब मनाया जाता है<br>
+                <section>
+                    <span class="ans" tabindex="0">Answer</span>
+                    <div class="ansbox">
+                        <p class="answer"><span class="anw">Answer:- </span></p>
+                        <p class="more"><span class="mor">more:- </span>27 सितंबर</p>
+                    </div>
+                </section>
+                <br>
+            </li>
+
+            <!-- ???????????????????????????? -->
+
+            <li class="question">अंतर्राष्ट्रीय अहिंसा दिवस कब मनाया जाता है<br>
+                <section>
+                    <span class="ans" tabindex="0">Answer</span>
+                    <div class="ansbox">
+                        <p class="answer"><span class="anw">Answer:- </span>2 अक्टूबर</p>
+                        <p class="more"><span class="mor">more:- </span></p>
+                    </div>
+                </section>
+                <br>
+            </li>
+
+            <!-- ???????????????????????????? -->
+
+            <li class="question">राष्ट्रीय डॉल्फिन दिवस कब मनाया जाता है<br>
+                <section>
+                    <span class="ans" tabindex="0">Answer</span>
+                    <div class="ansbox">
+                        <p class="answer"><span class="anw">Answer:- </span>5 अक्टूबर</p>
+                        <p class="more"><span class="mor">more:- </span></p>
+                    </div>
+                </section>
+                <br>
+            </li>
+
+            <!-- ???????????????????????????? -->
+
+            <li class="question">वायु सेवा दिवस कब मनाया जाता है<br>
+                <section>
+                    <span class="ans" tabindex="0">Answer</span>
+                    <div class="ansbox">
+                        <p class="answer"><span class="anw">Answer:- </span>8 अक्टूबर</p>
+                        <p class="more"><span class="mor">more:- </span></p>
+                    </div>
+                </section>
+                <br>
+            </li>
+
+            <!-- ???????????????????????????? -->
+
+            <li class="question">विश्व डाक दिवस कब मनाया जाता है<br>
+                <section>
+                    <span class="ans" tabindex="0">Answer</span>
+                    <div class="ansbox">
+                        <p class="answer"><span class="anw">Answer:- </span>9 अक्टूबर</p>
+                        <p class="more"><span class="mor">more:- </span></p>
+                    </div>
+                </section>
+                <br>
+            </li>
+
+            <!-- ???????????????????????????? -->
+
+            <li class="question">विश्व दृष्टि दिवस कब मनाया जाता है<br>
+                <section>
+                    <span class="ans" tabindex="0">Answer</span>
+                    <div class="ansbox">
+                        <p class="answer"><span class="anw">Answer:- </span>10 अक्टूबर</p>
+                        <p class="more"><span class="mor">more:- </span></p>
+                    </div>
+                </section>
+                <br>
+            </li>
+
+            <!-- ???????????????????????????? -->
+
+            <li class="question">अंतरराष्ट्रीय बालिका दिवस कब मनाया जाता है<br>
+                <section>
+                    <span class="ans" tabindex="0">Answer</span>
+                    <div class="ansbox">
+                        <p class="answer"><span class="anw">Answer:- </span>11 अक्टूबर</p>
+                        <p class="more"><span class="mor">more:- </span></p>
+                    </div>
+                </section>
+                <br>
+            </li>
+
+            <!-- ???????????????????????????? -->
+
+            <li class="question">विश्व मानक दिवस कब मनाया जाता है<br>
+                <section>
+                    <span class="ans" tabindex="0">Answer</span>
+                    <div class="ansbox">
+                        <p class="answer"><span class="anw">Answer:- </span>14 अक्टूबर</p>
+                        <p class="more"><span class="mor">more:- </span></p>
+                    </div>
+                </section>
+                <br>
+            </li>
+
+            <!-- ???????????????????????????? -->
+
+            <li class="question">विश्व छात्र दिवस कब मनाया जाता है<br>
+                <section>
+                    <span class="ans" tabindex="0">Answer</span>
+                    <div class="ansbox">
+                        <p class="answer"><span class="anw">Answer:- </span>15 अक्टूबर</p>
+                        <p class="more"><span class="mor">more:- </span></p>
+                    </div>
+                </section>
+                <br>
+            </li>
+
+            <!-- ???????????????????????????? -->
+
+            <li class="question">विश्व एलर्जी जागरूक दिवस कब मनाया जाता है<br>
+                <section>
+                    <span class="ans" tabindex="0">Answer</span>
+                    <div class="ansbox">
+                        <p class="answer"><span class="anw">Answer:- </span>16 अक्टूबर</p>
+                        <p class="more"><span class="mor">more:- </span></p>
+                    </div>
+                </section>
+                <br>
+            </li>
+
+            <!-- ???????????????????????????? -->
+
+            <li class="question">विश्व खाद्य दिवस कब मनाया जाता है<br>
+                <section>
+                    <span class="ans" tabindex="0">Answer</span>
+                    <div class="ansbox">
+                        <p class="answer"><span class="anw">Answer:- </span>16 अक्टूबर</p>
+                        <p class="more"><span class="mor">more:- </span></p>
+                    </div>
+                </section>
+                <br>
+            </li>
+
+            <!-- ???????????????????????????? -->
+
+            <li class="question">विश्व आयोडीन अल्पता दिवस कब मनाया जाता है<br>
+                <section>
+                    <span class="ans" tabindex="0">Answer</span>
+                    <div class="ansbox">
+                        <p class="answer"><span class="anw">Answer:- </span>21 अक्टूबर</p>
+                        <p class="more"><span class="mor">more:- </span></p>
+                    </div>
+                </section>
+                <br>
+            </li>
+
+            <!-- ???????????????????????????? -->
+
+            <li class="question">संयुक्त राष्ट्र दिवस कब मनाया जाता है<br>
+                <section>
+                    <span class="ans" tabindex="0">Answer</span>
+                    <div class="ansbox">
+                        <p class="answer"><span class="anw">Answer:- </span>24 अक्टूबर</p>
+                        <p class="more"><span class="mor">more:- </span></p>
+                    </div>
+                </section>
+                <br>
+            </li>
+
+            <!-- ???????????????????????????? -->
+
+            <li class="question">विश्व मितव्यविता दिवस कब मनाया जाता है<br>
+                <section>
+                    <span class="ans" tabindex="0">Answer</span>
+                    <div class="ansbox">
+                        <p class="answer"><span class="anw">Answer:- </span>30 अक्टूबर</p>
+                        <p class="more"><span class="mor">more:- </span></p>
+                    </div>
+                </section>
+                <br>
+            </li>
+
+            <!-- ???????????????????????????? -->
+
+            <li class="question">राष्ट्रीय एकता दिवस कब और किनके जन्मदिवस पर मनाया जाता है<br>
+                <section>
+                    <span class="ans" tabindex="0">Answer</span>
+                    <div class="ansbox">
+                        <p class="answer"><span class="anw">Answer:- </span>31 अक्टूबर, सरदार पटेल</p>
+                        <p class="more"><span class="mor">more:- </span></p>
+                    </div>
+                </section>
+                <br>
+            </li>
+
+            <!-- ???????????????????????????? -->
+
+            <li class="question">विश्व सेवा दिवस कब मनाया जाता है<br>
+                <section>
+                    <span class="ans" tabindex="0">Answer</span>
+                    <div class="ansbox">
+                        <p class="answer"><span class="anw">Answer:- </span>9 नवंबर</p>
+                        <p class="more"><span class="mor">more:- </span></p>
+                    </div>
+                </section>
+                <br>
+            </li>
+
+            <!-- ???????????????????????????? -->
+
+            <li class="question">बाल दिवस कब मनाया जाता है<br>
+                <section>
+                    <span class="ans" tabindex="0">Answer</span>
+                    <div class="ansbox">
+                        <p class="answer"><span class="anw">Answer:- </span>14 नवंबर</p>
+                        <p class="more"><span class="mor">more:- </span></p>
+                    </div>
+                </section>
+                <br>
+            </li>
+
+            <!-- ???????????????????????????? -->
+
+            <li class="question">विश्व मधुमेह दिवस कब मनाया जाता है<br>
+                <section>
+                    <span class="ans" tabindex="0">Answer</span>
+                    <div class="ansbox">
+                        <p class="answer"><span class="anw">Answer:- </span>14 नवंबर</p>
+                        <p class="more"><span class="mor">more:- </span></p>
+                    </div>
+                </section>
+                <br>
+            </li>
+
+            <!-- ???????????????????????????? -->
+
+            <li class="question">जनजातीय गौरव दिवस कब मनाया जाता है<br>
+                <section>
+                    <span class="ans" tabindex="0">Answer</span>
+                    <div class="ansbox">
+                        <p class="answer"><span class="anw">Answer:- </span>15 नवंबर</p>
+                        <p class="more"><span class="mor">more:- </span></p>
+                    </div>
+                </section>
+                <br>
+            </li>
+
+            <!-- ???????????????????????????? -->
+
+            <li class="question">सहनशीलता के लिए अंतर्राष्ट्रीय दिवस कब मनाया जाता है<br>
+                <section>
+                    <span class="ans" tabindex="0">Answer</span>
+                    <div class="ansbox">
+                        <p class="answer"><span class="anw">Answer:- </span>16 नवंबर</p>
+                        <p class="more"><span class="mor">more:- </span></p>
+                    </div>
+                </section>
+                <br>
+            </li>
+
+            <!-- ???????????????????????????? -->
+
+            <li class="question">विश्व विद्यार्थी दिवस कब मनाया जाता है<br>
+                <section>
+                    <span class="ans" tabindex="0">Answer</span>
+                    <div class="ansbox">
+                        <p class="answer"><span class="anw">Answer:- </span>17 नवंबर</p>
+                        <p class="more"><span class="mor">more:- </span></p>
+                    </div>
+                </section>
+                <br>
+            </li>
+
+            <!-- ???????????????????????????? -->
+
+            <li class="question">राष्ट्रीय पत्रकारिता दिवस कब मनाया जाता है<br>
+                <section>
+                    <span class="ans" tabindex="0">Answer</span>
+                    <div class="ansbox">
+                        <p class="answer"><span class="anw">Answer:- </span>17 नवंबर</p>
+                        <p class="more"><span class="mor">more:- </span></p>
+                    </div>
+                </section>
+                <br>
+            </li>
+
+            <!-- ???????????????????????????? -->
+
+            <li class="question">विश्व वयस्क दिवस कब मनाया जाता है<br>
+                <section>
+                    <span class="ans" tabindex="0">Answer</span>
+                    <div class="ansbox">
+                        <p class="answer"><span class="anw">Answer:- </span>18 नवंबर</p>
+                        <p class="more"><span class="mor">more:- </span></p>
+                    </div>
+                </section>
+                <br>
+            </li>
+
+            <!-- ???????????????????????????? -->
+            
+            <li class="question">यादव शौर्य दिवस कब मनाया जाता है<br>
+                <section>
+                    <span class="ans" tabindex="0">Answer</span>
+                    <div class="ansbox">
+                        <p class="answer"><span class="anw">Answer:- </span>18 नवंबर</p>
+                        <p class="more"><span class="mor">more:- </span></p>
+                    </div>
+                </section>
+                <br>
+            </li>
+
+            <!-- ???????????????????????????? -->
+
+            <li class="question">विश्व नागरिक दिवस कब मनाया जाता है<br>
+                <section>
+                    <span class="ans" tabindex="0">Answer</span>
+                    <div class="ansbox">
+                        <p class="answer"><span class="anw">Answer:- </span>19 नवंबर</p>
+                        <p class="more"><span class="mor">more:- </span></p>
+                    </div>
+                </section>
+                <br>
+            </li>
+
+            <!-- ???????????????????????????? -->
+
+            <li class="question">विश्व पर्यावरण संरक्षण दिवस कब मनाया जाता है<br>
+                <section>
+                    <span class="ans" tabindex="0">Answer</span>
+                    <div class="ansbox">
+                        <p class="answer"><span class="anw">Answer:- </span>26 नवंबर</p>
+                        <p class="more"><span class="mor">more:- </span></p>
+                    </div>
+                </section>
+                <br>
+            </li>
+
+            <!-- ???????????????????????????? -->    
+
+            <li class="question">राष्ट्रीय विधि दिवस या संविधान दिवस कब मनाया जाता है<br>
+                <section>
+                    <span class="ans" tabindex="0">Answer</span>
+                    <div class="ansbox">
+                        <p class="answer"><span class="anw">Answer:- </span>26 नवंबर</p>
+                        <p class="more"><span class="mor">more:- </span></p>
+                    </div>
+                </section>
+                <br>
+            </li>
+
+            <!-- ???????????????????????????? -->
+
+            <li class="question">विश्व एड्स दिवस कब मनाया जाता है<br>
+                <section>
+                    <span class="ans" tabindex="0">Answer</span>
+                    <div class="ansbox">
+                        <p class="answer"><span class="anw">Answer:- </span>1 दिसंबर</p>
+                        <p class="more"><span class="mor">more:- </span></p>
+                    </div>
+                </section>
+                <br>
+            </li>
+
+            <!-- ???????????????????????????? -->
+
+            <li class="question">अंतर्राष्ट्रीय विकलांगता जन दिवस कब मनाया जाता है<br>
+                <section>
+                    <span class="ans" tabindex="0">Answer</span>
+                    <div class="ansbox">
+                        <p class="answer"><span class="anw">Answer:- </span>3 दिसंबर</p>
+                        <p class="more"><span class="mor">more:- </span></p>
+                    </div>
+                </section>
+                <br>
+            </li>
+
+            <!-- ???????????????????????????? -->
+
+            <li class="question">नौसेना दिवस कब मनाया जाता है<br>
+                <section>
+                    <span class="ans" tabindex="0">Answer</span>
+                    <div class="ansbox">
+                        <p class="answer"><span class="anw">Answer:- </span>4 दिसंबर</p>
+                        <p class="more"><span class="mor">more:- </span></p>
+                    </div>
+                </section>
+                <br>
+            </li>
+
+            <!-- ???????????????????????????? -->
+
+            <li class="question">विश्व मृदा दिवस कब मनाया जाता है<br>
+                <section>
+                    <span class="ans" tabindex="0">Answer</span>
+                    <div class="ansbox">
+                        <p class="answer"><span class="anw">Answer:- </span>5 दिसंबर</p>
+                        <p class="more"><span class="mor">more:- </span></p>
+                    </div>
+                </section>
+                <br>
+            </li>
+
+            <!-- ???????????????????????????? -->
+
+            <li class="question">नागरिक सुरक्षा दिवस कब मनाया जाता है<br>
+                <section>
+                    <span class="ans" tabindex="0">Answer</span>
+                    <div class="ansbox">
+                        <p class="answer"><span class="anw">Answer:- </span>6 दिसंबर</p>
+                        <p class="more"><span class="mor">more:- </span></p>
+                    </div>
+                </section>
+                <br>
+            </li>
+
+            <!-- ???????????????????????????? -->
+
+            <li class="question">झंडा दिवस कब मनाया जाता है<br>
+                <section>
+                    <span class="ans" tabindex="0">Answer</span>
+                    <div class="ansbox">
+                        <p class="answer"><span class="anw">Answer:- </span>7 दिसंबर</p>
+                        <p class="more"><span class="mor">more:- </span></p>
+                    </div>
+                </section>
+                <br>
+            </li>
+
+            <!-- ???????????????????????????? -->
+
+            <li class="question">अंतर्राष्ट्रीय नागरिक उड्डयन दिवस कब मनाया जाता है<br>
+                <section>
+                    <span class="ans" tabindex="0">Answer</span>
+                    <div class="ansbox">
+                        <p class="answer"><span class="anw">Answer:- </span>7 दिसंबर</p>
+                        <p class="more"><span class="mor">more:- </span></p>
+                    </div>
+                </section>
+                <br>
+            </li>
+
+            <!-- ???????????????????????????? -->
+
+            <li class="question">अंतर्राष्ट्रीय मानवाधिकार दिवस कब मनाया जाता है<br>
+                <section>
+                    <span class="ans" tabindex="0">Answer</span>
+                    <div class="ansbox">
+                        <p class="answer"><span class="anw">Answer:- </span>10 दिसंबर</p>
+                        <p class="more"><span class="mor">more:- </span></p>
+                    </div>
+                </section>
+                <br>
+            </li>
+
+            <!-- ???????????????????????????? -->
+
+            <li class="question">विश्व पर्वत दिवस कब मनाया जाता है<br>
+                <section>
+                    <span class="ans" tabindex="0">Answer</span>
+                    <div class="ansbox">
+                        <p class="answer"><span class="anw">Answer:- </span>11 दिसंबर</p>
+                        <p class="more"><span class="mor">more:- </span></p>
+                    </div>
+                </section>
+                <br>
+            </li>
+
+            <!-- ???????????????????????????? -->
+
+            <li class="question">राष्ट्रीय ऊर्जा संरक्षण दिवस कब मनाया जाता है<br>
+                <section>
+                    <span class="ans" tabindex="0">Answer</span>
+                    <div class="ansbox">
+                        <p class="answer"><span class="anw">Answer:- </span>14 दिसंबर</p>
+                        <p class="more"><span class="mor">more:- </span></p>
+                    </div>
+                </section>
+                <br>
+            </li>
+
+            <!-- ???????????????????????????? -->
+
+            <li class="question">विश्व चाय दिवस कब मनाया जाता है<br>
+                <section>
+                    <span class="ans" tabindex="0">Answer</span>
+                    <div class="ansbox">
+                        <p class="answer"><span class="anw">Answer:- </span>15 दिसंबर</p>
+                        <p class="more"><span class="mor">more:- </span></p>
+                    </div>
+                </section>
+                <br>
+            </li>
+
+            <!-- ???????????????????????????? -->
+
+            <li class="question">विजय दिवस कब मनाया जाता है<br>
+                <section>
+                    <span class="ans" tabindex="0">Answer</span>
+                    <div class="ansbox">
+                        <p class="answer"><span class="anw">Answer:- </span>16 दिसंबर</p>
+                        <p class="more"><span class="mor">more:- </span></p>
+                    </div>
+                </section>
+                <br>
+            </li>
+
+            <!-- ???????????????????????????? -->
+
+            <li class="question">अंतर्राष्ट्रीय अल्पसंख्यक अधिकार दिवस कब मनाया जाता है<br>
+                <section>
+                    <span class="ans" tabindex="0">Answer</span>
+                    <div class="ansbox">
+                        <p class="answer"><span class="anw">Answer:- </span>18 दिसंबर</p>
+                        <p class="more"><span class="mor">more:- </span></p>
+                    </div>
+                </section>
+                <br>
+            </li>
+
+            <!-- ???????????????????????????? -->
+
+            <li class="question">किसान दिवस कब और किनके जन्म दिवस पर मनाया जाता है<br>
+                <section>
+                    <span class="ans" tabindex="0">Answer</span>
+                    <div class="ansbox">
+                        <p class="answer"><span class="anw">Answer:- </span>23 दिसंबर, चौधरी चरण सिंह</p>
+                        <p class="more"><span class="mor">more:- </span></p>
+                    </div>
+                </section>
+                <br>
+            </li>
+
+            <!-- ???????????????????????????? -->
+
+            <li class="question">राष्ट्रीय उपभोक्ता दिवस कब मनाया जाता है<br>
+                <section>
+                    <span class="ans" tabindex="0">Answer</span>
+                    <div class="ansbox">
+                        <p class="answer"><span class="anw">Answer:- </span>24 दिसंबर</p>
+                        <p class="more"><span class="mor">more:- </span></p>
+                    </div>
+                </section>
+                <br>
+            </li>
+
+            <!-- ???????????????????????????? -->
+
+            <li class="question">सुशासन दिवस कब मनाया जाता है<br>
+                <section>
+                    <span class="ans" tabindex="0">Answer</span>
+                    <div class="ansbox">
+                        <p class="answer"><span class="anw">Answer:- </span>25 दिसंबर</p>
+                        <p class="more"><span class="mor">more:- </span></p>
+                    </div>
+                </section>
+                <br>
+            </li>
+
+            <!-- ???????????????????????????? -->
+
+            <li class="question">वीर बाल दिवस कब मनाया जाता है<br>
+                <section>
+                    <span class="ans" tabindex="0">Answer</span>
+                    <div class="ansbox">
+                        <p class="answer"><span class="anw">Answer:- </span>26 दिसंबर</p>
+                        <p class="more"><span class="mor">more:- </span></p>
+                    </div>
+                </section>
+                <br>
+            </li>
+
+            <!-- ???????????????????????????? -->
+            
+
+        </ol>
+    </div>
+
+    <script type="text/javascript">
+
+        function shuffle() {
+            var ol = document.getElementById("myol")
+            for (var i = ol.children.length; i >= 0; i--) {
+                ol.appendChild(ol.children[Math.random() * i | 0])
+            }
+        }
+
+        function hhide() {
+            let heading = document.getElementById("h");
+            heading.style.display = "none";
+        }
+
+        function main() {
+            shuffle();
+            hhide();
+        }
+        
+        document.addEventListener("DOMContentLoaded", function () {
+
+const searchInput = document.getElementById("searchInput")
+
+const list = document.getElementById("myol");
+
+const items = list.getElementsByTagName("li");
+
+searchInput.addEventListener("input", function () {
+
+const searchTerm = searchInput.value.toLowerCase();
+
+Array.from(items).forEach((item) => {
+
+const text = item.textContent.toLowerCase();
+
+item.style.display = text.includes (searchTerm) ?
+
+"block" : "none";
+
+})
+
+})
+
+})
+        
+    </script>
+
+</body>
+
+
+</html>
