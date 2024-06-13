@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>प्राचीन धर्म और संप्रदाय</title>
+
+    <style>
+    * {
+
+            font-family: ;
+
+            margin: 0;
+
+            padding: 0;
+
+            box-sizing: border-box;
+
+            text-decoration: none;
+
+            outline: none;
+
+            text-transform: capitalize;
+
+
+        }
+
+
+
+        .nav {
+
+            width: 100vw;
+
+            height: 100%;
+
+            background-color: orangered;
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            text-align: center;
+
+        }
+
+
+
+        .st {
+
+            font-size: 30px;
+
+            color: white;
+
+            padding: 10px 25px;
+
+            font-weight: bold;
+
+        }
+
+
+
+        .qbox section div {
+            display: none;
+        }
+
+        .qbox section .ans:focus+div {
+            display: block;
+        }
+
+
+
+        .qbox {
+            margin: 5px 15px;
+
+            border: 2px solid #ccc;
+
+            height: 100%;
+
+            padding: 15px;
+
+        }
+
+
+        .ans {
+            border: 1px solid black;
+            padding: 5px 5px;
+            margin: 0;
+            background-color: #ccc;
+            position: relative;
+
+        }
+
+
+        .ansbox {
+            position: relative;
+            top: 5px;
+            padding: 5px 0;
+            margin-bottom: 10px;
+            border: ;
+        }
+
+
+        .anw,
+        .mor {
+            color: red;
+            font-weight: bold;
+        }
+
+        .answer,
+        .more {
+            color: blue;
+            padding: 5px 0;
+        }
+
+        .question {
+            font-weight: bold;
+            color: #000;
+        }
+
+        .h {
+            width: 100%;
+            background-color: #ccc;
+            padding: 10px 10px;
+            margin-bottom: 10px;
+            text-align: center;
+            justify-content: center;
+        }
+
+        section {
+            margin-top: 10px;
+        }
+
+        .fs {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0 15px;
+            gap: 10px;
+        }
+
+        .shuffle,
+        .reload {
+            padding: 5px 10px;
+            font-size: 20px;
+            margin-top: 5px;
+            font-weight: bold;
+            background-color: #ccc;
+        }
+        
+        .search {
+            padding: 8px 10px;
+            margin-top: 5px;
+            border: 2px solid black;
+        }
+        
+        #myol {
+           list-style-position: inside; 
+        }
+    </style>
+
+</head>
+
+
+
+<body>
+
+    <nav class="nav">
+        <div class="st">प्राचीन धर्म और संप्रदाय</div>
+    </nav>
+
+    <div class="fs">
+        <input class="search" id="searchInput" placeholder="search question">
+        <button class="shuffle" onclick="main()">shuffle</button>
+        <button class="reload" onclick="window.location.reload()">reset</button>       
+    </div>
+
+    <div class="qbox">
+    
+    <ol id="myol">
+    
+        <!-- ???????????????????????????? -->
+        
+        <h3 class="h" id="h">पारसी धर्म</h3>
+    
+        <li class="question">पारसी धर्म के संस्थापक कौन थे, इनका जन्म कहां हुआ था, इसका पवित्र ग्रंथ क्या है<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>पैगंबर जरथुस्त्र, ईरान, जेंद अवेस्ता</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <h3 class="h" id="h">आजीवक संप्रदाय</h3>
+        
+        <li class="question">आजीवक संप्रदाय के संस्थापक कौन थे<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>मक्खली गोसाल</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <h3 class="h" id="h">इस्लाम धर्म</h3>
+        
+        <li class="question">हजरत मोहम्मद साहब ने मक्का से मदीना की यात्रा कब की थी<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>24 सितंबर, 622 ई</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">हजरत मोहम्मद साहब को कब और कहां ज्ञान की प्राप्ति हुई थी<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>610 ईस्वी में, मक्का के हीरा नामक गुफा में</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">हजरत मोहम्मद साहब का जन्म कब, कहां और किस कबीला में हुआ था, इनके जन्म के उपलक्ष में कौन सा त्यौहार मनाया जाता है<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>570 ई., मक्का के मदीना में, कुरेश कबीला में, ईद उल मिलादुन्नबी</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">रमजान महीने का अंत कौन सा त्यौहार प्रदर्शित करता है<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>ईद उल फितर</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">इस्लाम धर्म का पवित्र ग्रंथ क्या है<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>कुरान</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <h3 class="h" id="h">ईसाई धर्म</h3>
+        
+        <li class="question">ईसाई धर्म के संस्थापक कौन थे इनका जन्म कब और कहां हुआ था उनके माता और पिता कौन थे<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>ईसा मसीह, </p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">ईसाई धर्म का पवित्र ग्रंथ और चिन्ह क्या है<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>बाइबल, क्रॉस</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">मिशनरीज का चैरिटी की स्थापना किसके द्वारा की गई थी<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>मदर टेरेसा</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <h5 class="h" id="h">★★★ईसाई धर्म★★★</h5>
+        
+        <li class="question">भारत का एक धर्म जोरोआस्ट्रीयन मुख्य रूप से किस राज्य में पाया जाता है<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>महाराष्ट्र</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+
+</ol>
+</div>
+
+<script type="text/javascript">
+
+        function shuffle() {
+            var ol = document.getElementById("myol")
+            for (var i = ol.children.length; i >= 0; i--) {
+                ol.appendChild(ol.children[Math.random() * i | 0])
+            }
+        }
+
+        function hhide() {
+            let heading = document.getElementById("h");
+            heading.style.display = "none";
+        }
+
+        function main() {
+            shuffle();
+            hhide();
+        }
+        
+        document.addEventListener("DOMContentLoaded", function () {
+
+const searchInput = document.getElementById("searchInput")
+
+const list = document.getElementById("myol");
+
+const items = list.getElementsByTagName("li");
+
+searchInput.addEventListener("input", function () {
+
+const searchTerm = searchInput.value.toLowerCase();
+
+Array.from(items).forEach((item) => {
+
+const text = item.textContent.toLowerCase();
+
+item.style.display = text.includes (searchTerm) ?
+
+"block" : "none";
+
+})
+
+})
+
+})
+        
+    </script>
+    
+</body>
+   
+
+</html>

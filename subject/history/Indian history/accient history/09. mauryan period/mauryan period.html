@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>मौर्य काल</title>
+
+    <style>
+    * {
+
+            font-family: ;
+
+            margin: 0;
+
+            padding: 0;
+
+            box-sizing: border-box;
+
+            text-decoration: none;
+
+            outline: none;
+
+            text-transform: capitalize;
+
+
+        }
+
+
+
+        .nav {
+
+            width: 100vw;
+
+            height: 100%;
+
+            background-color: orangered;
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            text-align: center;
+
+        }
+
+
+
+        .st {
+
+            font-size: 30px;
+
+            color: white;
+
+            padding: 10px 25px;
+
+            font-weight: bold;
+
+        }
+
+
+
+        .qbox section div {
+            display: none;
+        }
+
+        .qbox section .ans:focus+div {
+            display: block;
+        }
+
+
+
+        .qbox {
+            margin: 5px 15px;
+
+            border: 2px solid #ccc;
+
+            height: 100%;
+
+            padding: 15px;
+
+        }
+
+
+        .ans {
+            border: 1px solid black;
+            padding: 5px 5px;
+            margin: 0;
+            background-color: #ccc;
+            position: relative;
+
+        }
+
+
+        .ansbox {
+            position: relative;
+            top: 5px;
+            padding: 5px 0;
+            margin-bottom: 10px;
+            border: ;
+        }
+
+
+        .anw,
+        .mor {
+            color: red;
+            font-weight: bold;
+        }
+
+        .answer,
+        .more {
+            color: blue;
+            padding: 5px 0;
+        }
+
+        .question {
+            font-weight: bold;
+            color: #000;
+        }
+
+        .h {
+            width: 100%;
+            background-color: #ccc;
+            padding: 10px 10px;
+            margin-bottom: 10px;
+            text-align: center;
+            justify-content: center;
+        }
+
+        section {
+            margin-top: 10px;
+        }
+
+        .fs {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0 15px;
+            gap: 10px;
+        }
+
+        .shuffle,
+        .reload {
+            padding: 5px 10px;
+            font-size: 20px;
+            margin-top: 5px;
+            font-weight: bold;
+            background-color: #ccc;
+        }
+        
+        .search {
+            padding: 8px 10px;
+            margin-top: 5px;
+            border: 2px solid black;
+        }
+        
+        #myol {
+           list-style-position: inside; 
+        }
+    </style>
+
+</head>
+
+
+
+<body>
+
+    <nav class="nav">
+        <div class="st">मौर्य काल</div>
+    </nav>
+
+    <div class="fs">
+        <input class="search" id="searchInput" placeholder="search question">
+        <button class="shuffle" onclick="main()">shuffle</button>
+        <button class="reload" onclick="window.location.reload()">reset</button>       
+    </div>
+
+    <div class="qbox">
+    
+    <ol id="myol">
+    
+        <!-- ???????????????????????????? -->
+        
+        <h3 class="h" id="h">प्रशासनिक व्यवस्था</h3>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">उच्च अधिकारियों को_____कहा जाता था। इनकी संख्या_____थी।<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>तीर्थ या महामात्र, 18</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">उपधा परीक्षण किसे कहा जाता था<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>मुख्यमंत्री और पुरोहित की नियुक्ति के पहले इनके चरित्र को जांचा या परखा जाता था उसे ही उपधा परीक्षण कहा जाता था।</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <h3 class="h" id="h">अर्थशास्त्र में उल्लेखित तीर्थ (शीर्षस्थ अधिकारी)</h3>
+        
+        <!-- ???????????????????????????? -->
+    
+        <li class="question">प्रधानमंत्री<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>अमात्य</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">धर्म एवं दान विभाग का प्रधान<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>पुरोहित</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">सैन्य विभाग का प्रधान<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>सेनापति</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">राजपुत्र<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>युवराज</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">राजदरबार/राजकीय द्वार-रक्षक<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>दौवारिक</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">अन्तःपुर का अध्यक्ष<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>अन्तर्वेदिक</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">आय का संग्रहकर्ता<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>समाहर्ता</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">राजकीय कोष का अध्यक्ष<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>सन्निधाता</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">कारगार का अध्यक्ष<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>प्रशास्ता</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">कमिश्नर<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>प्रदेष्ट्रि</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">नगर का कोतवाल<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>पौर</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">प्रमुख न्यायाधीश<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>व्यावहारिक</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">नगर रक्षा का अध्यक्ष<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>नायक</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">उद्योगों और कारखानों का अध्यक्ष<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>कर्मान्तिक</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">अध्यक्ष<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>मन्त्रिपरिषद्</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">सैन्य सामग्री एकत्रित करनेवाला<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>दण्डपाल</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">राजकीय दुर्ग रक्षक<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>दुर्गपाल</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">सीमावर्ती दुर्गों का रक्षक<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>अंतपाल</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <h5 class="h" id="h">★★★अर्थशास्त्र में उल्लेखित तीर्थ (शीर्षस्थ अधिकारी)★★★</h5>
+        <h5 class="h" id="h">★★★प्रशासनिक व्यवस्था★★★</h5>
+        
+        <li class="question">अशोक द्वारा कलिंग पर चढ़ाई के जानकारी के लिए सबसे मुख्य स्रोत कौन सा है<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>13वाँ वृहत शिलालेख</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">अशोक का उत्तराधिकारी कौन था<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>कुणाल</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">'भारतीय लिखने की कल नहीं जानते हैं' यह किसकी उक्ति है<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>मेगास्थनीज</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">अत्यंत पॉलिश किये गये एकाश्म के अशोक स्तंभ जिसे पांडुरंजित बालुकाश्म एकल टुकड़ों में तक्षित किए गये उसे साधारणत: कहां के खदानों से निकाला गया<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>मिर्जापुर के समीप चुनार</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">मालवा, गुजरात एवं महाराष्ट्र किस शासक ने पहली बार जीते<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>चंद्रगुप्त मौर्य</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">अशोक का अभिलेख भारतीय उपमहाद्वीप के बाहर किस देश में भी पाया गया<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>अफगानिस्तान</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        
+</ol>
+</div>
+
+<script type="text/javascript">
+
+        function shuffle() {
+            var ol = document.getElementById("myol")
+            for (var i = ol.children.length; i >= 0; i--) {
+                ol.appendChild(ol.children[Math.random() * i | 0])
+            }
+        }
+
+        function hhide() {
+            let heading = document.getElementById("h");
+            heading.style.display = "none";
+        }
+
+        function main() {
+            shuffle();
+            hhide();
+        }
+        
+        document.addEventListener("DOMContentLoaded", function () {
+
+const searchInput = document.getElementById("searchInput")
+
+const list = document.getElementById("myol");
+
+const items = list.getElementsByTagName("li");
+
+searchInput.addEventListener("input", function () {
+
+const searchTerm = searchInput.value.toLowerCase();
+
+Array.from(items).forEach((item) => {
+
+const text = item.textContent.toLowerCase();
+
+item.style.display = text.includes (searchTerm) ?
+
+"block" : "none";
+
+})
+
+})
+
+})
+        
+    </script>
+
+</body>
+   
+
+</html>

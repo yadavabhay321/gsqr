@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>राजपूत काल</title>
+
+    <style>
+    * {
+
+            font-family: ;
+
+            margin: 0;
+
+            padding: 0;
+
+            box-sizing: border-box;
+
+            text-decoration: none;
+
+            outline: none;
+
+            text-transform: capitalize;
+
+
+        }
+
+
+
+        .nav {
+
+            width: 100vw;
+
+            height: 100%;
+
+            background-color: orangered;
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            text-align: center;
+
+        }
+
+
+
+        .st {
+
+            font-size: 30px;
+
+            color: white;
+
+            padding: 10px 25px;
+
+            font-weight: bold;
+
+        }
+
+
+
+        .qbox section div {
+            display: none;
+        }
+
+        .qbox section .ans:focus+div {
+            display: block;
+        }
+
+
+
+        .qbox {
+            margin: 5px 15px;
+
+            border: 2px solid #ccc;
+
+            height: 100%;
+
+            padding: 15px;
+
+        }
+
+
+        .ans {
+            border: 1px solid black;
+            padding: 5px 5px;
+            margin: 0;
+            background-color: #ccc;
+            position: relative;
+
+        }
+
+
+        .ansbox {
+            position: relative;
+            top: 5px;
+            padding: 5px 0;
+            margin-bottom: 10px;
+            border: ;
+        }
+
+
+        .anw,
+        .mor {
+            color: red;
+            font-weight: bold;
+        }
+
+        .answer,
+        .more {
+            color: blue;
+            padding: 5px 0;
+        }
+
+        .question {
+            font-weight: bold;
+            color: #000;
+        }
+
+        .h {
+            width: 100%;
+            background-color: #ccc;
+            padding: 10px 10px;
+            margin-bottom: 10px;
+            text-align: center;
+            justify-content: center;
+        }
+
+        section {
+            margin-top: 10px;
+        }
+
+        .fs {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0 15px;
+            gap: 10px;
+        }
+
+        .shuffle,
+        .reload {
+            padding: 5px 10px;
+            font-size: 20px;
+            margin-top: 5px;
+            font-weight: bold;
+            background-color: #ccc;
+        }
+        
+        .search {
+            padding: 8px 10px;
+            margin-top: 5px;
+            border: 2px solid black;
+        }
+        
+        #myol {
+           list-style-position: inside; 
+        }
+    </style>
+
+</head>
+
+
+
+<body>
+
+    <nav class="nav">
+        <div class="st">राजपूत काल</div>
+    </nav>
+
+    <div class="fs">
+        <input class="search" id="searchInput" placeholder="search question">
+        <button class="shuffle" onclick="main()">shuffle</button>
+        <button class="reload" onclick="window.location.reload()">reset</button>       
+    </div>
+
+    <div class="qbox">
+    
+    <ol id="myol">
+    
+        <!-- ???????????????????????????? -->
+    
+        <li class="question">राजपूत वंश के उदय की जानकारी किस पुस्तक से मिलती है, इसके रचनाकार हैं, इस पुस्तक के अनुसार कहां कैसे हो किस-किस वंश का उदय हुआ<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>पृथ्वीराज रासो, चंद्रबरदाई, माउंट आबू पर एक अग्निकुंड से, गुर्जर प्रतिहार वंश, परमार वंश, गुजरात के चालुक्य या सोलंकी वंश, चौहान वंश</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <h3 class="h" id="h">गुर्जर प्रतिहार वंश</h3>
+        
+        <li class="question">गुर्जर प्रतिहार वंश की उत्पति किस क्षेत्र में हुई, सर्वप्रथम इसका उल्लेख कहा मिलता है<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>गुजरात व दक्षिण पश्चिम राजस्थान में, पुलकेशिन द्वितीय के एहोल अभिलेख में</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">गुर्जर प्रतिहार वंश की स्थापना किसने किया<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>नागभट्ट प्रथम</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">गुर्जर प्रतिहार वंश का सबसे प्रतापी राजा कौन था इसने अपनी राजधानी कहा बनाया<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>मिहिरभोज, कनौज</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">राजशेखर किसके दरबार में रहते थे, इनकी प्रमुख रचनाएं हैं<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>मिहिरभोज, कनौज</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">मिहिरभोज की उपलब्धियों की चर्चा_____अभिलेख में की गई है<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>ग्वालियर प्रशस्ति अभिलेख</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">गुर्जर प्रतिहार वंश का अंतिम शासक कौन था<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>यशपाल</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <h3 class="h" id="h">परमार वंश</h3>
+        
+        <li class="question">परमार वंश के संस्थापक कौन थे, इसकी राजधानी कहां थी, यह वंश किस क्षेत्र में था<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>उपेंद्र, धारानगरी, मध्य प्रदेश, मालवा</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">धारानगरी में एक विशाल सरस्वती मंदिर का निर्माण किसने करवाया<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>परमार शासक राजा भोज</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <h3 class="h" id="h">गुजरात के चालुक्य(सोलंकी वंश)</h3>
+        
+        <li class="question">सोलंकी वंश के संस्थापक कौन थे, इसकी राजधानी कहां थी<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>मूल राज, पाटन</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">दिलवाड़ा के जैन मंदिर का निर्माण किसने करवाया, यह स्थित है<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>सोलंकी शासक भीम प्रथम के सेनापति विमलशाह ने, माउंट आबू</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">सोलंकी शासक भीम प्रथम के समय कब महमूद गजनवी ने आक्रमण किया<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>1173 में</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">महमूद गजनवी ने दुबारा आक्रमण कब किया तब सोलंकी वंश के शासक कौन थे, कौन जीता<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>1178 में, भीम द्वितीय</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <h3 class="h" id="h">चौहान वंश</h3>
+        
+        <li class="question">चौहान वंश के संस्थापक कौन थे, इसकी राजधानी कहां थी<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>वासुदेव (सिंह राज), अहिक्षत्रपुर</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">विग्रहराज चतुर्थ विसलदेव किसके दरबार में रहते थे<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>चौहान शासक अरुणोराज</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">चौहानों में सर्वप्रथम किसने महाराज की उपाधि धारण किया<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>वाकपतिराज प्रथम</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">किस चौहान शासक को रामपिथौरा भी कहा जाता है<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>पृथ्वीराज तृतीय</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">चौहान शासक पृथ्वीराज चौहान के दरबार में रहने वाले विद्वान थे<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>जयानक, चंद्रबरदाई, विश्वरूप, वागीश्वर, जनार्दन, विद्यापति गौंड, आशाधार, पृथ्वीभट्ट</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">तराइन का प्रथम युद्ध कब और किसके किसके बीच हुआ<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>1191 में, पृथ्वीराज तृतीय और मोहम्मद गौरी</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">तराइन का द्वितीय युद्ध कब हुआ<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>1192</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">चंदवार का युद्ध कब और किसके किसके बीच हुआ, कौन जीता<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>1194, मोहमद गौरी और जयचंद, गौरी जीता</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+
+</ol>
+</div>
+
+<script type="text/javascript">
+
+        function shuffle() {
+            var ol = document.getElementById("myol")
+            for (var i = ol.children.length; i >= 0; i--) {
+                ol.appendChild(ol.children[Math.random() * i | 0])
+            }
+        }
+
+        function hhide() {
+            let heading = document.getElementById("h");
+            heading.style.display = "none";
+        }
+
+        function main() {
+            shuffle();
+            hhide();
+        }
+        
+        document.addEventListener("DOMContentLoaded", function () {
+
+const searchInput = document.getElementById("searchInput")
+
+const list = document.getElementById("myol");
+
+const items = list.getElementsByTagName("li");
+
+searchInput.addEventListener("input", function () {
+
+const searchTerm = searchInput.value.toLowerCase();
+
+Array.from(items).forEach((item) => {
+
+const text = item.textContent.toLowerCase();
+
+item.style.display = text.includes (searchTerm) ?
+
+"block" : "none";
+
+})
+
+})
+
+})
+        
+    </script>
+    
+</body>
+   
+
+</html>

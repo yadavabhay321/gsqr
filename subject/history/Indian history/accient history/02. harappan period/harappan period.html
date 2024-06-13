@@ -1,0 +1,986 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>हड़प्पा काल</title>
+
+    <style>
+    * {
+
+            font-family: ;
+
+            margin: 0;
+
+            padding: 0;
+
+            box-sizing: border-box;
+
+            text-decoration: none;
+
+            outline: none;
+
+            text-transform: capitalize;
+
+
+        }
+
+
+
+        .nav {
+
+            width: 100vw;
+
+            height: 100%;
+
+            background-color: orangered;
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            text-align: center;
+
+        }
+
+
+
+        .st {
+
+            font-size: 30px;
+
+            color: white;
+
+            padding: 10px 25px;
+
+            font-weight: bold;
+
+        }
+
+
+
+        .qbox section div {
+            display: none;
+        }
+
+        .qbox section .ans:focus+div {
+            display: block;
+        }
+
+
+
+        .qbox {
+            margin: 5px 15px;
+
+            border: 2px solid #ccc;
+
+            height: 100%;
+
+            padding: 15px;
+
+        }
+
+
+        .ans {
+            border: 1px solid black;
+            padding: 5px 5px;
+            margin: 0;
+            background-color: #ccc;
+            position: relative;
+
+        }
+
+
+        .ansbox {
+            position: relative;
+            top: 5px;
+            padding: 5px 0;
+            margin-bottom: 10px;
+            border: ;
+        }
+
+
+        .anw,
+        .mor {
+            color: red;
+            font-weight: bold;
+        }
+
+        .answer,
+        .more {
+            color: blue;
+            padding: 5px 0;
+        }
+
+        .question {
+            font-weight: bold;
+            color: #000;
+        }
+
+        .h {
+            width: 100%;
+            background-color: #ccc;
+            padding: 10px 10px;
+            margin-bottom: 10px;
+            text-align: center;
+            justify-content: center;
+        }
+
+        section {
+            margin-top: 10px;
+        }
+
+        .fs {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0 15px;
+            gap: 10px;
+        }
+
+        .shuffle,
+        .reload {
+            padding: 5px 10px;
+            font-size: 20px;
+            margin-top: 5px;
+            font-weight: bold;
+            background-color: #ccc;
+        }
+        
+        .search {
+            padding: 8px 10px;
+            margin-top: 5px;
+            border: 2px solid black;
+        }
+        
+        #myol {
+           list-style-position: inside; 
+        }
+    </style>
+
+</head>
+
+
+
+<body>
+
+    <nav class="nav">
+        <div class="st">हड़प्पा काल</div>
+    </nav>
+
+    <div class="fs">
+        <input class="search" id="searchInput" placeholder="search question">
+        <button class="shuffle" onclick="main()">shuffle</button>
+        <button class="reload" onclick="window.location.reload()">reset</button>       
+    </div>
+
+    <div class="qbox">
+    
+    <ol id="myol">
+    
+        <!-- ???????????????????????????? -->
+        
+        <h3 class="h" id="h">सिन्धु सभ्यता के प्रमुख स्थल</h3>
+    
+        <li class="question">हड़प्पा का उत्खनन कब, किसने किया, यह वर्तमान में कहा और किस नदी के किनारे अवस्थित हैं, यहां से कौन-कौन सी वस्तुएं प्राप्त हुई।<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>1921 में, दयाराम साहनी और माधोस्वरूप वत्स
+        <br>स्थान- मोंटगोमरी जिला, पंजाब (पाकिस्तान)<br>नदी- रावी
+        <br>प्राप्त वातुएं- 1. कुम्हार का चाक 2. अन्नागार 3. श्रमिक आवास 4. मातृ देवी की मूर्ति 5. लकड़ी की ओखली 6. लकड़ी का ताबूत 7. R H 37 कब्रिस्तान 8. हाथी का कपाल 9. स्वास्तिक चिन्ह</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">मोहनजोदड़ो का उत्खनन कब, किसने किया, यह वर्तमान में कहा और किस नदी के किनारे अवस्थित हैं, यहां से कौन-कौन सी वस्तुएं प्राप्त हुई।<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>1922, राखलदास बनर्जी<br>स्थान- लरकाना जिला सिंध प्रांत पाकिस्तान
+        <br>नदी- सिंधु
+        <br>प्राप्त वस्तुएं- 1. पुरोहित आवास 2. घर में कुआं 3. विशाल स्नानागार 4. अन्नगार 5. सूती वस्त्र 6. स्वास्तिक चिन्ह 7. सबसे चौड़ी सड़क 8. सभागार 9. पशुपति शिव 10. कांसे की नर्तकी 11. तांबे का ढेर</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">कालीबंगा का उत्खनन कब, किसने किया, यह वर्तमान में कहा और किस नदी के किनारे अवस्थित हैं, यहां से कौन-कौन सी वस्तुएं प्राप्त हुई।<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>1961 से 69, बी वी लाल और बीके थापर
+        <br>स्थान- हनुमानगढ़ जिला राजस्थान
+        <br>नदी- घग्गर
+        <br>प्राप्त वस्तुएं- अलंकृत ईट, चूड़ी, जुटा हुआ खेत, हल, हवन कुंड(यज्ञीय वेदियां)</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">धौलावीरा का उत्खनन कब, किसने किया, यह वर्तमान में कहा अवस्थित हैं।<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>1990 से 91, रविंद्र सिंह बिष्ट
+        <br>स्थान- कच्छ जिला गुजरात</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">चन्हूदडो का उत्खनन कब, किसने किया, यह वर्तमान में कहा और किस नदी के किनारे अवस्थित हैं, यहां से कौन-कौन सी वस्तुएं प्राप्त हुई।<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>1931, गोपाल मजूमदार
+        <br>स्थान- सिंध प्रांत पाकिस्तान
+        <br>नदी- सिंधु
+        <br>प्राप्त वस्तुएं- 1. मेकअप सामग्रीय 2. लिपस्टिक 3. शीशा 4. मनका 5. गुड़िया 6. सुई 7. अलंकृत ईट 8. बिल्ली का पीछा करता हुआ कुत्ता</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">लोथल का उत्खनन कब, किसने किया, यह वर्तमान में कहा और किस नदी के किनारे अवस्थित हैं, यहां से कौन-कौन सी वस्तुएं प्राप्त हुई।<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>1955/1962, रंगनाथ राव
+        <br>स्थान- अहमदाबाद जिला गुजरात
+        <br>नदी- भोगाव
+        <br>प्राप्त वस्तुएं- गोदीवाड़ा, फारस की मुहर, युगल सावधान, यज्ञीय वेदियां</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        <li class="question">कोटदीजी का उत्खनन कब, किसने किया, यह वर्तमान में कहा और किस नदी के किनारे अवस्थित हैं।<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>1953, फजल अहमद खान
+        <br>स्थान- सिंध प्रांत का खैरपुर स्थान पाकिस्तान
+        <br>नदी- सिंधु</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">बनवाली का उत्खनन कब, किसने किया, यह वर्तमान में कहा और किस नदी के किनारे अवस्थित हैं, यहां से कौन-कौन सी वस्तुएं प्राप्त हुई।<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>1974, रविंद्र सिंह बिष्ट
+        <br>स्थान- हिसार जिला हरियाणा
+        <br>नदी- सरस्वती
+        <br>प्राप्त वस्तुएं- सोखता, टेढ़ी-मेढ़ी सदके</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">रोपड़ का उत्खनन कब, किसने किया, यह वर्तमान में कहा और किस नदी के किनारे अवस्थित हैं, यहां से कौन-कौन सी वस्तुएं प्राप्त हुई।<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>1953 से 56, यज्ञदत्त शर्मा
+        <br>स्थान- रोपड़ जिला पंजाब
+        <br>नदी- सतलज
+        <br>प्राप्त वस्तुएं- मानव के साथ पालतू जानवर का शव</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">रंगपुर का उत्खनन कब, किसने किया, यह वर्तमान में कहा और किस नदी के किनारे अवस्थित हैं।<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>1953 से 54, रंगनाथ राव
+        <br>स्थान- काठियावाड़ जिला गुजरात अहमदाबाद
+        <br>नदी- मादर
+        <br>प्राप्त वस्तुएं- धान की भूसी</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">आलमगीरपुर का उत्खनन कब, किसने किया, यह वर्तमान में कहा और किस नदी के किनारे अवस्थित हैं।<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>1958, यज्ञदत्त शर्मा
+        <br>स्थान- मेरठ जिला उत्तर प्रदेश
+        <br>नदी- हिंडन</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        <li class="question">सुतकांगेडोर का उत्खनन कब, किसने किया, यह वर्तमान में कहा और किस नदी के किनारे अवस्थित हैं।<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>1927, आरेल स्टाइन
+        <br>स्थान- मकरान में समुद्र के तट के किनारे पाकिस्तान
+        <br>नदी- दाश्क</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">सुत्काकोह का उत्खनन कब, किसने किया, यह वर्तमान में कहा और किस नदी के किनारे अवस्थित हैं।<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>1962, जॉर्ज डेल्स
+        <br>स्थान- मकरान के समुद्र तट पर पाकिस्तान
+        <br>नदी- शादीकोर</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">सुरकोटड़ा की खुदाई किसने की यहां से कौन-कौन सी वस्तुएं प्राप्त हुई<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>जगपति जोशी
+        <br>प्राप्त वस्तुएं- कलश शावाधान घोड़े की हड्डी</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">कुणाल कहां स्थित है यहां से कौन-कौन सी वस्तुएं प्राप्त हुई<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>हरियाणा के हिसार जिला में
+        <br>प्राप्त वस्तुएं- चांदी के दो मुकुट</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question"><br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span></p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <h5 class="h" id="h">★★★सिंधु सभ्यता के प्रमुख स्थल★★★</h5>
+        <h3 class="h" id="h">आयात वस्तुएं</h3>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">सोना<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>अफगानिस्तान, ईरान, कर्नाटक</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">चांदी<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>अफगानिस्तान, ईरान</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">तांबा<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>बलूचिस्तान, खेतड़ी, ओमान</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">टीन<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>ईरान, अफगानिस्तान</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">गोमेद<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>सौराष्ट्र</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">लाजवर्द<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>मेसोपोटामिया</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">सीसा<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>ईरान</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+       
+        <!-- ???????????????????????????? -->
+        
+        <h5 class="h" id="h">★★★आयात वस्तुएं★★★</h5>
+        <h3 class="h" id="h">सिंधु सभ्यता के पतन के कारण</h3>
+        
+        <li class="question">बाह्य एवं आर्यों के आक्रमण<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>गार्डन चाइल्ड एवं व्हीलर</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">बाढ़<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>जॉन मार्शल अर्नेस्ट एवं एस आर राव</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">जलवायु परिवर्तन<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>आरेल स्टेइन, अमलानंद घोष</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">बहुत तात्विक परिवर्तन/जल प्लावन<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>एम आर साहनी</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">प्रशासनिक शिथिलता<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>जॉन मार्शल</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">प्राकृतिक आपदा<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>के यू आर कैनेडी</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <h5 class="h" id="h">★★★सिंधु सभ्यता के पतन के कारण★★★</h5>
+        
+        <li class="question">हड़प्पा सभ्यता के प्रमुख खाद्य फसल क्या थे<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>गेहूं, जौ</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">स्वतंत्रता प्राप्ति के पश्चात सर्वाधिक हड़प्पा कालीन स्थलों का पता कहां से चलता हैं<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>गुजरात</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">हड़प्पा कालीन शहरों एवं नगरों को किस प्रकार बांटा गया था<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>आयताकार खण्डों में</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">सिंधु सभ्यता का समूचा क्षेत्र किस आकार का हैं<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>त्रिभुज</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">हड़प्पा सभ्यता का क्षेत्रफल कितना हैं<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>12,99,600</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">अब तक लगभग हड़प्पा सभ्यता के कितने स्थलों का पता लग चुका हैं<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>100</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">हड़प्पा सभ्यता की मुख्य विशेषता क्या थी<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>नगरीय सभ्यता</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">मोहनजोदड़ो का सबसे महत्वपूर्ण सार्वजनिक स्थल कौन सा हैं<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>विशाल स्नानागार</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">मोहनजोदड़ो की सबसे बड़ी इमारत कौन सी हैं<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>अन्नागार</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">हड़प्पाई लोग किससे बने हल का प्रयोग करते थे<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>लकड़ी के</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">कपास का उत्पादन सर्वप्रथम कब हुआ था , इसे यूनानी लोग किस नाम से पुकारते थे<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>हड़प्पा काल में, सिंडन</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">मेसोपोटामियाई अभिलेखों में सिंधु क्षेत्र का प्राचीन नाम क्या पाया जाता हैं<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>मेलुहा</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">हड़प्पा नगर की संरचना लगभग कितने किलोमीटर के घेरे में फैली हुई हैं<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>पाँच किलोमीटर</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">पक्के हुए ईंटो के प्रमाण कहां से मिलें हैं<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>भगवानपुरा</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">चावल उत्पादन के साक्ष्य कहां से मिलें हैं<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span></p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">भारत में सबसे बड़ा हड़प्पा कालीन स्थल कौन सा हैं<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>धौलावीरा</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">हड़प्पा काल की ज्यादातर मुहरें किस प्रकार की होती थी<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>वर्गाकार</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">किसने हड़प्पा एवं मोहनजोदड़ो को एक विस्तृत साम्राज्य की राजधानी कहा<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>पिगट</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">किन पुराविदों की मान्यता हैं की सैंधव सभ्यता की उत्पति मेसोपोटामिया की सुमेरियन सभ्यता से हुई थी<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>सर जॉन मार्शल, गार्डन चाइड, व्हीलर</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">सैंधव सभ्यता के लोग किस धातु से परिचित नहीं थे<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>लोहा</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">एकमात्र हड़प्पा स्थल जो त्रिस्तरीय था<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>धौलावीरा</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">मोहनजोदड़ो के निवासी अधिकांशत: किस जाति के निवासी थे<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>भूमध्य सागरीय</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">अधिकांशत: विद्वानों की धारणा के अनुसार सैंधव सभ्यता के निवासी किस भाषा से संबंधित थे<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>द्रविड़</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">कृषि के साक्ष्य सर्वप्रथम कहां मिलें<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>मेहरगढ़</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">सैंधव सभ्यता के किस स्थल को स्तूप टीला की संज्ञा दी गई हैं , क्यों ?<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>मोहनजोदड़ो, यहां कुषाणकालीन स्तूप प्राप्त हुआ</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">सैंधव सभ्यता के प्राय: सभी मकान पीछे के ओर खुलते थे , परंतु इसका एक अपवाद कौन सा स्थल हैं<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>लोथक</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">सैंधव सभ्यता का ऐसा कौन सा स्थल हैं , जो पुरातत्वविदों के अनुसार सात बार उजड़ कर बसा था<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>मोहनजोदड़ो</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">जिसे टीले पर हड़प्पा का दुर्ग बना हैं , उसे व्हीलर ने किस नाम से पुकारा हैं<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>माउंट ए बी</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">सिंधु घाटी सभ्यता को आर्यों से पूर्व रखें जाने का महत्वपूर्ण कारण क्या हैं<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>मृदभांड</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->    
+        
+        
+</ol>
+</div>
+
+<script type="text/javascript">
+
+        function shuffle() {
+            var ol = document.getElementById("myol")
+            for (var i = ol.children.length; i >= 0; i--) {
+                ol.appendChild(ol.children[Math.random() * i | 0])
+            }
+        }
+
+        function hhide() {
+            let heading = document.getElementById("h");
+            heading.style.display = "none";
+        }
+
+        function main() {
+            shuffle();
+            hhide();
+        }
+        
+        document.addEventListener("DOMContentLoaded", function () {
+
+const searchInput = document.getElementById("searchInput")
+
+const list = document.getElementById("myol");
+
+const items = list.getElementsByTagName("li");
+
+searchInput.addEventListener("input", function () {
+
+const searchTerm = searchInput.value.toLowerCase();
+
+Array.from(items).forEach((item) => {
+
+const text = item.textContent.toLowerCase();
+
+item.style.display = text.includes (searchTerm) ?
+
+"block" : "none";
+
+})
+
+})
+
+})
+        
+    </script>
+    
+</body>
+   
+
+</html>
