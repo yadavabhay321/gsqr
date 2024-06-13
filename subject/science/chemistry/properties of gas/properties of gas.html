@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>properties of gas</title>
+
+    <style>
+    * {
+
+            font-family: ;
+
+            margin: 0;
+
+            padding: 0;
+
+            box-sizing: border-box;
+
+            text-decoration: none;
+
+            outline: none;
+
+            text-transform: capitalize;
+
+
+        }
+
+
+
+        .nav {
+
+            width: 100vw;
+
+            height: 100%;
+
+            background-color: orangered;
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            text-align: center;
+
+        }
+
+
+
+        .st {
+
+            font-size: 30px;
+
+            color: white;
+
+            padding: 10px 25px;
+
+            font-weight: bold;
+
+        }
+
+
+
+        .qbox section div {
+            display: none;
+        }
+
+        .qbox section .ans:focus+div {
+            display: block;
+        }
+
+
+
+        .qbox {
+            margin: 5px 15px;
+
+            border: 2px solid #ccc;
+
+            height: 100%;
+
+            padding: 15px;
+
+        }
+
+
+        .ans {
+            border: 1px solid black;
+            padding: 5px 5px;
+            margin: 0;
+            background-color: #ccc;
+            position: relative;
+
+        }
+
+
+        .ansbox {
+            position: relative;
+            top: 5px;
+            padding: 5px 0;
+            margin-bottom: 10px;
+            border: ;
+        }
+
+
+        .anw,
+        .mor {
+            color: red;
+            font-weight: bold;
+        }
+
+        .answer,
+        .more {
+            color: blue;
+            padding: 5px 0;
+        }
+
+        .question {
+            font-weight: bold;
+            color: #000;
+        }
+
+        .h {
+            width: 100%;
+            background-color: #ccc;
+            padding: 10px 10px;
+            margin-bottom: 10px;
+            text-align: center;
+            justify-content: center;
+        }
+
+        section {
+            margin-top: 10px;
+        }
+
+        .fs {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0 15px;
+            gap: 10px;
+        }
+
+        .shuffle,
+        .reload {
+            padding: 5px 10px;
+            font-size: 20px;
+            margin-top: 5px;
+            font-weight: bold;
+            background-color: #ccc;
+        }
+        
+        .search {
+            padding: 8px 10px;
+            margin-top: 5px;
+            border: 2px solid black;
+        }
+        
+        #myol {
+           list-style-position: inside; 
+        }
+    </style>
+
+</head>
+
+
+
+<body>
+
+    <nav class="nav">
+        <div class="st">properties of gas</div>
+    </nav>
+
+    <div class="fs">
+        <input class="search" id="searchInput" placeholder="search question">
+        <button class="shuffle" onclick="main()">shuffle</button>
+        <button class="reload" onclick="window.location.reload()">reset</button>       
+    </div>
+
+    <div class="qbox">
+    
+    <ol id="myol">
+    
+        <!-- ???????????????????????????? -->
+    
+        <li class="question">निश्चित ताप पर किसी गैस के दिए हुए द्रव्यमानका दाब उसके आयतन के प्रतिलोमानुपाती होता है' ,यह नियम है<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>बॉयल का नियम</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">दिए हुए ताप पर गैस की एक निश्चित मात्रा के लिए दाब का मान नियत रहता है',यह कौन सा नियम है<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>बॉयल का नियम</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">स्थिर ताप पर किसी गैस का आयतन कम करने पर उसका दाब -<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>बढता है</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">स्थिर दाब पर गैस का आयतन परमताप के समानुपाती होता है , यह नियम है<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>चार्ल्स का नियम</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">	'समान दाब और ताप पर गैसों के समान आयतनो में अणुओ की संख्या समान होती है ' ,यह नियम है<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>एवोग्राद्रो (Avogadro) के अभिकल्पना</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">स्थिर ताप पर किसी गैस का दाब तिगुना कर देने पर उसका आयतन होगा<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>तिहाई</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">गैसों के विसरण का नियम किसने प्रतिपादित किया था<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>ग्राहम</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">निश्चित ताप और दाब पर विभिन्न गैसों के विसरण के आपेक्षित वेग उनके घनत्व के वर्गमूल के विपरीत अनुपात में होता है ' , यह नियम है<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>ग्राहम का नियम</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">गैसों की विसरण दरों और उनके घनत्वों में कौन-सा समबन्ध है ?<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>r₁/r₂ - √d₂/d₁</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">वायु से हल्की गैस कौन सी है<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>अमोनिया</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">वास्तविक गैस किन परिस्थितियों में आदर्श गैस सा व्यव्हार करती है<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>निम्न दाब उच्च ताप</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">किसी कमरे के एक कोने में इत्र की खुलीशीशी रख देने से उसकी खुशबु कमरे के सभी भागों में फैल जाता है , इसका कारण है<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>विसरण</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">घनत्व में अंतर रहते हुए भी गैसों के पृथ्वी के गुरुत्वाकर्षण में बल के विरुद्ध परस्पर घुल मिल जाने स्वाभाव प्रक्रिया को कहते है<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>गैसों का विसरण</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">किसी गैस का अणु भार उसके वाष्प घनत्व का कितना होता है<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>दुगुना</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">गैसों के विसरण नियम का प्रयोग होता है<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>समस्थानिको को अलग करने के लिए<br>गैसों के वाष्पन घनत्व के निर्धारण के लिए<br>गैसों के मिश्रण को अलग करने के लिए</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">कार्बन कार्बन डाईऑक्साइड के विसरण की गति हवा की अपेक्षा कम होती है , क्योंकि यह हवा से<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>भारी होती है</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">गैसों के विसरण हेतु आवश्यक शर्त है की उनके बीच रासायनिक प्रतिशतता<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>संभव न हो</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">ऑक्सीजन और हाइड्रोजनके विसरण की दर का अनुपात है<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>1:4'</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">ताप और दाब की समान अवस्थाओं में विभिन्न गैसों के समान आयतन में किसकी संख्या समान होती है<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>अणु की</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">गैसीय समीकरण में pV = nRT में र सूचित करता है<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>एक मोल गैस को</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">किसी गैस दाब तथा तापमान दोनों बढते है<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>दबाने पर</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">आदर्श गैस की उर्जा निर्भर करती है<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>मोल की संख्या पर</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        
+</ol>
+</div>
+
+<script type="text/javascript">
+
+        function shuffle() {
+            var ol = document.getElementById("myol")
+            for (var i = ol.children.length; i >= 0; i--) {
+                ol.appendChild(ol.children[Math.random() * i | 0])
+            }
+        }
+
+        function hhide() {
+            let heading = document.getElementById("h");
+            heading.style.display = "none";
+        }
+
+        function main() {
+            shuffle();
+            hhide();
+        }
+        
+        document.addEventListener("DOMContentLoaded", function () {
+
+const searchInput = document.getElementById("searchInput")
+
+const list = document.getElementById("myol");
+
+const items = list.getElementsByTagName("li");
+
+searchInput.addEventListener("input", function () {
+
+const searchTerm = searchInput.value.toLowerCase();
+
+Array.from(items).forEach((item) => {
+
+const text = item.textContent.toLowerCase();
+
+item.style.display = text.includes (searchTerm) ?
+
+"block" : "none";
+
+})
+
+})
+
+})
+        
+    </script>
+    
+</body>
+   
+
+</html>
