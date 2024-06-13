@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>बहुउद्देशीय परियोजना</title>
+
+    <style>
+    * {
+
+            font-family: ;
+
+            margin: 0;
+
+            padding: 0;
+
+            box-sizing: border-box;
+
+            text-decoration: none;
+
+            outline: none;
+
+            text-transform: capitalize;
+
+
+        }
+
+
+
+        .nav {
+
+            width: 100vw;
+
+            height: 100%;
+
+            background-color: orangered;
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            text-align: center;
+
+        }
+
+
+
+        .st {
+
+            font-size: 30px;
+
+            color: white;
+
+            padding: 10px 25px;
+
+            font-weight: bold;
+
+        }
+
+
+
+        .qbox section div {
+            display: none;
+        }
+
+        .qbox section .ans:focus+div {
+            display: block;
+        }
+
+
+
+        .qbox {
+            margin: 5px 15px;
+
+            border: 2px solid #ccc;
+
+            height: 100%;
+
+            padding: 15px;
+
+        }
+
+
+        .ans {
+            border: 1px solid black;
+            padding: 5px 5px;
+            margin: 0;
+            background-color: #ccc;
+            position: relative;
+
+        }
+
+
+        .ansbox {
+            position: relative;
+            top: 5px;
+            padding: 5px 0;
+            margin-bottom: 10px;
+            border: ;
+        }
+
+
+        .anw,
+        .mor {
+            color: red;
+            font-weight: bold;
+        }
+
+        .answer,
+        .more {
+            color: blue;
+            padding: 5px 0;
+        }
+
+        .question {
+            font-weight: bold;
+            color: #000;
+        }
+
+        .h {
+            width: 100%;
+            background-color: #ccc;
+            padding: 10px 10px;
+            margin-bottom: 10px;
+            text-align: center;
+            justify-content: center;
+        }
+
+        section {
+            margin-top: 10px;
+        }
+
+        .fs {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0 15px;
+            gap: 10px;
+        }
+
+        .shuffle,
+        .reload {
+            padding: 5px 10px;
+            font-size: 20px;
+            margin-top: 5px;
+            font-weight: bold;
+            background-color: #ccc;
+        }
+        
+        .search {
+            padding: 8px 10px;
+            margin-top: 5px;
+            border: 2px solid black;
+        }
+        
+        #myol {
+           list-style-position: inside; 
+        }
+    </style>
+
+</head>
+
+
+
+<body>
+
+    <nav class="nav">
+        <div class="st">बहुउद्देशीय परियोजना</div>
+    </nav>
+
+    <div class="fs">
+        <input class="search" id="searchInput" placeholder="search question">
+        <button class="shuffle" onclick="main()">shuffle</button>
+        <button class="reload" onclick="window.location.reload()">reset</button>
+    </div>
+
+    <div class="qbox">
+    
+    <ol id="myol">
+    
+        <!-- ???????????????????????????? -->
+    
+        <li class="question">प्रमुख बहुउद्देशीय परियोजना<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>लद्दाख<br>निम्मो बाजमो- सिंधु नदी<br>चुटक- सुरु नदी<br><br>
+        
+        जम्मू कश्मीर<br>उझ- उझ नदी<br>तुलबुल- झेलम नदी<br>बगलिहार- चिनाब नदी<br>उरी- झेलम<br>सलाल- चिनाब नदी<br>बुरसर- चिनाब नदी<br>किशनगंगा- किशनगंगा नदी(झेलम)<br><br>
+        
+        हिमाचल प्रदेश<br>जवाई- जवाई नदी<br>बाउरा सियाल- रावी की सहायक नदी<br>खाब- सतजल की सहायक नदी स्फीति नदी<br>रनपुर- सतजल नदी<br>पोंग- व्यास<br>मंडी- व्यास<br>चमेरा बांध- रावी<br>नाथपा झाकरी- सतलज<br>रेणुका बांध- गिरी नदी<br>कोलडैम- सतलज<br>सुईल- सुईल नदी<br><br>
+        
+        उत्तराखंड<br>धौलीगंगा- धौलीगंगा व गौरीगंगा नदी<br>लखवर व्यासी- यमुना नदी<br>विषुणुगढ पीपलकोटी- अलकनंदा<br>कोटेश्वर जल विद्युत- भागीरथी नदी<br>टंकपुर जल विद्युत- काली नदी<br>बाककांग बालिंग- धौलीगंगा<br>मलेरी झेलम बांध- धौली गंगा<br>गोहना ताल- विरही गंगा<br>झेलम तमक- धौलीगंगा<br>करमोली- जड़गंगा<br>टिहरी बांध- भागीरथी और भिलगंगा<br>किशऊबांध- यमुना की सहायक टांस नदी(हिमाचल+उत्तराखंड)<br>देवसारी बांध- पिंडर नदी<br>रामगंगा- रामगंगा नदी<br><br>
+        
+        पंजाब<br>शाहपुर कांदी- रावी<br>देहर- व्यास<br>थीन सागर- रावी<br>रंजीत सागर- रावी<br>भांखडा नांगल- सतलज<br><br>
+        
+        उत्तर प्रदेश<br>चिबरो- टोंस नदी<br>चिल्ला- चिल्ला<br>रिहंद- रिहंद नदी<br>माताटीला- बेतवा नदी(ललितपुर)<br>रानी लक्ष्मी बाई बांध- बेतवा नदी<br><br>
+        
+        बिहार<br>गंडक- गंडक(बिहार + उत्तर प्रदेश)<br>कोसी- कोसी नदी(नेपाल + बिहार)<br><br>
+        
+        पश्चिम बंगाल<br>फरक्का बैराज बांध- गंगा नदी<br>म्युरक्षी- म्युराक्षी नदी<br><br>
+        
+        सिक्किम<br>तीस्ता- तीस्ता नदी<br>रंगीत- रंगीत नदी<br><br>
+        
+        असम<br>कुल्सी- कुल्सी नदी<br>कोपली- कोपली नदी<br><br>
+        
+        अरुणाचल प्रदेश<br>अपर लोहित- लोहित नदी<br>तवांग- तवांग नदी<br>दिबांग- दिबांग नदी<br>रंगा नदी- रंगा नदी<br>अपर सियांग- सियांग नदी<br>कामेंग जल विद्युत- ब्रह्मपुत्र की सहायक नदी कामेंग नदी<br><br>
+        
+        नागालैंड<br>दोयांग- ब्रह्मपुत्र की सहायक नदी दोयांग<br><br>
+        
+        मणिपुर<br>लोकटक- इम्फाल व मणिपुर नदी<br>तिबाई मुख जल विद्युत परियोजना- ब्राक और तुवुवाई नदी<br><br>
+        
+        मिजोरम<br>तुझबाई- तुझबाई नदी<br><br>
+        
+        मेघालय<br>कर्दमकुलाई<br><br>
+        
+        राज्यस्थान<br>चंबल- चंबल(राजस्थान+मध्य प्रदेश)<br>राणा प्रताप सागर- चंबल नदी<br>जवाहर सागर- चंबल नदी<br>कोटा बैराज- चंबल नदी<br><br>
+        
+        मध्य प्रदेश<br>तवा- तवा नदी<br>बारगी- बारगी नदी<br>नर्मदा सागर बांध- नर्मदा नदी<br>महेश्वर- नर्मदा नदी<br>ओंकारेश्वर- नर्मदा नदी<br>पेंच- पेंच नदी<br>संजय सरोवर- वेंगनगा नदी<br>इंदिरा सागर- नर्मदा नदी<br><br>
+        
+        ओडिसा<br>बालीमेला- सिलेरू नदी<br>हीराकुंड बांध- महानदी<br><br>
+        
+        गुजरात<br>कदाना- माही नदी<br>सरदार सरोवर बांध- नर्मदा नदी<br>उकाई- ताप्ती नदी<br>काकरपाड़ा- ताप्ती नदी<br>दंतावीरा- बनास<br>केल्पसर- <br><br>
+        
+        महाराष्ट्र<br>जादववाड़ी- गोदावरी<br>टाटा जल विद्युत- खोपली, भिवपुरी व भीसरा की संयुक्त परियोजना<br>कोयना- कोयना नदी<br>पवना- पवना नदी<br>पूर्णा- पूर्णा नदी<br><br>
+        
+        कर्नाटक<br>काली नदी- काली नदी<br>अलमाटी- कृष्ण नदी<br>शरावती- शरावती नदी<br>घाटप्रभा- घाटप्रभा नदी<br>तुंगभद्रा- तुंगभद्रा नदी<br>कृष्ण सागर बांध- कावेरी नदी<br>शिवसमुंद्र- कावेरी नदी<br>हिडकल- घटप्रभा नदी<br><br>
+        
+        केरल<br>पराम्बीकुलम आलियार- 8 छोटी नदियों द्वारा संचालित<br>इदुक्की- पेरियार नदी<br>पल्लीवासल- मदिरापुज़हा नदी<br>सबरिगिरी- पम्बा नदी/कक्की नदी<br>मुल्ला पेरियार- पेरियार<br><br>
+        
+        तेलांगना<br>श्री नागार्जुन सागर- कृष्णा नदी<br><br>
+        
+        आंध्र प्रदेश<br>लोअर एवं अपर सिलेरू- सिलेरू नदी<br>मचकुंड- मचकुंड नदी<br>निजाम सागर- गोदावरी की सहायक मंजरी नदी<br>रामगुंडम- गोदावरी नदी<br>श्री सेलम- कृष्णा नदी<br>तेलुगु गंगा- कृष्णा नदी<br><br>
+        
+        तमिलनाडु<br>मेट्टूर बांध- कावेरी नदी<br>पापनाशम- ताम्रपर्नी नदी<br>पायकरा- पायकरा नदी</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">तमिलनाडु की प्रथम परियोजना कौन सी हैं<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>पायकरा परियोजना</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question"><br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span></p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+
+</ol>
+</div>
+
+<script type="text/javascript">
+
+        function shuffle() {
+            var ol = document.getElementById("myol")
+            for (var i = ol.children.length; i >= 0; i--) {
+                ol.appendChild(ol.children[Math.random() * i | 0])
+            }
+        }
+
+        function hhide() {
+            let heading = document.getElementById("h");
+            heading.style.display = "none";
+        }
+
+        function main() {
+            shuffle();
+            hhide();
+        }
+
+document.addEventListener("DOMContentLoaded", function () {
+
+const searchInput = document.getElementById("searchInput")
+
+const list = document.getElementById("myol");
+
+const items = list.getElementsByTagName("li");
+
+searchInput.addEventListener("input", function () {
+
+const searchTerm = searchInput.value.toLowerCase();
+
+Array.from(items).forEach((item) => {
+
+const text = item.textContent.toLowerCase();
+
+item.style.display = text.includes (searchTerm) ?
+
+"block" : "none";
+
+})
+
+})
+
+})
+
+    </script>
+    
+</body>
+   
+
+</html>

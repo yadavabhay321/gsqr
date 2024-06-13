@@ -1,0 +1,1133 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>भारत की नदियां</title>
+
+    <style>
+    * {
+
+            font-family: ;
+
+            margin: 0;
+
+            padding: 0;
+
+            box-sizing: border-box;
+
+            text-decoration: none;
+
+            outline: none;
+
+            text-transform: capitalize;
+
+
+        }
+
+
+
+        .nav {
+
+            width: 100vw;
+
+            height: 100%;
+
+            background-color: orangered;
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            text-align: center;
+
+        }
+
+
+
+        .st {
+
+            font-size: 30px;
+
+            color: white;
+
+            padding: 10px 25px;
+
+            font-weight: bold;
+
+        }
+
+
+
+        .qbox section div {
+            display: none;
+        }
+
+        .qbox section .ans:focus+div {
+            display: block;
+        }
+
+
+
+        .qbox {
+            margin: 5px 15px;
+
+            border: 2px solid #ccc;
+
+            height: 100%;
+
+            padding: 15px;
+
+        }
+
+
+        .ans {
+            border: 1px solid black;
+            padding: 5px 5px;
+            margin: 0;
+            background-color: #ccc;
+            position: relative;
+
+        }
+
+
+        .ansbox {
+            position: relative;
+            top: 5px;
+            padding: 5px 0;
+            margin-bottom: 10px;
+            border: ;
+        }
+
+
+        .anw,
+        .mor {
+            color: red;
+            font-weight: bold;
+        }
+
+        .answer,
+        .more {
+            color: blue;
+            padding: 5px 0;
+        }
+
+        .question {
+            font-weight: bold;
+            color: #000;
+        }
+
+        .h {
+            width: 100%;
+            background-color: #ccc;
+            padding: 10px 10px;
+            margin-bottom: 10px;
+            text-align: center;
+            justify-content: center;
+        }
+
+        section {
+            margin-top: 10px;
+        }
+
+        .fs {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0 15px;
+            gap: 10px;
+        }
+
+        .shuffle,
+        .reload {
+            padding: 5px 10px;
+            font-size: 20px;
+            margin-top: 5px;
+            font-weight: bold;
+            background-color: #ccc;
+        }
+        
+        .search {
+            padding: 8px 10px;
+            margin-top: 5px;
+            border: 2px solid black;
+        }
+        
+        #myol {
+           list-style-position: inside; 
+        }
+    </style>
+
+</head>
+
+
+
+<body>
+
+    <nav class="nav">
+        <div class="st">भारत की नदियां</div>
+    </nav>
+
+    <div class="fs">
+        <input class="search" id="searchInput" placeholder="search question">
+        <button class="shuffle" onclick="main()">shuffle</button>
+        <button class="reload" onclick="window.location.reload()">reset</button>
+    </div>
+
+    <div class="qbox">
+    
+    <ol id="myol">
+    
+        <!-- ???????????????????????????? -->
+    
+        <li class="question">भारत की नदियां अपनी कुल प्रवाहित जल का_____प्रतिशत बंगाल की खाड़ी में तथा_____प्रतिशत अरब सागर में गिरती है<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>77, 23</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">बंगाल की खाड़ी में जल गिराने वाली नदियां<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>गंगा, ब्रह्मपुत्र, स्वर्णरेखा, महानदी, गोदावरी, कृष्णा, कावेरी, वैतरणी, ब्राह्मणी, पेन्नार, पल्लार, ताम्रपर्णी</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">अरब सागर में जल गिराने वाली नदियां<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>साबरमती, नर्मदा, ताप्ती, वैतरणा, शरावती</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">नील नदी का उद्गम स्थल तथा मुहाना है<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>अफ्रीका महादेश के सबसे बड़े झील विक्टोरिया झील, भूमध्य सागर</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">विश्व का सबसे बड़ा डेल्टा है इसका निर्माण किन नदियों द्वारा होता है<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>सुंदरवन डेल्टा, गंगा और ब्रह्मपुत्र</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">प्रायद्वीपीय भारत की नदियों में कौन सी नदी सदानीरा है<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>कावेरी</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">अलकनंदा का उद्गम स्थल है, इसकी सहायक नदियां है<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>बद्रीनाथ के संतोपथ हिमनद, धौलीगंगा, नंदाकिनी, पिंडार, मंदाकिनी, भागीरथी</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">मंदाकिनी का उद्गम स्थल है<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>केदारनाथ</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">भागीरथी का उद्गम स्थल है<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>गंगोत्री</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">विष्णु प्रयाग में मिलने वाली नदियां है<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>धौलीगंगा, अलकनंदा</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">नंदप्रयाग में मिलने वाली नदियां है<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>नंदाकिनी, अलकनंदा</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        <li class="question">कर्णप्रयाग में मिलने वाली नदियां<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>पिंडार, अलकनंदा</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">रुद्रप्रयाग में मिलने वाली नदियां<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>मंदाकिनी, अलकनंदा</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">देवप्रयाग में मिलने वाली नदियां<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>भागीरथी, अलकनंदा</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">गंगा नदी का उद्गम स्थल है<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>देवप्रयाग</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">गंगा की सहायक नदियां<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>यमुना, सोन (दाहिने), रामगंगा, गोमती, घाघरा, गंडक, कोसी (बाए)</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">गंगा की सबसे बड़ी सहायक नदी कौन सी है इसका उद्गम स्थल कहां है यह गंगा में कहा मिलती है, इसकी लंबाई कितनी है, इस नदी के तट पर कौन-कौन से शहर स्थित है<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>यमुना नदी, उत्तराखंड के यमुनोत्री हिमानी, प्रयागराज, 1326 किलोमीटर, दिल्ली आगरा मथुरा औरैया इटावा</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">सोन नदी का उद्गम स्थल कहां है यह गंगा में किस स्थान पर मिलती है<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>मध्य प्रदेश के अमरकंटक पहाड़ी से, पटना के निकट दानापुर में</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">रामगंगा नदी का उद्गम स्थल कहां है यह किस स्थान पर गंगा से मिल जाती है<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>उत्तराखंड के गढ़वाल पहाड़ी से, उत्तर प्रदेश में कन्नौज के सम</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">गोमती नदी का उद्गम स्थल कहां है किस स्थान पर गंगा से मिल जाती है<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>उत्तर प्रदेश के पीलीभीत जिला के फुलहर झील से, लखनऊ से गुजरती हुई गाजीपुर के समीप</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">घाघरा नदी का उद्गम स्थल कहां है यह गंगा में किस स्थान पर मिलती है<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>तिब्बत के पठार के मापचा चुंग हिमनद से, बिहार के छपरा में</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">गंडक नदी का उद्गम स्थल कहां है यह गंगा में किस स्थान पर मिलती है<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>नेपाल हिमालय से, सोनपुर के निकट</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">बिहार का शोक किस नदी को कहा जाता है इसका उद्गम स्थल कहां है यह किस स्थान पर गंगा में मिल जाती है<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>नेपाल के गोसाई स्थान से, कटिहार के कुर्सेला के समीप</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">विश्व में सबसे ज्यादा मार्ग परिवर्तन करने वाली नदी कौन सी है<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>कोसी नदी</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">महानंदा नदी का उद्गम स्थल कहां है यह किस स्थान पर गंगा से मिल जाती है<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>पश्चिम बंगाल के दार्जिलिंग पहाड़ी से, फरक्का के समीप</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <h3 class="h" id="h">सिंधु नदी तंत्र</h3>
+        
+        <li class="question">सिंधु नदी का उद्गम स्थल कहां है इसकी लंबाई कितनी है इसका मुहाना कहां है इसकी सहायक नदियां कौन-कौन सी है<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>तिब्बत के मानसरोवर झील के सिंगी खनमान हिमनद, 2880 किलोमीटर, अरब सागर<br>सहायक नदियां- झेलम, चिनाब, रावि, व्यास, सतलज</p>
+        <p class="more"><span class="mor">more:- </span>पश्चिम की ओर बहती हुई भारत की एकमात्र केंद्र शासित प्रदेश लद्दाख से होते हुए पाकिस्तान में प्रवेश करती है और अपना जल अरब सागर में गिरती हैं</p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">सिंधु की कौन सी सहायक नदी सिर्फ भारत में बहती है, इसका उद्गम स्थल कहां है इसका मुहाना कहां है<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>व्यास नदी, रोहतांग दर्रा के समीप व्यास कुंड से, सतलज नदी</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">सिंधु नदी जल समझौता कब कहां किसकी अध्यक्षता में और किसके किसके बीच हुआ था, इस समझौता के तहत भारत और पाकिस्तान को कितने प्रतिशत जल पर अधिकार प्राप्त हुआ<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>1960 में कराची में विश्व बैंक की अध्यक्षता में, भारत के प्रधानमंत्री पंडित जवाहरलाल नेहरू तथा पाकिस्तान के राष्ट्रपति अयूब खान के बीच, भारत को 20%, पाकिस्तान को 80%</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">झेलम नदी का उद्गम स्थल कहां है इसका मुहाना कहां है<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>जम्मू कश्मीर के बेरिनाग के निकट स्थित शेषनाग झील से, पाकिस्तान में चिनाब नदी से मिल जाती है</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">सिंधु की सबसे बड़ी सहायक नदी कौन सी है इसका उद्गम स्थल कहां है और मुहाना कहां है<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>चिनाब नदी हिमाचल प्रदेश के बारालाचा धारा से, पाकिस्तान में सतलज नदी</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">रावि नदी का उद्गम स्थल और मुहाना कहां हैं<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>हिमाचल प्रदेश के रोहतांग दर्रा से, पाकिस्तान में चिनाब नदी</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">सतलज नदी का उद्गम स्थल और मुहाना कहां है<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>तिब्बत के पत्थर के मानसरोवर झील के राक्सताल झील से, पाकिस्तान में चिनाब नदी</p>
+        <p class="more"><span class="mor">more:- </span>पश्चिम की ओर बहती हुई शिपकिला दर्रा से भारत के हिमाचल प्रदेश में प्रवेश करती है और हिमाचल प्रदेश के बाद यह पंजाब में बहती हुई पाकिस्तान में प्रवेश करती है</p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">झेलम चिनाब रवि व्यास सतलुज की संयुक्त धारा किसके समीप सिंधु नदी में मिलती है<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>पाकिस्तान के मिठानकोट के समीप</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <h3 class="h" id="h">प्रायद्वीपीय भारत की नदियां</h3>
+        
+        <li class="question"><br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span></p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">पश्चिम बंगाल का शोक किसे कहा जाता है इसका उद्गम स्थल और मोहना कहां हैं, यह किसकी सबसे बड़ी सहायक नदी है, इसकी सहायक नदियां कौन-कौन सी है<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>दामोदर नदी, झारखंड के पलामू जिला के छोटा नागपुर के पठार के खमरपेट पहाड़ी से, पश्चिम बंगाल में हुगली नदी से, हुगली<br>सहायक नदियां- बराकर, कोनारी, बोकारो, जमुनिया, घरी</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">छोटा नागपुर की गंगा किसे कहा जाता है इसका उद्गम स्थल कहां है इसका मुहाना कहां है<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>स्वर्णरेखा नदी, छोटा नागपुर के पठार से, बंगाल के खाड़ी में</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">महानदी का उद्गम स्थल कहां है इसका संगम कहां है, इसकी प्रमुख सहायक नदियां कौन-कौन सी है<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>छत्तीसगढ़ के सिंधवा पर्वत श्रेणी से, बंगाल की खाड़ी में<br>सहायक नदियां- मांड, ईब, जोक, तेल, शिवनाथ</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">दक्षिण भारत की सबसे लंबी नदी कौन सी है उद्गम स्थल और संगम कहां है यह नदी किन-किन राज्यों से गुजरती है इसकी लंबाई कितनी है इसकी प्रमुख सहायक नदियां कौन-कौन सी है<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>गोदावरी नदी, महाराष्ट्र के नासिक के त्र्यंबक पहाड़ी से, बंगाल की खाड़ी, महाराष्ट्र तेलंगाना और आंध्र प्रदेश, 1465 किलोमीटर<br>सहायक नदियां- पैनगंगा, वैनगंगा, वर्धा, मंजरा, इंद्रावती, प्राणहिता</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">दक्षिण भारत की दूसरी सबसे लंबी नदी कौन सी है इसका उद्गम स्थल और मोहना कहां है यह किन-किन राज्यों से होकर गुजरती है इसकी लंबाई कितनी है इसकी प्रमुख सहायक नदियां कौन-कौन सी है<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>कृष्णा नदी, महाराष्ट्र में स्थित महाबलेश्वर की पहाड़ी से, बंगाल की खाड़ी, महाराष्ट्र कर्नाटक तेलंगाना आंध्र प्रदेश, 1400 किलोमीटर<br>सहायक नदियां- भीमा तुंगभद्रा घटप्रभा मालप्रभा</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">दक्षिण भारत की गंगा किसे कहते हैं इसका उद्गम स्थल और मोहना कहां है इसकी लंबाई कितनी है, इसकी सहायक नदियां कौन-कौन सी है<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>कावेरी नदी, कर्नाटक के ब्रह्मगिरि पहाड़ी से, बंगाल की खाड़ी में, 800 किलोमीटर<br>सहायक नदियां- हेमावती अमरावती अकरावती भवानी काविनी</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">दक्षिणी गंगा किसे कहा जाता है<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>गोदावरी नदी को</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">लूनी नदी का उद्गम स्थल और मोहना कहां है इसकी प्रमुख सहायक नदियां कौन-कौन सी है<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>राजस्थान के अरावली पर्वत श्रेणी से, कच्छ के रण में लुप्त हो जाती है<br>सहायक नदियां- सरसुती, जुबई</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">साबरमती नदी का उद्गम स्थल कहां है इसका संगम कहां है<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>राजस्थान के अरावली पहाड़ी से, खंभात की खाड़ी में</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">नर्मदा नदी का उद्गम स्थल कहां है इसका संगम कहां है इसकी लंबाई कितनी है इसकी प्रमुख सहायक नदियां कौन-कौन सी है<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>विंध्याचल और सतपुड़ा पर्वत श्रेणी के मध्य में स्थित अमरकंटक की पहाड़ी से, खंभात की खाड़ी में, 1312 किलोमीटर<br>सहायक नदियां- ओरसंग तवा बंजर शेर</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">ताप्ती नदी का उद्गम स्थल और संगम कहां है इसकी लंबाई कितनी है इसकी प्रमुख सहायक नदियां कौन-कौन सी है<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>मध्य प्रदेश के बैतूल जिले के महादेव पहाड़ी से, खंभात की खाड़ी में, 730 किलोमीटर<br>सहायक नदियां- अरूणावती मुरना गिरना</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">भारत की कौन सी नदी कर्क रेखा को दो बार काटती है इसका उद्गम स्थल और संगम कहां है<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>माही नदी, मध्य प्रदेश के विंध्याचल पर्वत श्रेणी में स्थित मेहंद झील से, खंभात की खाड़ी</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">केरल की सबसे लंबी नदी कौन सी है इसका उद्गम स्थल और संगम कहां है<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>पेरियार नदी, अन्नामलाई की पहाड़ी से, अरब सागर</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">शरावती नदी का उद्गम स्थल और मुहाना कहां है<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>कर्नाटक के शिमोगा जिले से, अरब सागर</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">भारत के सबसे दक्षिणी में स्थित नदी कौन सी है इसका उद्गम स्थल और संगम कहां है<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>वेगई नदी, तमिलनाडु के वर्षणाद पहाड़ी से, मन्नार की खाड़ी में</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">पेन्नार नदी का उद्गम स्थल कहां है<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>कर्नाटक के कोलार जिला के नंदी दुर्गा पहाड़ी से</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">पल्लार नदी का उद्गम स्थल कहां है<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>कर्नाटक के चिकावल्लपुर जिले से</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">वैतरणी नदी का उद्गम स्थल कहां है<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>उड़ीसा के क्योसर पहाड़ी से</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">ब्राह्मणी नदी किस राज्य की एक प्रमुख नदी है इसका निर्माण किन दो नदियों के संयुक्त धारा से होता है<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>ओडिसा, दक्षिणी कोयल और शंख नदी</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">वैतरणा नदी का उद्गम स्थल कहां है<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>महाराष्ट्र के नासिक के त्र्यंबक पहाड़ी से</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">दक्षिण भारत की नदियां किस प्रकार के अपवाह तंत्र का निर्माण करती है<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>वृक्षनुमा</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <h3 class="h" id="h">ब्रह्मपुत्र नदी तंत्र</h3>
+        
+        <li class="question">ब्रह्मपुत्र नदी का उद्गम स्थल और संगम कहां है इसकी लंबाई कितनी है, भारत में इसकी लंबाई कितनी है इससे तिब्बत में किस नाम से जाना जाता है अरुणाचल प्रदेश में किस नाम से जाना जाता है असम में किस नाम से जाना जाता है बांग्लादेश में किस नाम से जाना जाता है, इसकी सहायक नदियां कौन सी है<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>तिब्बत के मानसरोवर झील के चेमयुंग दुंग हिमनद से, बांग्लादेश में मेघना के नाम से बंगाल की खाड़ी में, 2900 किलोमीटर, 916 किलोमीटर, तिब्बत में सांगपो, अरुणाचल प्रदेश में दिहांग या दिबांग, असम में ब्रह्मपुत्र, बांग्लादेश में जमुना<br>सहायक नदियां- तीस्ता, मानस, संकोश, सुवनश्री, रंगीत (दाहिने), दिवांग, लोहित, दिहांग, धनश्री, कामपीली, ब्राक (बाएं)</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">तीस्ता नदी का उद्गम स्थल और संगम कहां है<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>सिक्किम के पोहुनरी पर्वत से, बांग्लादेश के रंगपुर नामक स्थान पर ब्रह्मपुत्र से मिल जाती है</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">रंगीत नदी किस राज्य में बहती है<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>सिक्किम</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">मानस का उद्गम स्थल कहां है यह ब्रह्मपुत्र में किस स्थान पर मिलती है<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>तिब्बत के हिमालय क्षेत्र से, असम के मैदानी भाग में</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">सुवनश्री नदी किन दो पहाड़ियों को अलग करती है<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>अरुणाचल प्रदेश में स्थित मिरी पहाड़ी और अबोर पहाड़ी</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">संकोष नदी कहां बहती है यह ब्रह्मपुत्र से जाकर कहां मिलती है<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>भूटान की एक प्रमुख नदी है, असम के ध्रुवरी के निकट</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">दीवांग लोहित और दिहांग किस राज्य में बहती है<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>अरुणाचल प्रदेश</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">धनश्री उद्गम स्थल कहां है<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>नागालैंड के नागा पहाड़ी से</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">ब्राक किस राज्य की एक प्रमुख नदी है<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>मणिपुर</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <h3 class="h" id="h">प्रमुख नदी जल विवाद</h3>
+        
+        <li class="question">भारतीय संविधान के किस अनुच्छेद के अंतर्गत अंतराज्जीय नदी जल विवाद संबंधित चर्चा है<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>अनुच्छेद 262</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">कावेरी नदी जल विवाद किन राज्यों के बीच है<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>कर्नाटक और तमिलनाडु</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">मध्य प्रदेश और गुजरात के बीच किस नदी को लेकर जल विवाद है<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>नर्मदा नदी</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">कर्नाटक और आंध्र प्रदेश के बीच किस नदी को लेकर जल विवाद है<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>कृष्णा नदी</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">सोन नदी जल विवाद किन राज्यों के बीच है<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>बिहार मध्य प्रदेश और उत्तर प्रदेश</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <h5 class="h" id="h">★★★प्रमुख नदी जल विवाद★★★</h5>
+        
+        <li class="question">भारत की सबसे लंबी नदी कौन सी है जिसका उद्गम तथा मुहाना दोनों भारतीय क्षेत्र में ही हो<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>गोदावरी नदी</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">कौन सी नदी अपने भ्रंश घाटी प्रवाह के लिए प्रसिद्ध है<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>दामोदर नदी</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">शारदा/सरयू नदी का उद्गम स्थल और संगम कहां है, इसे वर्तमान में किस नाम से जाना जाता है, भारत और नेपाल की सीमा पर इसे किस नाम से जाना जाता है, इसके संगम स्थान पर किस नाम से जाना जाता है<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>नेपाल हिमालय के मिलाम हिमानी से, उत्तर प्रदेश के बारांबाकी जिला में घाघरा नदी से, गौरीगंगा, काली नदी, चौक</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question"><br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span></p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+       
+</ol>
+</div>
+
+<script type="text/javascript">
+
+        function shuffle() {
+            var ol = document.getElementById("myol")
+            for (var i = ol.children.length; i >= 0; i--) {
+                ol.appendChild(ol.children[Math.random() * i | 0])
+            }
+        }
+
+        function hhide() {
+            let heading = document.getElementById("h");
+            heading.style.display = "none";
+        }
+
+        function main() {
+            shuffle();
+            hhide();
+        }
+
+document.addEventListener("DOMContentLoaded", function () {
+
+const searchInput = document.getElementById("searchInput")
+
+const list = document.getElementById("myol");
+
+const items = list.getElementsByTagName("li");
+
+searchInput.addEventListener("input", function () {
+
+const searchTerm = searchInput.value.toLowerCase();
+
+Array.from(items).forEach((item) => {
+
+const text = item.textContent.toLowerCase();
+
+item.style.display = text.includes (searchTerm) ?
+
+"block" : "none";
+
+})
+
+})
+
+})
+
+    </script>
+    
+</body>
+   
+
+</html>
