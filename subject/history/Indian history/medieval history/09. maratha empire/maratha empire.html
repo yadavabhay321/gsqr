@@ -1,0 +1,950 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>मराठा साम्राज्य</title>
+
+    <style>
+    * {
+
+            font-family: ;
+
+            margin: 0;
+
+            padding: 0;
+
+            box-sizing: border-box;
+
+            text-decoration: none;
+
+            outline: none;
+
+            text-transform: capitalize;
+
+
+        }
+
+
+
+        .nav {
+
+            width: 100vw;
+
+            height: 100%;
+
+            background-color: orangered;
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            text-align: center;
+
+        }
+
+
+
+        .st {
+
+            font-size: 30px;
+
+            color: white;
+
+            padding: 10px 25px;
+
+            font-weight: bold;
+
+        }
+
+
+
+        .qbox section div {
+            display: none;
+        }
+
+        .qbox section .ans:focus+div {
+            display: block;
+        }
+
+
+
+        .qbox {
+            margin: 5px 15px;
+
+            border: 2px solid #ccc;
+
+            height: 100%;
+
+            padding: 15px;
+
+        }
+
+
+        .ans {
+            border: 1px solid black;
+            padding: 5px 5px;
+            margin: 0;
+            background-color: #ccc;
+            position: relative;
+
+        }
+
+
+        .ansbox {
+            position: relative;
+            top: 5px;
+            padding: 5px 0;
+            margin-bottom: 10px;
+            border: ;
+        }
+
+
+        .anw,
+        .mor {
+            color: red;
+            font-weight: bold;
+        }
+
+        .answer,
+        .more {
+            color: blue;
+            padding: 5px 0;
+        }
+
+        .question {
+            font-weight: bold;
+            color: #000;
+        }
+
+        .h {
+            width: 100%;
+            background-color: #ccc;
+            padding: 10px 10px;
+            margin-bottom: 10px;
+            text-align: center;
+            justify-content: center;
+        }
+
+        section {
+            margin-top: 10px;
+        }
+
+        .fs {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0 15px;
+            gap: 10px;
+        }
+
+        .shuffle,
+        .reload {
+            padding: 5px 10px;
+            font-size: 20px;
+            margin-top: 5px;
+            font-weight: bold;
+            background-color: #ccc;
+        }
+        
+        .search {
+            padding: 8px 10px;
+            margin-top: 5px;
+            border: 2px solid black;
+        }
+        
+        #myol {
+           list-style-position: inside; 
+        }
+    </style>
+
+</head>
+
+
+
+<body>
+
+    <nav class="nav">
+        <div class="st">मराठा साम्राज्य</div>
+    </nav>
+
+    <div class="fs">
+        <input class="search" id="searchInput" placeholder="search question">
+        <button class="shuffle" onclick="main()">shuffle</button>
+        <button class="reload" onclick="window.location.reload()">reset</button>       
+    </div>
+
+    <div class="qbox">
+    
+    <ol id="myol">
+    
+    
+        <!-- ???????????????????????????? -->
+        
+        <h3 class="h" id="h">मराठा साम्राज्य के अष्टप्रधान</h3>
+    
+        <li class="question">पेशवा<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>प्रधानमंत्री का पद</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">मजूमदार/अमात्य<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>यह वित्त मंत्री का पद था जो राजस्व कर लेखा-जोखा करता था</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">सर ए नौबत<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>सेनापति</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">सुमत्त<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>विदेश मंत्री</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">वाकयानवीस<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>सूचना गुप्तचर तथा संधि करने वाला मंत्री</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">चिटनिस<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>पत्राचार व्यवस्था</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        <li class="question">पंडित राव<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>धार्मिक मामलों की देखरेख करना
+        </p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">न्यायाधीश<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>न्याय व्यवस्था की देखरेख करना
+        </p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <h5 class="h" id="h">★★★मराठा साम्राज्य के अष्टप्रधान★★★</h5>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">मराठों के पूर्वज कौन थे मराठों के उदय का कारण क्या बना है<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>राजस्थान के सिसोदिया वंश के सूर्यवंशी राजपूत, महाराष्ट्र की भक्ति आंदोलन तथा औरंगजेब की कट्टर धार्मिक नीति</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">मराठा साम्राज्य की स्थापना किसने किया इनका जन्म कब और कहां हुआ इनके पिता और माता का नाम क्या था उनके गुरु कौन थे उनके आध्यात्मिक गुरु कौन थे उनकी सौतेली मां का क्या नाम था<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>शिवाजी ने, 20 अप्रैल 1627 में पुणे के निकट शिवनेर नामक स्थान पर, पिता शाह जी भोसले, माता जीजाबाई, गुरु कोण्ड देव, आध्यात्मिक गुरु रामदास, सौतेली मां तुकाबाई</p>
+        <p class="more"><span class="mor">more:- </span>शिवाजी के पिता शाह जी भोसले पहले अहमदनगर के शासक के यहां नौकरी पर थे जब अहमदनगर पर मुगलों का अधिकार हो गया तो शाहजी भोंसले बीजापुर के शासक के यहां नौकरी करने लगे और अपनी अपेक्षित पत्नी जीजाबाई तथा पुत्र शिव जी को पुणे की जागीर सौंप दिया</p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">शिवाजी के जीवन पर सर्वाधिक प्रभाव किनका पड़ा<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>माता जीजाबाई तथा गुरु कोण्ड देव का</p>
+        <p class="more"><span class="mor">more:- </span>शिवाजी दक्षिण भारत में मुस्लिम शासन के स्थान पर हिंदू साम्राज्य बड़ा करना चाहते थे</p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">शिवाजी ने गोरिल्ला पद्धति को किससे सीखा था<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>अहमदनगर के शासक मलिक अंबर से</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">शिवाजी ने अपना प्रथम सैन्य अभियान कब और किसके विरुद्ध किया और कौन सा किला जीत लिया<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>1643 में, बीजापुर के विरुद्ध, तोरण का किला</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">अफजल खान किसका सेनापति था, इसकी हत्या किसने और कब कर दी<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>बीजापुर का, शिवाजी ने, 1659 में</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">शिवाजी का मुलाकात औरंगजेब से कब हुआ<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span></p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">औरंगजेब ने अपने मामा शाइस्ता खां के द्वारा शिवाजी जी के बढ़ते हुए शक्तियों को देखकर कब एक अभियान भेजा, इसमें कौन जीता<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>1663 में, शिवाजी</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">शिवाजी ने सूरत को पहली बार कब लूटा<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>1664 में</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">सूरत लूट के बाद औरंगजेब द्वारा शिवजी के विरुद्ध भेजे गए एक अभियान का नेतृत्व किसने किया इस अभियान में कौन जीता<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>राजा जयसिंह, शिवाजी पराजित हो गए</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">पुरंदर की संधि कब और किसके किसके बीच हुई<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>5 जून 1665 में शिवाजी तथा जय सिंह के बीच</p>
+        <p class="more"><span class="mor">more:- </span>इस संधि के तहत 35 किलो में से 23 किला मुगलों को लौटना पड़ा इस संधि के तहत शिवाजी ने अपने पुत्र संभाजी को औरंगजेब की सेवा में भेजे और खुद अगले वर्ष 1666 ईस्वी में औरंगजेब से मिलने आगरा पहुंचे किंतु औरंगजेब ने धोखे से शिवाजी को जयपुरी महल आगरा में कैद कर लिया परंतु शिवाजी ने बहुत जल्द भेष बदलकर 1666 ईस्वी में ही फलों की टोकरी में बैठकर जयपुरी महल से भाग गए</p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">शिवाजी ने सूरत को दोबारा कब लूटा<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>1670 में</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">शिवाजी ने कब और कहां अपना राज्याभिषेक करवाया और कौन सी उपाधि धारण किया, इनका राज्याभिषेक किसने करवाया यह कहां का रहने वाला था<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>1674 में, रायगढ़ के किला में, छत्रपति, गंगा भट्ट (विशेश्वर) नामक पंडित ने, काशी बनारस</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">शिवाजी ने कर्नाटक के विरुद्ध सैन्य अभियान कब किया था<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>1676 में</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">शिवाजी को राजा की उपाधि किसने दिया<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>औरंगजेब ने</p>
+        <p class="more"><span class="mor">more:- </span>औरंगजेब कभी भी शिवाजी को पराजित नहीं कर सका अंत में 1679 ईस्वी में औरंगजेब ने पुनः जजिया कर लगा दिया जजिया कर का विरोध करने वाला एकमात्र शासक शिवाजी थे विवस होकर औरंगजेब ने शिवाजी को राजा की उपाधि दिया</p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">शिवाजी की मृत्यु कब हुई<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>12 अप्रैल 1680 ई</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">शिवाजी की जीवनी किस पुस्तक में लिखी गई है<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>बखर</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">शिवाजी की मृत्यु के बाद मराठा साम्राज्य के छत्रपति कौन बने, इनकी हत्या किसने कब और क्यों कर दिया<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>संभाजी, औरंगजेब ने, 1686 ईस्वी में, औरंगजेब के विद्रोही पुत्र अकबर द्वितीय को शरण दिए जिस कारण और उनके पुत्र साहू जी को बंदी बना लिया</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">मराठा शासन का मैग्नाकार्टा किसे कहा जाता है<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>साहू जी ने बालाजी विश्वनाथ को 1717 में अपना प्रतिनिधि बनकर मुगल शासक फारुखसियार के दरबार में भेजा था फारुखसियार ने छत्रपति के पद को मान्यता दे दिया इसी संधि को मराठा शासन का मैग्नाकांटा कहा जाता है</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">बालाजी विश्वनाथ को पेशवा किसने बनाया उनकी मृत्यु कब हुई<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>साहू जी ने, 1720 में</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">लड़ाकू पेशवा किसे कहा जाता है इनके पिता कौन थे<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>बाजीराव प्रथम, बालाजी विश्वनाथ</p>
+        <p class="more"><span class="mor">more:- </span>शिवाजी के बाद गोरिल्ला पति का सर्वाधिक प्रयोग बाजीराव प्रथम ने किया</p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">मुंशी शिवगांव की संधि कब और किसके किसके बीच हुई<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>1728 में, बाजीराव प्रथम और हैदराबाद के शासक निजाम उल मुल्क को हराकर किया</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">बाजीराव प्रथम ने कब मुगल शासक मोहम्मद शाह पर आक्रमण कर दिया<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>1737 में</p>
+        <p class="more"><span class="mor">more:- </span>मात्र 500 घुड़सवार लेकर मुगल शासक मोहम्मद साहब आक्रमण कर दिया और दिल्ली को पूरी तरह लूट और मोहम्मद साहब से एक संधि की जिसके तहत 5 लाख प्रतिवर्ष लेकर विदेशी आक्रमण के समय सैन्य मदद देने का वचन दिया परंतु 1739 में ईरान तथा एशिया का नेपोलियन कहा जाने वाला नादिर शाह ने दिल्ली पर आक्रमण कर दिया किंतु बाजीराव ने कोई भी सैन्य मदद नहीं दिया</p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">बाजीराव का संबंध किस मुस्लिम महिला से था<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>मस्तानी</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">साहू जी ने बाजीराव प्रथम के समय ही पूरे मराठा साम्राज्य को कितने भागो में बांटा और कौन कौन से भागो में, वहां के शासक कौन थे<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>5, बडौदा गायकवाड, पुणे पेशवा, नागपुर भोसले, इंदौर होलकर, ग्वालियर सिंधिया</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">मराठा साम्राज्य का दूसरा संस्थापक किसे कहा जाता है<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>बालाजी बाजीराव इन्हें नाना साहब के नाम से भी जाना जाता है, 1740 से 1761</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">किस संधि के तहत छत्रपति के पद को समाप्त कर दिया गया और मराठा साम्राज्य पूरी तरह पेशवा के अधीन हो गया यह संधि कब हुई थी<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>सांगोला की संधि, 1750 में</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">हैदराबाद के निजाम ने मराठों की अधीनता किस संधि के तहत स्वीकार किया यह संधि कब हुई<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>झलकी की संधि, 1752 में</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">पानीपत का तृतीय युद्ध कब और किसके किसके बीच हुआ, किस इतिहासकार ने इसे स्वयं देखा था<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>14 जनवरी 1761 को, अफगान सेनापति अहमद शाह अब्दाली और सदाशिव राव भाऊ, विश्वास भाऊ के बीच, काशिराज पंडित</p>
+        <p class="more"><span class="mor">more:- </span>सदाशिव और विश्वास भाऊ दोनों युद्ध लड़ते हुए मारे गए और मराठा बुरी तरह पराजित हो गए</p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">नारायण राव की हत्या किसने की<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>उनके चाचा रघुनाथ ने</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">किस पेशवा को सहायता देने के लिए बारभाई परिषद का गठन किया गया<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>माधव राव द्वितीय</p>
+        <p class="more"><span class="mor">more:- </span>इस परिषद में 12 मंत्रियों का एक समूह था इसमें सबसे प्रमुख नाना फडणवीस तथा महादजी सिंधिया थे</p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">सूरत की संधि कब और किसके किसके बीच हुई<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>1775 में रघुनाथ राव और अंग्रेजों के बीच</p>
+        <p class="more"><span class="mor">more:- </span>इस संधि के तहत रघुनाथ राव ने उपहार में वसीम तथा सालसेट अंग्रेजों को दे दिया क्योंकि खुद वह पेशवा बनना चाहता था परंतु बाद में अंग्रेजों अपने वादे से मुकर गए और अंग्रेज तथा मैराथन के बीच यही तनाव आंग्ल मराठा युद्ध का रूप लिया</p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">प्रथम आंग्ल मराठा युद्ध कब से कब तक चला यह युद्ध किसकी अध्यक्षता में हुआ यह युद्ध किस संधि के तहत और कब समाप्त हुआ<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>1775 से 1782 महादजी सिंधिया साला बाई के संधि के तहत 1782 में</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">अंतिम पेशवा कौन थे<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>बाजीराव द्वितीय</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">द्वितीय आंग्ल मराठा युद्ध कब से कब तक चला यह युद्ध किस संधि के तहत समाप्त हुआ<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>1803 से 1806 वसीन की संधि के तहत</p>
+        <p class="more"><span class="mor">more:- </span>इस संधि के तहत बाजीराव द्वितीय ने अंग्रेजों के अधीनता स्वीकार कर ली वही घोसला होलकर तथा सिंधिया ने स्वीकार नहीं किया और यह तृतीय आंग्ल मराठा युद्ध का कारण बना</p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">तृतीय आंग्ल मराठा युद्ध कब से कब तक चला यह युद्ध किस संधि के तहत समाप्त हुआ<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>1817 से 1818 तक पुणे की संधि के तहत</p>
+        <p class="more"><span class="mor">more:- </span>तृतीय आंग्ल मराठा युद्ध के बाद बाजीराव द्वितीय को अंग्रेजों ने पेंशन भोगी बना दिया और उसे कानपुर बिठूर भेज दिया इसी पेशवा बाजीराव द्वितीय का दस्तक पुत्र नाना साहब था बाजीराव द्वितीय के बाद इसे भी पेंशन दिया जा रहा था</p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">किस इतिहासकार ने पिंडारियों को मराठों का कुत्ता कहा है, किसने इनका अंत कर दिया<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>मेलकम ग्रे, लॉर्ड हेस्टिंग्स ने</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">शिवाजी के समय सबसे मजबूत स्थाई सेना को क्या कहा गया<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>पागा</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">शिवाजी के समय सबसे महत्वपूर्ण कर कौन से थे<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>चौथ तथा सरदेशमुख़ी</p>
+        <p class="more"><span class="mor">more:- </span>चौथ - यह शिवाजी अपने पड़ोसी देश से लेते थे यह कुल कृषि का 1/4 भाग होता था, सर्देशमुखी - यह कर शिवाजी अपने ही देश की जनता से लेते थे इस कर को देने वाला इस बात को स्वीकार करता था कि उसके देश के प्रमुख शिवाजी ही हैं यह कुल कृषि के 1/10 भाग पर था</p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">मराठा साम्राज्य की सबसे छोटी इकाई क्या थी इसका प्रधान कौन होता था<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>गांव, पटेल</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">शिवाजी के राज्य को डाकुओं का राज्य किसने कहा था<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>स्मिथ ने</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">शिवाजी के मृत्यु के पश्चात उत्तराधिकारी पद के लिए किसके किसके बीच युद्ध हुआ<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>राजाराम और संभाजी</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">शिवाजी ने मुगलों से किस संधि के तहत किला का हस्तांतरण किया, कितने किलों का हस्तांतरण किया गया<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>पुरंदर की संधि, 23</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">मराठा शासन में एक शब्द ऊपरी का अर्थ है<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>मराठा शासन के अधीन एक धारिता भूघृति की श्रेणी</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">शिवाजी को पहाड़ी चूहा और साहसी डाकू किसने कहा<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>औरंजेब</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">किसे अंतिम महान पेशवा कहा जाता है<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>माधव राव</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">शिवाजी की अंतिम विजय थी<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>जिंजी की</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">शिवाजी ने मुगलों को किस युद्ध में हराया था<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>सलहार</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">शिवाजी पर पेशवाओ की जीत के बाद मराठा साम्राज्य की राजधानी बन गई<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>पुणे</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+        <li class="question">राजा जयसिंह कहा के शासक थे<br>
+        <section>
+        <span class="ans" tabindex="0">Answer</span>
+        <div class="ansbox">
+        <p class="answer"><span class="anw">Answer:- </span>आमेर</p>
+        <p class="more"><span class="mor">more:- </span></p>
+        </div>
+        </section>
+        <br></li>
+        
+        <!-- ???????????????????????????? -->
+        
+
+</ol>               
+</div>
+
+<script type="text/javascript">
+
+        function shuffle() {
+            var ol = document.getElementById("myol")
+            for (var i = ol.children.length; i >= 0; i--) {
+                ol.appendChild(ol.children[Math.random() * i | 0])
+            }
+        }
+
+        function hhide() {
+            let heading = document.getElementById("h");
+            heading.style.display = "none";
+        }
+
+        function main() {
+            shuffle();
+            hhide();
+        }
+        
+        document.addEventListener("DOMContentLoaded", function () {
+
+const searchInput = document.getElementById("searchInput")
+
+const list = document.getElementById("myol");
+
+const items = list.getElementsByTagName("li");
+
+searchInput.addEventListener("input", function () {
+
+const searchTerm = searchInput.value.toLowerCase();
+
+Array.from(items).forEach((item) => {
+
+const text = item.textContent.toLowerCase();
+
+item.style.display = text.includes (searchTerm) ?
+
+"block" : "none";
+
+})
+
+})
+
+})
+        
+    </script>
+
+</body>
+   
+
+</html>
